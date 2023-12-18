@@ -22,3 +22,7 @@ func _on_option_pressed():
 
 func _on_exit_pressed():
 	get_tree().quit()
+
+
+func _on_credits_pressed():
+	Global.emit_signal("change_scene",self,"credits")

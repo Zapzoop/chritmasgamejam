@@ -1,4 +1,8 @@
 res://assets/scenes&scripts/main.tscn
 res://main_menu/mainmenu.tscn
 res://main_menu/option/option.tscn
+res://main_menu/mainmenu.gd
+res://main_menu/credits/credits.tscn
 res://global/global.gd
+res://main_menu/credits/credits.gd
+res://generator/generator.gd
