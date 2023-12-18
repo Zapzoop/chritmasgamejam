@@ -33,6 +33,11 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Option"
 
+[node name="credits" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Credits"
+
 [node name="exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
@@ -40,4 +45,5 @@ text = "Exit"
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="VBoxContainer/credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
