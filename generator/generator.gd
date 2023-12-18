@@ -32,14 +32,6 @@ var selected_bad_habits = {} #All selected bad_habits
 func _ready():
 	print("child 1")
 	create_child()
-	print("child 2")
-	create_child()
-	print("child 3")
-	create_child()
-	print("child 4")
-	create_child()
-	print("child 5")
-	create_child()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -109,8 +101,15 @@ func report_card():
 	selected_good_habits = {}
 
 func child(): 
-	print("i am child with")
-	print(selected_bad_habits)
-	print(selected_good_habits)
+	$story.text = "i am child with \n \n"
+	var rand = RandomNumberGenerator
+	var good = selected_good_habits.keys()
+	var bad = selected_bad_habits.keys()
+	for x in good:
+		$story.text += x+ "\n \n"
+	for x in bad:
+		$story.text += x + "\n \n"
+		
+
 	report_card()
 	

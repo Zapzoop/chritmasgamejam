@@ -1,6 +1,7 @@
 RichTextLabel
+TextEdit
+ColorRect
+Sprite2D
 AnimationPlayer
 AnimationTree
-TextEdit
 Button
-ColorRect
