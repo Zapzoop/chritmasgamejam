@@ -12,6 +12,7 @@ func _process(delta):
 
 
 func _on_start_pressed():
+	Global.emit_signal("change_scene",self,"level")
 	pass # Replace with function body.
 
 

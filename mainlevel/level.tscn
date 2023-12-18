@@ -1,16 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://vuqfwpbiwr2m"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vm8si"]
-radius = 8.0
+[ext_resource type="PackedScene" uid="uid://dc75jg62m0dr3" path="res://child/child.tscn" id="1_xap0m"]
 
 [node name="Level" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-motion_mode = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("CircleShape2D_vm8si")
-
-[node name="Area2D" type="Area2D" parent="CharacterBody2D"]
+[node name="Child" parent="." instance=ExtResource("1_xap0m")]
+position = Vector2(224, 96)

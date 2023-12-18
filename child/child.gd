@@ -10,7 +10,7 @@ func _process(delta):
 			Global.is_dragging = true
 		if Input.is_action_pressed("click"):
 			global_position = get_global_mouse_position() - offset
-		elif Input.is_action_just_pressed("click"):
+		elif Input.is_action_just_released("click"):
 			var final_location = get_global_mouse_position()
 			Global.is_dragging = false
 			var tween = get_tree().create_tween()
@@ -47,4 +47,4 @@ func _on_area_2d_mouse_exited():
 	if not Global.is_dragging:
 		draggable = false
 		var tween = get_tree().create_tween()
-		tween.tween_property($Sprite2D,"scale",Vector2(0.2,0.2),0.2).set_ease(Tween.EASE_OUT)
+		tween.tween_property($Sprite2D,"scale",Vector2(0.3,0.3),0.2).set_ease(Tween.EASE_OUT)

@@ -2,6 +2,8 @@ extends Node
 
 var options = "res://main_menu/option/option.tscn"
 var credits = "res://main_menu/credits/credits.tscn"
+var level = "res://mainlevel/level.tscn"
+
 signal change_scene(caller,callee)
 signal callback(callee)
 
@@ -19,6 +21,8 @@ func _on_change_scene(caller,callee):
 		get_tree().change_scene_to_file(options)
 	if callee == "credits":
 		get_tree().change_scene_to_file(credits)
+	if callee == "level":
+		get_tree().change_scene_to_file(level)
 	
 func _on_callback(calleename,calleeobj):
 	if calleename == "options":
@@ -26,6 +30,10 @@ func _on_callback(calleename,calleeobj):
 		get_tree().get_root().add_child(remember)
 		get_tree().set_current_scene(remember)
 	if calleename == "credits":
+		calleeobj.queue_free()
+		get_tree().get_root().add_child(remember)
+		get_tree().set_current_scene(remember)
+	if calleename == "level":
 		calleeobj.queue_free()
 		get_tree().get_root().add_child(remember)
 		get_tree().set_current_scene(remember)

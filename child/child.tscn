@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://df8hb6mrpqwrh" path="res://icon.svg" id="2_heq2e"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x8ghi"]
-radius = 16.0
+radius = 24.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rbf47"]
 radius = 16.0
@@ -24,7 +24,7 @@ shape = SubResource("CircleShape2D_rbf47")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 3.8147e-06)
-scale = Vector2(0.2, 0.2)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_heq2e")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
