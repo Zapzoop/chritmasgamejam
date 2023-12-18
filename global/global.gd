@@ -11,15 +11,12 @@ func _ready():
 	callback.connect(_on_callback)
 
 func _on_change_scene(caller,callee):
-	print("emitted 2.0")
 	remember = caller.duplicate()
 	if callee == "options":
 		get_tree().change_scene_to_file(options)
 	
 func _on_callback(calleename,calleeobj):
 	if calleename == "options":
-		print("received")
-		print(remember)
 		calleeobj.queue_free()
 		get_tree().get_root().add_child(remember)
 		get_tree().set_current_scene(remember)
