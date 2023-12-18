@@ -3,8 +3,9 @@ CollisionShape2D
 Area2D
 CharacterBody2D
 RichTextLabel
+TextEdit
+ColorRect
+Sprite2D
 AnimationPlayer
 AnimationTree
-TextEdit
 Button
-ColorRect

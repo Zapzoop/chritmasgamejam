@@ -1,5 +1,13 @@
 res://generator/generator.gd
+<<<<<<< HEAD
 res://child/child.tscn
 res://child/child.gd
 res://mainlevel/level.tscn
 res://global/global.gd
+=======
+res://assets/scenes&scripts/child_file.tscn
+res://assets/scenes&scripts/main.tscn
+res://main_menu/mainmenu.tscn
+res://main_menu/option/option.tscn
+res://main_menu/credits/credits.tscn
+>>>>>>> main
