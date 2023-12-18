@@ -5,6 +5,8 @@ var credits = "res://main_menu/credits/credits.tscn"
 signal change_scene(caller,callee)
 signal callback(callee)
 
+var is_dragging = false
+
 var remember
 # Called when the node enters the scene tree for the first time.
 func _ready():
