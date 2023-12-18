@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://df08ijrktdbk6"]
+
+[ext_resource type="Script" path="res://generator/generator.gd" id="1_tt4ca"]
+
+[node name="paper" type="Sprite2D"]
+script = ExtResource("1_tt4ca")
+
+[node name="just untile we get the texture" type="ColorRect" parent="."]
+offset_right = 336.0
+offset_bottom = 632.0
+color = Color(1, 1, 0.647059, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="temporary" type="ColorRect" parent="Sprite2D"]
+offset_left = 208.0
+offset_top = 88.0
+offset_right = 304.0
+offset_bottom = 200.0
+
+[node name="name" type="RichTextLabel" parent="."]
+offset_right = 336.0
+offset_bottom = 72.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 35
+text = "             anvil"
+
+[node name="data" type="RichTextLabel" parent="."]
+offset_left = 32.0
+offset_top = 88.0
+offset_right = 192.0
+offset_bottom = 216.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "age: 0
+from: hell
+height: 1m
+ocupation: party killer
+"
+
+[node name="story" type="RichTextLabel" parent="."]
+offset_left = 8.0
+offset_top = 232.0
+offset_right = 328.0
+offset_bottom = 616.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
