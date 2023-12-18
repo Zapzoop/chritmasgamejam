@@ -5,3 +5,4 @@ res://main_menu/mainmenu.gd
 res://main_menu/credits/credits.tscn
 res://global/global.gd
 res://main_menu/credits/credits.gd
+res://generator/generator.gd
