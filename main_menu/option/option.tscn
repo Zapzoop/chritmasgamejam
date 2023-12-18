@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://b7tk213b5gudl"]
+
+[ext_resource type="Script" path="res://main_menu/option/option.gd" id="1_ek2sl"]
+[ext_resource type="Texture2D" uid="uid://5h6l2qocg6y4" path="res://assets/icons/back.png" id="2_c5mbi"]
+
+[node name="Option" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ek2sl")
+metadata/_edit_use_anchors_ = true
+
+[node name="back" type="Button" parent="."]
+layout_mode = 0
+anchor_right = 0.0486111
+anchor_bottom = 0.0864198
+icon = ExtResource("2_c5mbi")
+flat = true
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
