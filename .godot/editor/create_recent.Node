@@ -1,5 +1,6 @@
-ColorRect
 RichTextLabel
+ColorRect
+Node2D
 Button
 ProgressBar
 TextureProgressBar
@@ -7,11 +8,6 @@ AudioStreamPlayer2D
 Sprite2D
 CollisionShape2D
 Area2D
-ColorRect
 StaticBody2D
 Sprite2D
 CharacterBody2D
-TextEdit
-Sprite2D
-AnimationPlayer
-AnimationTree

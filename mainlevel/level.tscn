@@ -41,3 +41,6 @@ position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
 shape = SubResource("RectangleShape2D_2upqx")
+
+[node name="center" type="Node2D" parent="."]
+position = Vector2(608, 296)

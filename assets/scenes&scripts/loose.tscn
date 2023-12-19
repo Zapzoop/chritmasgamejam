@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjavqqcysec67"]
+
+[ext_resource type="Script" path="res://score.gd" id="1_3foxm"]
+
+[node name="loose" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1072.0
+offset_bottom = 592.0
+color = Color(0, 0, 0, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 184.0
+offset_top = 96.0
+offset_right = 896.0
+offset_bottom = 176.0
+theme_override_font_sizes/normal_font_size = 32
+text = "you loose"
+
+[node name="score" type="RichTextLabel" parent="."]
+offset_left = 368.0
+offset_top = 224.0
+offset_right = 520.0
+offset_bottom = 304.0
+theme_override_font_sizes/normal_font_size = 29
+script = ExtResource("1_3foxm")

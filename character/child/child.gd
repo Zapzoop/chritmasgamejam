@@ -34,7 +34,15 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self,"global_position",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
+				if Global.child_score > 0 and self.position.x > $/root/Level/center.position.x or Global.child_score < 0 and self.position.x < $/root/Level/center.position.x :
+					print("right") 
+					Global.score += 5
+				else:
+					$/root/Level.lost = true
+					get_tree().change_scene_to_file("res://assets/scenes&scripts/loose.tscn")
+				
 				self.free()
+				
 				Global.emit_signal("moveforward")
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
