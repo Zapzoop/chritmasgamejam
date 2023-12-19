@@ -118,7 +118,6 @@ func _on_naughty_pressed():
 	self.visible = false
 	parent.can_drag = true
 
-
 func _on_nice_pressed():
 	parent.verdictdone = true
 	self.visible = false

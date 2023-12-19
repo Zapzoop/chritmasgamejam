@@ -1,6 +1,7 @@
 extends Node2D
 
-var child = preload("res://child/child.tscn")
+var child = preload("res://character/child/child.tscn")
+var anvil = preload("res://character/anvil/anvil.tscn")
 @onready var pos1 = $Pos1
 @onready var pos2 = $Pos2
 @onready var pos3 = $Pos3
@@ -11,8 +12,12 @@ func _ready():
 	fill_pos()
 
 func fill_pos():
-	for i in range(self.get_child_count()-1): #reducing number of childern
+	for i in range(self.get_child_count()-3): #reducing number of childern
 		var pos = self.get_child(i+1) #adding appropiate index
+		if i == 2:
+			var child_ins = anvil.instantiate()
+			pos.add_child(child_ins)
+			continue
 		var child_ins = child.instantiate()
 		pos.add_child(child_ins)
 		var child_ins_file = child_ins.report
