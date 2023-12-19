@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://b7tk213b5gudl"]
+[gd_scene load_steps=6 format=3 uid="uid://b7tk213b5gudl"]
 
 [ext_resource type="Script" path="res://main_menu/option/option.gd" id="1_ek2sl"]
 [ext_resource type="Texture2D" uid="uid://5h6l2qocg6y4" path="res://assets/icons/back.png" id="2_c5mbi"]
+[ext_resource type="Script" path="res://main_menu/option/volume.gd" id="3_mvdhv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ijdtj"]
+bg_color = Color(0, 0.399589, 0.172035, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rb1p0"]
+bg_color = Color(0.546158, 0, 0.143179, 1)
+border_color = Color(3.66997e-07, 0.257058, 0.100851, 1)
+border_blend = true
 
 [node name="Option" type="Control"]
 layout_mode = 3
@@ -13,6 +22,12 @@ grow_vertical = 2
 script = ExtResource("1_ek2sl")
 metadata/_edit_use_anchors_ = true
 
+[node name="bg" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1176.0
+offset_bottom = 664.0
+color = Color(1, 1, 0.415686, 1)
+
 [node name="back" type="Button" parent="."]
 layout_mode = 0
 anchor_right = 0.0486111
@@ -22,4 +37,49 @@ flat = true
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
+[node name="volume" type="ProgressBar" parent="."]
+layout_mode = 0
+offset_left = 152.0
+offset_top = 264.0
+offset_right = 1016.0
+offset_bottom = 371.0
+theme_override_font_sizes/font_size = 75
+theme_override_styles/background = SubResource("StyleBoxFlat_ijdtj")
+theme_override_styles/fill = SubResource("StyleBoxFlat_rb1p0")
+value = 90.0
+script = ExtResource("3_mvdhv")
+
+[node name="minus" type="Button" parent="volume"]
+layout_mode = 0
+offset_left = -136.0
+offset_top = -48.0
+offset_right = -8.0
+offset_bottom = 131.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 125
+text = "-"
+flat = true
+
+[node name="plus" type="Button" parent="volume"]
+offset_left = 864.0
+offset_top = -40.0
+offset_right = 992.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 125
+text = "+"
+flat = true
+
+[node name="text" type="RichTextLabel" parent="volume"]
+layout_mode = 0
+offset_left = 256.0
+offset_top = -120.0
+offset_right = 616.0
+offset_bottom = -16.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 50
+text = "music volume"
+
 [connection signal="pressed" from="back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="volume/minus" to="volume" method="_on_minus_pressed"]
+[connection signal="pressed" from="volume/plus" to="volume" method="_on_plus_pressed"]
