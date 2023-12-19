@@ -25,6 +25,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Control" type="Control" parent="paper/just untile we get the texture"]
 layout_mode = 1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_vertical = 2

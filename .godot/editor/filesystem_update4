@@ -1,10 +1,7 @@
-res://generator/generator.gd
-res://assets/sound/musics.tscn
-res://assets/sound/musics.gd
 res://main_menu/mainmenu.tscn
-res://main_menu/option/option.tscn
+res://character/child/child.gd
+res://generator/generator.gd
 res://mainlevel/level.tscn
-res://main_menu/option/volume.gd
-res://main_menu/option/option.gd
-res://assets/sound/base.gd
-res://assets/sound/base.tscn
+res://character/child/child.tscn
+res://assets/scenes&scripts/child_file.tscn
+res://character/anvil/anvil.tscn
