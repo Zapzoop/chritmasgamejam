@@ -1,10 +1,7 @@
-res://assets/scenes&scripts/main.tscn
+res://mainlevel/level.tscn
 res://generator/generator.gd
+res://child/child.tscn
+res://mainlevel/level.gd
 res://child/child.gd
 res://main_menu/mainmenu.tscn
-res://main_menu/option/option.tscn
-res://main_menu/credits/credits.tscn
-res://child/child.tscn
-res://mainlevel/level.tscn
-res://main_menu/mainmenu.gd
-res://global/global.gd
+res://assets/scenes&scripts/child_file.tscn

@@ -1,6 +1,7 @@
 extends Node
 #TO RUN THE SCRIPT ADD IT TO ANY NODE AND THEN INSTANCE THAT SCENE
 
+var parent
 
 #Store as sentence:value
 var bad_habits = {
@@ -113,3 +114,19 @@ func child():
 
 	report_card()
 	
+
+
+func _on_naughty_pressed():
+	parent.verdictdone = true
+	self.visible = false
+	parent.can_drag = true
+
+
+func _on_nice_pressed():
+	parent.verdictdone = true
+	self.visible = false
+	parent.can_drag = true
+
+
+func _on_close_pressed():
+	self.visible = false

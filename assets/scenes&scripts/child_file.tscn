@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://df08ijrktdbk6"]
+[gd_scene load_steps=3 format=3 uid="uid://df08ijrktdbk6"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_tt4ca"]
+[ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_fnb60"]
 
 [node name="paper" type="Sprite2D"]
 script = ExtResource("1_tt4ca")
@@ -43,3 +44,36 @@ offset_top = 232.0
 offset_right = 328.0
 offset_bottom = 616.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+
+[node name="Naughty" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 40.0
+anchor_top = 552.0
+anchor_right = 128.0
+anchor_bottom = 584.0
+text = "Naughty"
+metadata/_edit_use_anchors_ = true
+
+[node name="Nice" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 208.0
+anchor_top = 552.0
+anchor_right = 288.0
+anchor_bottom = 584.0
+text = "Nice"
+metadata/_edit_use_anchors_ = true
+
+[node name="Close" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 288.0
+anchor_right = 332.4
+anchor_bottom = 46.4
+offset_right = 843.6
+offset_bottom = 881.6
+scale = Vector2(0.05, 0.05)
+icon = ExtResource("2_fnb60")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Naughty" to="." method="_on_naughty_pressed"]
+[connection signal="pressed" from="Nice" to="." method="_on_nice_pressed"]
+[connection signal="pressed" from="Close" to="." method="_on_close_pressed"]

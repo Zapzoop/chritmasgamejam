@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://dc75jg62m0dr3"]
+[gd_scene load_steps=6 format=3 uid="uid://dc75jg62m0dr3"]
 
 [ext_resource type="Script" path="res://child/child.gd" id="1_o16q4"]
 [ext_resource type="Texture2D" uid="uid://df8hb6mrpqwrh" path="res://icon.svg" id="2_heq2e"]
+[ext_resource type="PackedScene" uid="uid://df08ijrktdbk6" path="res://assets/scenes&scripts/child_file.tscn" id="3_a0p52"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x8ghi"]
 radius = 24.0
@@ -10,7 +11,6 @@ radius = 24.0
 radius = 16.0
 
 [node name="Child" type="CharacterBody2D"]
-position = Vector2(256, 128)
 input_pickable = true
 script = ExtResource("1_o16q4")
 
@@ -26,6 +26,9 @@ shape = SubResource("CircleShape2D_rbf47")
 position = Vector2(0, 3.8147e-06)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_heq2e")
+
+[node name="paper" parent="." instance=ExtResource("3_a0p52")]
+visible = false
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

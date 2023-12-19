@@ -1,20 +1,32 @@
 extends CharacterBody2D
 
 var draggable = false
+var can_drag = false
+
+var verdictdone = false
+
 var offset
 
+@onready var report  = $paper
+func _ready():
+	report.parent = self
+
+
 func _process(delta):
-	if draggable:
-		if Input.is_action_just_pressed("click"):
-			offset = get_global_mouse_position() - global_position
-			Global.is_dragging = true
-		if Input.is_action_pressed("click"):
-			global_position = get_global_mouse_position() - offset
-		elif Input.is_action_just_released("click"):
-			var final_location = get_global_mouse_position()
-			Global.is_dragging = false
-			var tween = get_tree().create_tween()
-			tween.tween_property(self,"position",final_location,0.2).set_ease(Tween.EASE_OUT)
+	if Input.is_action_just_pressed("click") and !verdictdone:
+		report.visible = true
+	if can_drag: 
+		if draggable:
+			if Input.is_action_just_pressed("click"):
+				offset = get_global_mouse_position() - global_position
+				Global.is_dragging = true
+			if Input.is_action_pressed("click"):
+				global_position = get_global_mouse_position() - offset
+			elif Input.is_action_just_released("click"):
+				var final_location = get_global_mouse_position()
+				Global.is_dragging = false
+				var tween = get_tree().create_tween()
+				tween.tween_property(self,"position",final_location,0.2).set_ease(Tween.EASE_OUT)
 			
 
 
