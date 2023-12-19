@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://3fx7xfhip5wx"]
+
+[ext_resource type="Script" path="res://main_menu/paused/paused.gd" id="1_v6fqh"]
+
+[node name="Paused" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_v6fqh")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.125
+anchor_top = 0.197531
+anchor_right = 0.833333
+anchor_bottom = 0.296296
+theme_override_font_sizes/font_size = 60
+text = "PAUSED"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.439216, 0.439216, 0.439216, 0.321569)
+metadata/_edit_use_anchors_ = true

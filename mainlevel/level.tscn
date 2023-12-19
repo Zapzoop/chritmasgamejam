@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=5 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
+[ext_resource type="PackedScene" uid="uid://3fx7xfhip5wx" path="res://main_menu/paused/paused.tscn" id="2_f6qk0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
 size = Vector2(170, 154)
@@ -10,6 +11,9 @@ size = Vector2(170, 146)
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_xguva")
+
+[node name="Paused" parent="." instance=ExtResource("2_f6qk0")]
+visible = false
 
 [node name="report" type="Node2D" parent="."]
 

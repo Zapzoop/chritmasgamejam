@@ -2,6 +2,9 @@ extends Node2D
 
 var child = preload("res://character/child/child.tscn")
 var anvil = preload("res://character/anvil/anvil.tscn")
+
+
+
 @onready var pos1 = $Pos1
 @onready var pos2 = $Pos2
 @onready var pos3 = $Pos3
@@ -13,8 +16,8 @@ func _ready():
 	Global.levelins = self
 
 func fill_pos():
-	for i in range(self.get_child_count()-3): #reducing number of childern
-		var pos = self.get_child(i+1) #adding appropiate index
+	for i in range(5): #reducing number of childern
+		var pos = self.get_child(i+2) #adding appropiate index
 		if i == 2:
 			var child_ins = anvil.instantiate()
 			pos.add_child(child_ins)
@@ -33,6 +36,7 @@ func fill_pos():
 		child_ins_file.position = Vector2(0,0)
 		
 func move():
+	$report.get_child(0).free()
 	reparentall()
 	var child = self.get_children()
 	for i in range(5):
