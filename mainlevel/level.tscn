@@ -1,8 +1,43 @@
-[gd_scene load_steps=2 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=4 format=3 uid="uid://vuqfwpbiwr2m"]
 
-[ext_resource type="PackedScene" uid="uid://dc75jg62m0dr3" path="res://child/child.tscn" id="1_xap0m"]
+[ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
+size = Vector2(170, 154)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2upqx"]
+size = Vector2(170, 146)
 
 [node name="Level" type="Node2D"]
+script = ExtResource("1_xguva")
 
-[node name="Child" parent="." instance=ExtResource("1_xap0m")]
-position = Vector2(224, 96)
+[node name="report" type="Node2D" parent="."]
+
+[node name="Pos1" type="Node2D" parent="."]
+position = Vector2(512, 320)
+
+[node name="Pos2" type="Node2D" parent="."]
+position = Vector2(512, 384)
+
+[node name="Pos3" type="Node2D" parent="."]
+position = Vector2(512, 448)
+
+[node name="Pos4" type="Node2D" parent="."]
+position = Vector2(512, 512)
+
+[node name="Pos5" type="Node2D" parent="."]
+position = Vector2(512, 576)
+
+[node name="presents" type="StaticBody2D" parent="." groups=["dropable"]]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(1016, 272)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
+shape = SubResource("RectangleShape2D_41rdw")
+
+[node name="gullotine" type="StaticBody2D" parent="." groups=["dropable"]]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(216, 264)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
+shape = SubResource("RectangleShape2D_2upqx")

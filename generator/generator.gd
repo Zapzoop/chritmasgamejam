@@ -1,7 +1,9 @@
 extends Node
 #TO RUN THE SCRIPT ADD IT TO ANY NODE AND THEN INSTANCE THAT SCENE
 
-
+var parent
+var id
+var newparent
 #Store as sentence:value
 var bad_habits = {
 	"robbed a bank with a water gun":-30,
@@ -101,15 +103,31 @@ func report_card():
 	selected_good_habits = {}
 
 func child(): 
-	$story.text = "i am child with \n \n"
+	$"paper/just untile we get the texture/Control/story".text = "i am child with \n \n"
 	var rand = RandomNumberGenerator
 	var good = selected_good_habits.keys()
 	var bad = selected_bad_habits.keys()
 	for x in good:
-		$story.text += x+ "\n \n"
+		$"paper/just untile we get the texture/Control/story".text += x+ "\n \n"
 	for x in bad:
-		$story.text += x + "\n \n"
-		
-
+		$"paper/just untile we get the texture/Control/story".text += x + "\n \n"
 	report_card()
-	
+
+func _on_naughty_pressed():
+	parent.verdictdone = true
+	self.visible = false
+	parent.can_drag = true
+
+func _on_nice_pressed():
+	parent.verdictdone = true
+	self.visible = false
+	parent.can_drag = true
+
+func _on_close_pressed():
+	self.visible = false
+		
+func makerestinvisible():
+	for i in range(newparent.get_child_count()):
+		var child = newparent.get_child(i)
+		if self.visible == true and child != self:
+			child.visible = false
