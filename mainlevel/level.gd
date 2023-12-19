@@ -11,10 +11,15 @@ func _ready():
 	fill_pos()
 
 func fill_pos():
-	for i in range(self.get_child_count()):
-		var pos = self.get_child(i)
+	for i in range(self.get_child_count()-1): #reducing number of childern
+		var pos = self.get_child(i+1) #adding appropiate index
 		var child_ins = child.instantiate()
 		pos.add_child(child_ins)
+		var child_ins_file = child_ins.report
+		child_ins_file.reparent($report,true)
+		child_ins_file.newparent = $report
+		child_ins_file.position = Vector2(0,0)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
