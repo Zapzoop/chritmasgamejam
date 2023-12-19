@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5tfin1hbusy0"]
+
+[ext_resource type="PackedScene" uid="uid://c5mpxs5we22y1" path="res://assets/sound/base.tscn" id="1_hu556"]
+
+[node name="music" type="Node2D"]
+
+[node name="base" parent="." instance=ExtResource("1_hu556")]

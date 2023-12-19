@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5mpxs5we22y1"]
+
+[ext_resource type="AudioStream" uid="uid://bncbi3ycbieu8" path="res://assets/sound/obbiezzione.mp3" id="1_jycqg"]
+[ext_resource type="Script" path="res://assets/sound/base.gd" id="2_lau8x"]
+
+[node name="base" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_jycqg")
+script = ExtResource("2_lau8x")
