@@ -38,7 +38,6 @@ func _process(delta):
 				Global.emit_signal("moveforward")
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
-			
 
 func _on_area_2d_mouse_entered():
 	can_show = true
@@ -62,13 +61,8 @@ func _on_area_2d_body_entered(body:StaticBody2D):
 		body.modulate = Color(Color.DARK_GOLDENROD,1)
 		body_ref = body
 
-
 func _on_area_2d_body_exited(body):
 	if body.is_in_group("dropable"):
 		is_inside_dropable = false
 		body.modulate = Color(Color.DARK_GOLDENROD,0.4)
 		body_ref = body
-
-
-
-

@@ -1,4 +1,6 @@
 CollisionShape2D
+Area2D
+ColorRect
 StaticBody2D
 Sprite2D
 CharacterBody2D
@@ -6,9 +8,7 @@ Node2D
 Node
 Control
 Button
-Area2D
 RichTextLabel
 TextEdit
-ColorRect
 AnimationPlayer
 AnimationTree

@@ -8,3 +8,5 @@ res://assets/scenes&scripts/child_file.tscn
 res://character/anvil/anvil.tscn
 res://character/child/child.tscn
 res://character/child/child.gd
+res://global/global.gd
+res://character/anvil/anvil.gd

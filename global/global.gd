@@ -6,14 +6,17 @@ var level = "res://mainlevel/level.tscn"
 
 signal change_scene(caller,callee)
 signal callback(callee)
+signal moveforward()
 
 var is_dragging = false
 
+var levelins
 var remember
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	change_scene.connect(_on_change_scene)
 	callback.connect(_on_callback)
+	moveforward.connect(_on_moveforward)
 
 func _on_change_scene(caller,callee):
 	remember = caller.duplicate()
@@ -38,6 +41,10 @@ func _on_callback(calleename,calleeobj):
 		get_tree().get_root().add_child(remember)
 		get_tree().set_current_scene(remember)
 	remember = null
+	
+func _on_moveforward():
+	levelins.move()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
