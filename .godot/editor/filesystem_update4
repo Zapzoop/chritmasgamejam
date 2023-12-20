@@ -1,13 +1,10 @@
-res://main_menu/mainmenu.tscn
+res://mainlevel/level.tscn
 res://character/child/child.gd
 res://generator/generator.gd
+res://main_menu/mainmenu.tscn
 res://character/anvil/anvil_file.tscn
 res://assets/scenes&scripts/child_file.tscn
 res://character/anvil/anvil.tscn
 res://assets/scenes&scripts/loose.tscn
 res://assets/scenes&scripts/tutorial.tscn
 res://character/child/child.tscn
-res://mainlevel/level.tscn
-res://tutorial.gd
-res://mainlevel/level.gd
-res://character/anvil/anvil.gd

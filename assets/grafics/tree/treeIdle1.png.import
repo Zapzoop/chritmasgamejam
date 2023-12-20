@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qyxh1k8jjnwg"
-path="res://.godot/imported/TreeIdle.png-759132b41b05497abbac107f0f14b54a.ctex"
+uid="uid://bynxb35vi87sj"
+path="res://.godot/imported/treeIdle1.png-a701d4a641251948cc8a1589dbf2eb99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/grafics/tree/TreeIdle.png"
-dest_files=["res://.godot/imported/TreeIdle.png-759132b41b05497abbac107f0f14b54a.ctex"]
+source_file="res://assets/grafics/tree/treeIdle1.png"
+dest_files=["res://.godot/imported/treeIdle1.png-a701d4a641251948cc8a1589dbf2eb99.ctex"]
 
 [params]
 
