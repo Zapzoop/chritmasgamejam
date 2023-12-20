@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=3 uid="uid://crd2ohkb3lewo"]
+
+[ext_resource type="Script" path="res://tutorial.gd" id="1_ngq68"]
+[ext_resource type="FontFile" uid="uid://c7omhw0uwjvi8" path="res://assets/fonts/AA_typewriter.ttf" id="2_aqwty"]
+[ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="3_2j0yg"]
+
+[sub_resource type="Theme" id="Theme_j6tsk"]
+default_font = ExtResource("2_aqwty")
+default_font_size = 28
+
+[node name="tutorial" type="Control"]
+top_level = true
+layout_mode = 3
+anchor_right = 0.291667
+anchor_bottom = 1.0
+grow_vertical = 2
+script = ExtResource("1_ngq68")
+metadata/_edit_use_anchors_ = true
+
+[node name="paper" type="Sprite2D" parent="."]
+
+[node name="just untile we get the texture" type="ColorRect" parent="paper"]
+anchors_preset = -1
+anchor_right = 328.0
+anchor_bottom = 648.0
+grow_vertical = 2
+size_flags_vertical = 3
+color = Color(1, 1, 0.647059, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Control" type="Control" parent="paper/just untile we get the texture"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="name" type="RichTextLabel" parent="paper/just untile we get the texture/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.146341
+anchor_top = -0.0246914
+anchor_right = 0.878049
+anchor_bottom = 0.0864198
+theme = SubResource("Theme_j6tsk")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 35
+bbcode_enabled = true
+text = "[color=red]	IMPORTANT[/color]"
+scroll_active = false
+metadata/_edit_use_anchors_ = true
+
+[node name="data" type="RichTextLabel" parent="paper/just untile we get the texture/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0487805
+anchor_top = 0.123457
+anchor_right = 1.0
+anchor_bottom = 1.02469
+theme = ExtResource("3_2j0yg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "from: The Hollidays central office
+to: Santa Claus
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="story" type="RichTextLabel" parent="paper/just untile we get the texture/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0487805
+anchor_top = 0.209877
+anchor_right = 0.951219
+anchor_bottom = 0.888889
+theme = ExtResource("3_2j0yg")
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
+text = "Good morning Mr Claus, we are happy to have you working with us.
+This is your first day on the job, so we decided to give you some guidelines on how to fo this job!
+
+your role here is to judge children, you will recive a file for every child [click on the child sprite to open it], this file contains:
+-good and bad actions the child did during this year
+-a proof of one of acts [click on the text to open it]
+-the child letcter to you
+
+after examining all the proofs, click choose, then drag the child to the right if you consider him good, and on the left if you consider him naughty
+
+PS: 1 error will mean immediate termination of contract."
+metadata/_edit_use_anchors_ = true
+
+[node name="Nice" type="Button" parent="paper/just untile we get the texture/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.268293
+anchor_top = 0.901235
+anchor_right = 0.756098
+anchor_bottom = 0.975309
+text = "choose"
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="paper"]
+
+[connection signal="pressed" from="paper/just untile we get the texture/Control/Nice" to="." method="_on_nice_pressed"]
