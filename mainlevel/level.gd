@@ -14,7 +14,7 @@ func _ready():
 	Global.levelins = self
 
 func fill_pos():
-	for i in range(self.get_child_count()-3): #reducing number of childern
+	for i in range(5): #reducing number of childern
 		var pos = self.get_child(i+1) #adding appropiate index
 		if i == 2:
 			var child_ins = anvil.instantiate()
@@ -81,3 +81,10 @@ func decider():
 	
 func _process(delta):
 	pass
+
+
+func reparentme(scene):
+	scene.reparent($report,true)
+	scene.newparent = $report
+	scene.position = Vector2(0,0)
+	

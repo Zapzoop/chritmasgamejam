@@ -1,6 +1,8 @@
+Node2D
+Node
+Control
 RichTextLabel
 ColorRect
-Node2D
 Button
 ProgressBar
 TextureProgressBar
@@ -10,4 +12,3 @@ CollisionShape2D
 Area2D
 StaticBody2D
 Sprite2D
-CharacterBody2D

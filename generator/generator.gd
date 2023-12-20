@@ -46,8 +46,6 @@ var selected_good_habits = {} #All selected good_habits
 var selected_bad_habits = {} #All selected bad_habits
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	print("child 1")
-	create_child()
 	$"paper/just untile we get the texture/Control/data".text = "age: " + str(int(rnd.randi_range(5,11))) + "\nheight: " + str(int(rnd.randi_range(100,160))) + "cm \nfrom: " + country.pick_random()
 	$"paper/just untile we get the texture/Control/name".text = Name + " " + surname
 
@@ -112,9 +110,8 @@ func report_card():
 		negative_score += selected_bad_habits[keylist_bad[i]]
 		
 	var total = positive_score + negative_score
-	Global.child_score = total
-	print("My score = " + str(total))
-	
+	parent.child_score = total
+	print("My score" + str(total))
 	selected_bad_habits = {} #emptying occupied habits
 	selected_good_habits = {}
 
