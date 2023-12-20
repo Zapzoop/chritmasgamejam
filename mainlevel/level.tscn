@@ -1,18 +1,54 @@
-[gd_scene load_steps=5 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=12 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
+[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/grafics/bg.jpeg" id="3_2apgr"]
+[ext_resource type="Texture2D" uid="uid://qyxh1k8jjnwg" path="res://assets/grafics/tree/TreeIdle.png" id="3_ifg0a"]
+[ext_resource type="Texture2D" uid="uid://yei4th02xx80" path="res://assets/grafics/tree/treeIdle (2).png" id="4_bw8dr"]
+[ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/grafics/anvill/anvilIDLE1.png" id="5_423j7"]
+[ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/grafics/anvill/anvilIDLE2.png" id="6_hbgdg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
-size = Vector2(170, 154)
+size = Vector2(429, 616)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yyth6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ifg0a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_bw8dr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2upqx"]
-size = Vector2(170, 146)
+size = Vector2(344, 432)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_im6h1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_423j7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hbgdg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_xguva")
 
-[node name="report" type="Node2D" parent="."]
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.6, 0.603704)
+texture = ExtResource("3_2apgr")
 
 [node name="Pos1" type="Node2D" parent="."]
 position = Vector2(512, 320)
@@ -30,20 +66,42 @@ position = Vector2(512, 816)
 position = Vector2(512, 864)
 
 [node name="presents" type="StaticBody2D" parent="." groups=["dropable"]]
-modulate = Color(0, 1, 0, 1)
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
+visible = false
+position = Vector2(-129.5, 52)
 shape = SubResource("RectangleShape2D_41rdw")
 
+[node name="tree" type="AnimatedSprite2D" parent="presents"]
+position = Vector2(-441.5, 49.75)
+scale = Vector2(1.72523, 1.716)
+sprite_frames = SubResource("SpriteFrames_yyth6")
+animation = &"idle"
+autoplay = "idle"
+
 [node name="gullotine" type="StaticBody2D" parent="." groups=["dropable"]]
-modulate = Color(1, 0, 0, 1)
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
+visible = false
+position = Vector2(20, 72)
 shape = SubResource("RectangleShape2D_2upqx")
+
+[node name="anvill" type="AnimatedSprite2D" parent="gullotine"]
+position = Vector2(360, 60)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_im6h1")
+animation = &"idle"
+autoplay = "idle"
 
 [node name="center" type="Node2D" parent="."]
 position = Vector2(608, 296)
 
-[node name="tutorial" parent="." instance=ExtResource("2_prt3w")]
+[node name="report" type="Node2D" parent="."]
+position = Vector2(120, 144)
+
+[node name="tutorial" parent="report" instance=ExtResource("2_prt3w")]
+offset_top = -72.0001
+offset_right = 40.192
+offset_bottom = -72.0

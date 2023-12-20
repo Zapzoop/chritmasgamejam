@@ -18,6 +18,7 @@ var offset
 var loose = preload("res://assets/scenes&scripts/loose.tscn")
 
 @onready var report = $paper
+@onready var anim = $paper/anim
 
 func _ready():
 	report.parent = self
@@ -26,6 +27,7 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("click") and !verdictdone and can_show and is_first:
 		report.visible = true
+		anim.play("open")
 		report.makerestinvisible()
 	if can_drag and draggable:
 		if Input.is_action_just_pressed("click"):

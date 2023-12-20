@@ -38,7 +38,7 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self,"global_position",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
-				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+				if ((self.child_score > 0) and (self.global_position.x < $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
 					self.free()
 					print("right") 
 					Global.score += 5
