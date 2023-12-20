@@ -12,6 +12,10 @@ grow_vertical = 2
 script = ExtResource("1_tt4ca")
 metadata/_edit_use_anchors_ = true
 
+[node name="drawing" type="Sprite2D" parent="."]
+position = Vector2(520, 176)
+scale = Vector2(0.3, 0.3)
+
 [node name="paper" type="Sprite2D" parent="."]
 
 [node name="just untile we get the texture" type="ColorRect" parent="paper"]
@@ -103,5 +107,6 @@ anchor_right = 304.0
 anchor_bottom = 200.0
 metadata/_edit_use_anchors_ = true
 
+[connection signal="meta_clicked" from="paper/just untile we get the texture/Control/story" to="." method="_on_story_meta_clicked"]
 [connection signal="pressed" from="paper/just untile we get the texture/Control/Nice" to="." method="_on_nice_pressed"]
 [connection signal="pressed" from="paper/just untile we get the texture/Control/Close" to="." method="_on_close_pressed"]

@@ -100,6 +100,4 @@ anchor_bottom = 0.975309
 text = "choose"
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="paper"]
-
 [connection signal="pressed" from="paper/just untile we get the texture/Control/Nice" to="." method="_on_nice_pressed"]

@@ -42,6 +42,31 @@ var good_habits = {
 	"temp2":90,
 	"temp3":99
 }
+
+var drawings = {
+	"robbed a bank with a water gun":"res://assets/grafics/actions/CancerFound.png",
+	"kidnapped Aldo Moro in the 80s in Italy":"res://assets/grafics/actions/CancerFound.png",
+	"helped overtrow a government to install a dicatorship":"res://assets/grafics/actions/CancerFound.png",
+	"said YOLO in 482 conversations this year":"res://assets/grafics/actions/CancerFound.png",
+	"Invests in Lockheed martin when word tension goes up":"res://assets/grafics/actions/CancerFound.png",
+	"told other kids Santa isn't real":"res://assets/grafics/actions/CancerFound.png",
+	"accused of arson on Nikki's tree house":"res://assets/grafics/actions/CancerFound.png",
+	"hit n run on neighbor with your three wheeler":"res://assets/grafics/actions/CancerFound.png",
+	"sold nuclear warheads to China":-2,
+	"gave Mrs Huffman's cat to the animal shelter, saying it was a stray":"res://assets/grafics/actions/CancerFound.png",
+	"impersonated neighbor to file for divorce with his wife":"res://assets/grafics/actions/CancerFound.png",
+	"reported Mr Grouche to the police as a Nazi":"res://assets/grafics/actions/CancerFound.png",
+	"crooked meth with his chemistry teacher!":"res://assets/grafics/actions/CancerFound.png",
+	"dealt drugs to the Mexican cartel":"res://assets/grafics/actions/CancerFound.png",
+	"Gave all his allowance to the local animal scelter":"res://assets/grafics/actions/test.png",
+	"he opened a charity found for kids with cancer" :"res://assets/grafics/actions/test.png",
+	"temp1":"res://assets/grafics/actions/test.png",
+	"temp2":"res://assets/grafics/actions/test.png",
+	"temp3":"res://assets/grafics/actions/test.png"
+	}
+
+
+
 var selected_good_habits = {} #All selected good_habits
 var selected_bad_habits = {} #All selected bad_habits
 # Called when the node enters the scene tree for the first time.
@@ -127,9 +152,11 @@ func child():
 	for x in bad:
 		all.append(x)
 	
-	$"paper/just untile we get the texture/Control/story".text +="has "+ "[color=red]"+ all[0]+ "[/color]" + " and " + "[color=red]"+ all[1]+ "[/color]" + ". Furthermore, the list goes on stating that this kid "
+	all.shuffle()
+	
+	$"paper/just untile we get the texture/Control/story".text +="has "+ "[color=red][url]"+ all[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ all[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
 	for x in range(2,5):
-		$"paper/just untile we get the texture/Control/story".text += "[color=red], "  + all[x] + "[/color]"
+		$"paper/just untile we get the texture/Control/story".text += ",[color=red] [url]"  + all[x] + "[/url][/color]"
 	
 	report_card()
 
@@ -151,3 +178,7 @@ func makerestinvisible():
 		var child = newparent.get_child(i)
 		if self.visible == true and child != self:
 			child.visible = false
+
+
+func _on_story_meta_clicked(meta):
+	$drawing.texture = ResourceLoader.load(drawings[meta])
