@@ -1,5 +1,8 @@
 extends Node
 
+var score = 0
+var scoreholder
+
 var options = "res://main_menu/option/option.tscn"
 var credits = "res://main_menu/credits/credits.tscn"
 var level = "res://mainlevel/level.tscn"
@@ -17,6 +20,9 @@ func _ready():
 	change_scene.connect(_on_change_scene)
 	callback.connect(_on_callback)
 	moveforward.connect(_on_moveforward)
+
+func _on_Updatescore():
+	scoreholder.text = str(score)
 
 func _on_change_scene(caller,callee):
 	remember = caller.duplicate()

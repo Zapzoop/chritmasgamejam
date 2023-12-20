@@ -2,6 +2,7 @@ extends Node2D
 
 var child = preload("res://character/child/child.tscn")
 var anvil = preload("res://character/anvil/anvil.tscn")
+var lost = false
 @onready var pos1 = $Pos1
 @onready var pos2 = $Pos2
 @onready var pos3 = $Pos3
@@ -13,7 +14,7 @@ func _ready():
 	Global.levelins = self
 
 func fill_pos():
-	for i in range(self.get_child_count()-3): #reducing number of childern
+	for i in range(5): #reducing number of childern
 		var pos = self.get_child(i+1) #adding appropiate index
 		if i == 2:
 			var child_ins = anvil.instantiate()
@@ -56,7 +57,7 @@ func reparentall():
 
 func generatechild():
 	var decider = decider()
-	if decider == "anvil":
+	if decider == "anvil" and lost == false:
 		var child_ins = anvil.instantiate()
 		$Pos5.add_child(child_ins)
 		var child_ins_file = child_ins.report
@@ -64,13 +65,14 @@ func generatechild():
 		child_ins_file.newparent = $report
 		child_ins_file.position = Vector2(0,0)
 		return
-	var child_ins = child.instantiate()
-	$Pos5.add_child(child_ins)
-	var child_ins_file = child_ins.report
-	child_ins_file.reparent($report,true)
-	child_ins_file.newparent = $report
-	child_ins_file.position = Vector2(0,0)
-	return
+	if lost == false:
+		var child_ins = child.instantiate()
+		$Pos5.add_child(child_ins)
+		var child_ins_file = child_ins.report
+		child_ins_file.reparent($report,true)
+		child_ins_file.newparent = $report
+		child_ins_file.position = Vector2(0,0)
+		return
 
 func decider():
 	var probab = ["","","","","","","","","","anvil"]
@@ -79,3 +81,10 @@ func decider():
 	
 func _process(delta):
 	pass
+
+
+func reparentme(scene):
+	scene.reparent($report,true)
+	scene.newparent = $report
+	scene.position = Vector2(0,0)
+	
