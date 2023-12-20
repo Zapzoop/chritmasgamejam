@@ -17,16 +17,16 @@ script = ExtResource("1_xguva")
 position = Vector2(512, 320)
 
 [node name="Pos2" type="Node2D" parent="."]
-position = Vector2(512, 384)
+position = Vector2(504, 680)
 
 [node name="Pos3" type="Node2D" parent="."]
-position = Vector2(512, 448)
+position = Vector2(512, 752)
 
 [node name="Pos4" type="Node2D" parent="."]
-position = Vector2(512, 512)
+position = Vector2(512, 816)
 
 [node name="Pos5" type="Node2D" parent="."]
-position = Vector2(512, 576)
+position = Vector2(512, 864)
 
 [node name="presents" type="StaticBody2D" parent="." groups=["dropable"]]
 modulate = Color(0, 1, 0, 1)
