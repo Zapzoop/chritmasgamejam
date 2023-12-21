@@ -1,16 +1,61 @@
-[gd_scene load_steps=3 format=3 uid="uid://df08ijrktdbk6"]
+[gd_scene load_steps=6 format=3 uid="uid://df08ijrktdbk6"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_tt4ca"]
 [ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_fnb60"]
+
+[sub_resource type="Animation" id="Animation_xboi3"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 90), Vector2(120, 130), Vector2(120, 200), Vector2(120, 664)]
+}
+
+[sub_resource type="Animation" id="Animation_plked"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 664), Vector2(120, 200), Vector2(120, 130), Vector2(120, 90)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxlrj"]
+_data = {
+"close": SubResource("Animation_xboi3"),
+"open": SubResource("Animation_plked")
+}
 
 [node name="Control" type="Control"]
 top_level = true
 layout_mode = 3
 anchor_right = 0.291667
 anchor_bottom = 1.0
+offset_left = 120.0
+offset_top = 664.0
+offset_right = 120.0
+offset_bottom = 664.0
 grow_vertical = 2
+scale = Vector2(0.7, 0.7)
 script = ExtResource("1_tt4ca")
 metadata/_edit_use_anchors_ = true
+
+[node name="drawing" type="Sprite2D" parent="."]
+position = Vector2(520, 176)
+scale = Vector2(0.3, 0.3)
 
 [node name="paper" type="Sprite2D" parent="."]
 
@@ -35,7 +80,8 @@ metadata/_edit_use_anchors_ = true
 [node name="name" type="RichTextLabel" parent="paper/just untile we get the texture/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.0
+anchor_left = 0.121951
+anchor_right = 0.853659
 anchor_bottom = 0.0864198
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 35
@@ -46,8 +92,8 @@ metadata/_edit_use_anchors_ = true
 [node name="data" type="RichTextLabel" parent="paper/just untile we get the texture/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0243902
-anchor_top = 0.0864198
+anchor_left = 0.0487805
+anchor_top = 0.160494
 anchor_right = 1.0
 anchor_bottom = 1.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
@@ -61,30 +107,23 @@ metadata/_edit_use_anchors_ = true
 [node name="story" type="RichTextLabel" parent="paper/just untile we get the texture/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.345679
-anchor_right = 1.0
-anchor_bottom = 0.888889
-theme_override_colors/default_color = Color(0, 0, 0, 1)
-metadata/_edit_use_anchors_ = true
-
-[node name="Naughty" type="Button" parent="paper/just untile we get the texture/Control"]
-layout_mode = 1
-anchors_preset = -1
 anchor_left = 0.0487805
-anchor_top = 0.901235
-anchor_right = 0.414634
-anchor_bottom = 0.975309
-text = "Naughty"
+anchor_top = 0.444444
+anchor_right = 0.951219
+anchor_bottom = 0.82716
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Nice" type="Button" parent="paper/just untile we get the texture/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.560976
+anchor_left = 0.268293
 anchor_top = 0.901235
-anchor_right = 0.97561
+anchor_right = 0.756098
 anchor_bottom = 0.975309
-text = "Nice"
+text = "choose"
 metadata/_edit_use_anchors_ = true
 
 [node name="Close" type="Button" parent="paper/just untile we get the texture/Control"]
@@ -109,6 +148,11 @@ anchor_right = 304.0
 anchor_bottom = 200.0
 metadata/_edit_use_anchors_ = true
 
-[connection signal="pressed" from="paper/just untile we get the texture/Control/Naughty" to="." method="_on_naughty_pressed"]
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xxlrj")
+}
+
+[connection signal="meta_clicked" from="paper/just untile we get the texture/Control/story" to="." method="_on_story_meta_clicked"]
 [connection signal="pressed" from="paper/just untile we get the texture/Control/Nice" to="." method="_on_nice_pressed"]
 [connection signal="pressed" from="paper/just untile we get the texture/Control/Close" to="." method="_on_close_pressed"]

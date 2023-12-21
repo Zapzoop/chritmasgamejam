@@ -2,12 +2,122 @@
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://3fx7xfhip5wx" path="res://main_menu/paused/paused.tscn" id="2_f6qk0"]
+[ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
+[ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
+[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/grafics/bg.jpeg" id="3_2apgr"]
+[ext_resource type="Texture2D" uid="uid://bynxb35vi87sj" path="res://assets/grafics/tree/treeIdle1.png" id="3_uon42"]
+[ext_resource type="Texture2D" uid="uid://b4fj3yrce0xxs" path="res://assets/grafics/tree/treeIdle2.png" id="4_1ok3f"]
+[ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/grafics/anvill/anvilIDLE1.png" id="5_423j7"]
+[ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/grafics/anvill/anvilIDLE2.png" id="6_hbgdg"]
+[ext_resource type="Texture2D" uid="uid://dlo6er8dj16vv" path="res://assets/grafics/anvill/anvilKILL2.png" id="7_xsgw8"]
+[ext_resource type="Texture2D" uid="uid://ch58l7lmh75we" path="res://assets/grafics/Youre_fired.png" id="8_0xtyj"]
+[ext_resource type="Texture2D" uid="uid://d2c6b4i4rnti7" path="res://assets/grafics/anvill/anvilKILL1.png" id="8_6vg5y"]
+[ext_resource type="Texture2D" uid="uid://bvnnur8b5g67b" path="res://assets/grafics/anvill/anvilKILL3.png" id="9_0ehpn"]
+[ext_resource type="Texture2D" uid="uid://cpa2wtnge7n0q" path="res://assets/grafics/anvill/anvilKILL4.png" id="10_ntnmn"]
+[ext_resource type="Texture2D" uid="uid://dqdglcwei5hxk" path="res://assets/grafics/anvill/anvilKILL5.png" id="11_wcn31"]
+[ext_resource type="Texture2D" uid="uid://o5lnwqdfito4" path="res://assets/grafics/anvill/anvilKILL6.png" id="12_mfd3d"]
+[ext_resource type="Texture2D" uid="uid://lwpwlyahdvd3" path="res://assets/grafics/anvill/anvillKILL7.png" id="13_8as4i"]
+[ext_resource type="Texture2D" uid="uid://bjx1gto5cbqx6" path="res://assets/grafics/anvill/anvilKILL8.png" id="14_d3we6"]
+[ext_resource type="Texture2D" uid="uid://cj854hll8jpbe" path="res://assets/grafics/anvill/anvillKILL8.png" id="15_hanh1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
-size = Vector2(170, 154)
+size = Vector2(429, 616)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yyth6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_uon42")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_1ok3f")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2upqx"]
-size = Vector2(170, 146)
+size = Vector2(344, 432)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_im6h1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_423j7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_hbgdg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_xsgw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6vg5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0ehpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ntnmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wcn31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mfd3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8as4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_d3we6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hanh1")
+}],
+"loop": true,
+"name": &"kill",
+"speed": 8.0
+}]
+
+[sub_resource type="Animation" id="Animation_pyjji"]
+resource_name = "death"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.6, 0.6), Vector2(0.8, 0.8)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kod8k"]
+_data = {
+"death": SubResource("Animation_pyjji")
+}
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_xguva")
@@ -17,31 +127,78 @@ visible = false
 
 [node name="report" type="Node2D" parent="."]
 
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(576, 322)
+scale = Vector2(0.6, 0.603704)
+texture = ExtResource("3_2apgr")
+
 [node name="Pos1" type="Node2D" parent="."]
 position = Vector2(512, 320)
 
 [node name="Pos2" type="Node2D" parent="."]
-position = Vector2(512, 384)
+position = Vector2(504, 680)
 
 [node name="Pos3" type="Node2D" parent="."]
-position = Vector2(512, 448)
+position = Vector2(512, 752)
 
 [node name="Pos4" type="Node2D" parent="."]
-position = Vector2(512, 512)
+position = Vector2(512, 816)
 
 [node name="Pos5" type="Node2D" parent="."]
-position = Vector2(512, 576)
+position = Vector2(512, 864)
 
 [node name="presents" type="StaticBody2D" parent="." groups=["dropable"]]
-modulate = Color(0, 1, 0, 1)
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
+visible = false
+position = Vector2(-129.5, 52)
 shape = SubResource("RectangleShape2D_41rdw")
 
+[node name="tree" type="AnimatedSprite2D" parent="presents"]
+position = Vector2(-440, 52)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_yyth6")
+animation = &"idle"
+autoplay = "idle"
+
 [node name="gullotine" type="StaticBody2D" parent="." groups=["dropable"]]
-modulate = Color(1, 0, 0, 1)
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
+visible = false
+position = Vector2(20, 72)
 shape = SubResource("RectangleShape2D_2upqx")
+
+[node name="anvill" type="AnimatedSprite2D" parent="gullotine"]
+position = Vector2(360, 60)
+scale = Vector2(0.6, 0.6)
+sprite_frames = SubResource("SpriteFrames_im6h1")
+animation = &"kill"
+autoplay = "idle"
+frame_progress = 0.994008
+
+[node name="center" type="Node2D" parent="."]
+position = Vector2(608, 296)
+
+[node name="report" type="Node2D" parent="."]
+position = Vector2(120, 144)
+
+[node name="tutorial" parent="report" instance=ExtResource("2_prt3w")]
+offset_top = -72.0001
+offset_right = 40.192
+offset_bottom = -72.0
+
+[node name="YoureFired" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0, 0, 0, 1)
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_0xtyj")
+
+[node name="an" type="AnimationPlayer" parent="YoureFired"]
+libraries = {
+"": SubResource("AnimationLibrary_kod8k")
+}
+
+[connection signal="animation_finished" from="YoureFired/an" to="." method="_on_an_animation_finished"]

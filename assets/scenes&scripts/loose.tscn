@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjavqqcysec67"]
+
+[ext_resource type="Script" path="res://score.gd" id="1_3foxm"]
+
+[node name="loose" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.159722
+anchor_top = 0.148148
+anchor_right = 0.777778
+anchor_bottom = 0.271605
+offset_bottom = 1.52588e-05
+theme_override_font_sizes/normal_font_size = 32
+text = "you loose"
+metadata/_edit_use_anchors_ = true
+
+[node name="score" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.319444
+anchor_top = 0.345679
+anchor_right = 0.451389
+anchor_bottom = 0.469136
+theme_override_font_sizes/normal_font_size = 29
+script = ExtResource("1_3foxm")
+metadata/_edit_use_anchors_ = true

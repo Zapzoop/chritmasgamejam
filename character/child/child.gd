@@ -9,18 +9,25 @@ var body_ref
 var is_inside_dropable = false
 var initialPos : Vector2
 
+var child_score = 0
+
 var verdictdone = false
 
 var offset
 
+
+
 @onready var report = $paper
+@onready var anim = $paper/anim
 
 func _ready():
 	report.parent = self
+	report.create_child()
 
 func _process(delta):
 	if Input.is_action_just_pressed("click") and !verdictdone and can_show and is_first:
 		report.visible = true
+		anim.play("open")
 		report.makerestinvisible()
 	if can_drag and draggable:
 		if Input.is_action_just_pressed("click"):
@@ -34,8 +41,15 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self,"global_position",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
-				self.free()
-				Global.emit_signal("moveforward")
+				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+					self.free()
+					print("right") 
+					Global.score += 5
+					Global.emit_signal("moveforward")
+				else:
+					$/root/Level/YoureFired.show()
+					$/root/Level/YoureFired/an.play("death")
+					
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
 			
