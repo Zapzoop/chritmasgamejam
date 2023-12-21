@@ -10,7 +10,7 @@ radius = 24.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_rbf47"]
 radius = 16.0
 
-[sub_resource type="GDScript" id="GDScript_i61qd"]
+[sub_resource type="GDScript" id="GDScript_yldiw"]
 resource_local_to_scene = true
 script/source = "extends Node
 #TO RUN THE SCRIPT ADD IT TO ANY NODE AND THEN INSTANCE THAT SCENE
@@ -163,7 +163,11 @@ texture = ExtResource("2_1ohv5")
 
 [node name="paper" parent="." instance=ExtResource("3_few6r")]
 visible = false
-metadata/local = SubResource("GDScript_i61qd")
+offset_left = 80.0
+offset_top = 64.0
+offset_right = 80.0
+offset_bottom = 64.0
+metadata/local = SubResource("GDScript_yldiw")
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

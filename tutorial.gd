@@ -12,4 +12,10 @@ func _process(delta):
 
 
 func _on_nice_pressed():
-	get_parent().remove_child(self)
+	$anim.play("close")
+	
+
+
+func _on_anim_animation_finished(anim_name):
+	if anim_name == "close":
+		get_parent().remove_child(self)

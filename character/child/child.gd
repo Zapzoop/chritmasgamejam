@@ -15,9 +15,10 @@ var verdictdone = false
 
 var offset
 
-var loose = preload("res://assets/scenes&scripts/loose.tscn")
+
 
 @onready var report = $paper
+@onready var anim = $paper/anim
 
 func _ready():
 	report.parent = self
@@ -26,6 +27,7 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("click") and !verdictdone and can_show and is_first:
 		report.visible = true
+		anim.play("open")
 		report.makerestinvisible()
 	if can_drag and draggable:
 		if Input.is_action_just_pressed("click"):
@@ -45,8 +47,9 @@ func _process(delta):
 					Global.score += 5
 					Global.emit_signal("moveforward")
 				else:
-					$/root/Level.lost = true
-					get_tree().change_scene_to_packed(loose)
+					$/root/Level/YoureFired.show()
+					$/root/Level/YoureFired/an.play("death")
+					
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
 			

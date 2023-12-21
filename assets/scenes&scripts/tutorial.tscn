@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://crd2ohkb3lewo"]
+[gd_scene load_steps=8 format=3 uid="uid://crd2ohkb3lewo"]
 
 [ext_resource type="Script" path="res://tutorial.gd" id="1_ngq68"]
 [ext_resource type="FontFile" uid="uid://c7omhw0uwjvi8" path="res://assets/fonts/AA_typewriter.ttf" id="2_aqwty"]
@@ -8,12 +8,55 @@
 default_font = ExtResource("2_aqwty")
 default_font_size = 28
 
+[sub_resource type="Animation" id="Animation_xboi3"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 90), Vector2(120, 130), Vector2(120, 200), Vector2(120, 664)]
+}
+
+[sub_resource type="Animation" id="Animation_plked"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 664), Vector2(120, 200), Vector2(120, 130), Vector2(120, 90)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxlrj"]
+_data = {
+"close": SubResource("Animation_xboi3"),
+"open": SubResource("Animation_plked")
+}
+
 [node name="tutorial" type="Control"]
 top_level = true
 layout_mode = 3
-anchor_right = 0.291667
-anchor_bottom = 1.0
+anchor_left = -0.0348889
+anchor_top = 1.11111
+anchor_right = 0.289063
+anchor_bottom = 3.08822
+offset_left = 160.192
+offset_top = -630.0
+offset_right = 112.0
+offset_bottom = -1305.17
 grow_vertical = 2
+scale = Vector2(0.7, 0.7)
 script = ExtResource("1_ngq68")
 metadata/_edit_use_anchors_ = true
 
@@ -70,12 +113,12 @@ metadata/_edit_use_anchors_ = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.0487805
-anchor_top = 0.209877
+anchor_top = 0.246914
 anchor_right = 0.951219
-anchor_bottom = 0.888889
+anchor_bottom = 0.925926
 theme = ExtResource("3_2j0yg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/normal_font_size = 16
 bbcode_enabled = true
 text = "Good morning Mr Claus, we are happy to have you working with us.
 This is your first day on the job, so we decided to give you some guidelines on how to fo this job!
@@ -100,4 +143,11 @@ anchor_bottom = 0.975309
 text = "choose"
 metadata/_edit_use_anchors_ = true
 
+[node name="anim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xxlrj")
+}
+autoplay = "open"
+
 [connection signal="pressed" from="paper/just untile we get the texture/Control/Nice" to="." method="_on_nice_pressed"]
+[connection signal="animation_finished" from="anim" to="." method="_on_anim_animation_finished"]
