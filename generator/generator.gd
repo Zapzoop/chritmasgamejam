@@ -166,9 +166,8 @@ func _on_naughty_pressed():
 	parent.can_drag = true
 
 func _on_nice_pressed():
+	$anim.play("close")
 	parent.verdictdone = true
-	self.visible = false
-	parent.can_drag = true
 
 func _on_close_pressed():
 	self.visible = false
@@ -182,3 +181,9 @@ func makerestinvisible():
 
 func _on_story_meta_clicked(meta):
 	$drawing.texture = ResourceLoader.load(drawings[meta])
+
+
+func _on_anim_animation_finished(anim_name):
+	if anim_name == "close":
+		self.visible = false
+		parent.can_drag = true

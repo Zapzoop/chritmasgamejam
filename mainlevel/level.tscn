@@ -79,9 +79,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_hanh1")
 }],
-"loop": true,
+"loop": false,
 "name": &"kill",
-"speed": 8.0
+"speed": 7.0
 }]
 
 [sub_resource type="Animation" id="Animation_pyjji"]
