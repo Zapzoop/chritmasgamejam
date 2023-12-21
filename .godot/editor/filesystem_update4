@@ -11,3 +11,5 @@ res://character/anvil/anvil_file.tscn
 res://assets/scenes&scripts/loose.tscn
 res://assets/scenes&scripts/tutorial.tscn
 res://character/anvil/anvil.gd
+res://character/anvil/anvil_file.gd
+res://assets/scenes&scripts/main.tscn

@@ -50,7 +50,7 @@ func generatechild():
 			return
 		else:
 			var child_ins = child.instantiate()
-			$Pos5.add_child(child_ins)
+			$Pos3.add_child(child_ins)
 			return
 
 func decider():

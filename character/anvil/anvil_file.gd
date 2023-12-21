@@ -9,6 +9,8 @@ var anvil_things = ["destroyed a game jam",
 	"created several teams to squabble"]
 var all = []
 
+var parent
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	for x in range(5):

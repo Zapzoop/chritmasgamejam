@@ -35,18 +35,25 @@ func _process(delta):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
 				tween.tween_property(self,"global_position",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
-				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
-					if self.global_position.x < $/root/Level/center.global_position.x:
-						Global.emit_signal("playkill")
+				if self.is_in_group("anvil"):
+					if (self.global_position.x < $/root/Level/center.global_position.x):
+						Global.emit_signal("playkillanvil")
 						self.free()
-					self.free()
-					print("right") 
-					Global.score += 5
-					Global.emit_signal("moveforward")
+						print("right")
+						Global.score += 5
+						Global.emit_signal("moveforward")
+					else:
+						Global.emit_signal("gameover")
 				else:
-					Global.emit_signal("gameover")
-					#$/root/Level/YoureFired.show()
-					#$/root/Level/YoureFired/an.play("death")
+					if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+						if self.global_position.x < $/root/Level/center.global_position.x:
+							Global.emit_signal("playkillchild")
+						self.free()
+						print("right") 
+						Global.score += 5
+						Global.emit_signal("moveforward")
+					else:
+						Global.emit_signal("gameover")
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
 			

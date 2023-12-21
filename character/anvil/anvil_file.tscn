@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://bl7y0evi5127l"]
 
-[ext_resource type="Script" path="res://anvil.gd" id="1_patcr"]
+[ext_resource type="Script" path="res://character/anvil/anvil_file.gd" id="1_patcr"]
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="2_cpgnb"]
 [ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="3_ny1pj"]
 

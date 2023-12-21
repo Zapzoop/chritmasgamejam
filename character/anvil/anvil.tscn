@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bvp7aqf6crhy"]
 
-[ext_resource type="Script" path="res://character/anvil/anvil.gd" id="1_qooh8"]
+[ext_resource type="Script" path="res://character/child/child.gd" id="1_vlkd4"]
 [ext_resource type="Texture2D" uid="uid://b26kru0dealmf" path="res://assets/characters/anvil.webp" id="1_xh2n2"]
 [ext_resource type="PackedScene" uid="uid://df08ijrktdbk6" path="res://character/child/child_file.tscn" id="3_i8asy"]
 
@@ -8,8 +8,8 @@
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7jnlm"]
 
-[node name="Anvil" type="CharacterBody2D"]
-script = ExtResource("1_qooh8")
+[node name="Anvil" type="CharacterBody2D" groups=["anvil"]]
+script = ExtResource("1_vlkd4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.05, 0.05)
@@ -23,7 +23,7 @@ shape = SubResource("CircleShape2D_hnckx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_7jnlm")
 
-[node name="paper" parent="." instance=ExtResource("3_i8asy")]
+[node name="ReportFile" parent="." instance=ExtResource("3_i8asy")]
 visible = false
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

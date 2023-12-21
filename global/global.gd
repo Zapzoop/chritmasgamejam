@@ -10,7 +10,8 @@ signal change_scene(caller,callee)
 signal callback(callee)
 signal moveforward()
 
-signal playkill()
+signal playkillchild()
+signal playkillanvil()
 signal gameover()
 
 signal modulatepresents()
@@ -25,7 +26,8 @@ func _ready():
 	change_scene.connect(_on_change_scene)
 	callback.connect(_on_callback)
 	moveforward.connect(_on_moveforward)
-	playkill.connect(_on_playkill)
+	playkillchild.connect(_on_playkillchild)
+	playkillanvil.connect(_on_playkillanvil)
 	gameover.connect(_on_gameover)
 	
 	modulatepresents.connect(_on_modulatepresents)
@@ -44,9 +46,13 @@ func _on_modulatebackgullotine():
 	
 func _on_modulatebackpresents():
 	levelins.presents.modulate = Color(Color.WHITE,1)
-	
 
-func _on_playkill():
+func _on_playkillanvil():
+	#DO playkill animation of anvil
+	pass
+
+func _on_playkillchild():
+	#DO playkill animation of child
 	pass
 
 func _on_gameover():

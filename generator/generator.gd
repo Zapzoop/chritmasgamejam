@@ -1,8 +1,6 @@
 extends Node
 
 var parent
-var id
-var newparent
 
 var rnd = RandomNumberGenerator.new()
 
@@ -63,14 +61,24 @@ var drawings = {
 	"temp3":"res://assets/grafics/actions/test.png"
 	}
 
-
+var anvil_things = ["destroyed a game jam",
+	"was voted 'Worst Object Ever' this year",
+	"ruined everyone's plans",
+	"was just awful for people's imaginations",
+	"brought down Christmas",
+	"removed happiness",
+	"created several teams to squabble"]
+var selected_anvil_things = []
 
 var selected_good_habits = {} #All selected good_habits
 var selected_bad_habits = {} #All selected bad_habits
 
 func _ready():
-	$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(5,11))) + "\nHeight: " + str(int(rnd.randi_range(100,160))) + " cm \nFrom: " + country.pick_random()
-	$Paper/TempBg/Profile/Name.text = Name + " " + surname
+	if get_parent().is_in_group("anvil"):
+		data_anvil()
+	else:
+		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(5,11))) + "\nHeight: " + str(int(rnd.randi_range(100,160))) + " cm \nFrom: " + country.pick_random()
+		$Paper/TempBg/Profile/Name.text = Name + " " + surname
 
 func mergedic(dic1,dic2): #Merging two dictionaries Adding dic2 to dic1
 	var key_list = dic2.keys()
@@ -79,6 +87,9 @@ func mergedic(dic1,dic2): #Merging two dictionaries Adding dic2 to dic1
 		dic1[key] = dic2[key]
 
 func create_child():
+	if parent.is_in_group("anvil"):
+		create_anvil()
+		return
 	const EVENT_COUNT = 5 # Number of events linked to child
 	var decider = ["good","bad"] # for each event thier is a 50% chance
 	for i in range(0,EVENT_COUNT):
@@ -146,11 +157,27 @@ func report_card():
 	selected_bad_habits = {} #Emptying occupied habits
 	selected_good_habits = {}
 
+func create_anvil():
+	for x in range(5):
+		var anv = anvil_things.pick_random()
+		while selected_anvil_things.has(anv):
+			anv = anvil_things.pick_random()
+		selected_anvil_things.append(anv)
+	$Paper/TempBg/Profile/Story.text = "It's been reported that Bully Anvil "
+	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ selected_anvil_things[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ selected_anvil_things[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
+	for x in range(2,5):
+		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + selected_anvil_things[x] + "[/url][/color]"
+			
+
+func data_anvil():
+	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 6 m" + "\nFrom: GameJam"
+	$Paper/TempBg/Profile/Name.text = "Anvil"
+
 func _on_close_pressed():
 	$Animation.play("close")
 
 func _on_story_meta_clicked(meta):
-	$drawing.texture = ResourceLoader.load(drawings[meta])
+	$Drawing.texture = ResourceLoader.load(drawings[meta])
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":
