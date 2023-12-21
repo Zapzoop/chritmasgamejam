@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=24 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
@@ -7,7 +7,16 @@
 [ext_resource type="Texture2D" uid="uid://b4fj3yrce0xxs" path="res://assets/grafics/tree/treeIdle2.png" id="4_1ok3f"]
 [ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/grafics/anvill/anvilIDLE1.png" id="5_423j7"]
 [ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/grafics/anvill/anvilIDLE2.png" id="6_hbgdg"]
+[ext_resource type="Texture2D" uid="uid://dlo6er8dj16vv" path="res://assets/grafics/anvill/anvilKILL2.png" id="7_xsgw8"]
 [ext_resource type="Texture2D" uid="uid://ch58l7lmh75we" path="res://assets/grafics/Youre_fired.png" id="8_0xtyj"]
+[ext_resource type="Texture2D" uid="uid://d2c6b4i4rnti7" path="res://assets/grafics/anvill/anvilKILL1.png" id="8_6vg5y"]
+[ext_resource type="Texture2D" uid="uid://bvnnur8b5g67b" path="res://assets/grafics/anvill/anvilKILL3.png" id="9_0ehpn"]
+[ext_resource type="Texture2D" uid="uid://cpa2wtnge7n0q" path="res://assets/grafics/anvill/anvilKILL4.png" id="10_ntnmn"]
+[ext_resource type="Texture2D" uid="uid://dqdglcwei5hxk" path="res://assets/grafics/anvill/anvilKILL5.png" id="11_wcn31"]
+[ext_resource type="Texture2D" uid="uid://o5lnwqdfito4" path="res://assets/grafics/anvill/anvilKILL6.png" id="12_mfd3d"]
+[ext_resource type="Texture2D" uid="uid://lwpwlyahdvd3" path="res://assets/grafics/anvill/anvillKILL7.png" id="13_8as4i"]
+[ext_resource type="Texture2D" uid="uid://bjx1gto5cbqx6" path="res://assets/grafics/anvill/anvilKILL8.png" id="14_d3we6"]
+[ext_resource type="Texture2D" uid="uid://cj854hll8jpbe" path="res://assets/grafics/anvill/anvillKILL8.png" id="15_hanh1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
 size = Vector2(429, 616)
@@ -41,6 +50,38 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_xsgw8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6vg5y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_0ehpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ntnmn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_wcn31")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mfd3d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8as4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_d3we6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hanh1")
+}],
+"loop": true,
+"name": &"kill",
+"speed": 8.0
 }]
 
 [sub_resource type="Animation" id="Animation_pyjji"]
@@ -126,8 +167,9 @@ shape = SubResource("RectangleShape2D_2upqx")
 position = Vector2(360, 60)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_im6h1")
-animation = &"idle"
+animation = &"kill"
 autoplay = "idle"
+frame_progress = 0.994008
 
 [node name="center" type="Node2D" parent="."]
 position = Vector2(608, 296)
@@ -142,8 +184,9 @@ offset_bottom = -72.0
 
 [node name="YoureFired" type="Sprite2D" parent="."]
 visible = false
+modulate = Color(0, 0, 0, 1)
 position = Vector2(576, 324)
-scale = Vector2(0.8, 0.8)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("8_0xtyj")
 
 [node name="an" type="AnimationPlayer" parent="YoureFired"]
