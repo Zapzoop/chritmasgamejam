@@ -167,7 +167,7 @@ func create_anvil():
 	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ selected_anvil_things[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ selected_anvil_things[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
 	for x in range(2,5):
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + selected_anvil_things[x] + "[/url][/color]"
-			
+	selected_anvil_things = []
 
 func data_anvil():
 	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 6 m" + "\nFrom: GameJam"
