@@ -1,14 +1,18 @@
-from: The Hollidays central office
+from: The Holidays' Central Office
 to: Santa Claus
 
-Good morning Mr Claus, we are happy to have you working with us.
-This is your first day on the job, so we decided to give you some guidelines on how to fo this job!
+Good morning, Mr Claus! We are happy to have you working with us!
+As this is your first day on the job, here are some guidelines -
 
-your role here is to judge children, you will recive a file for every child [click on the child sprite to open it], this file contains:
--good and bad actions the child did during this year
--a proof of one of acts [click on the text to open it]
--the child letcter to you
+Children all around the world have been both naughty and nice,
+and it's your job to judge them!
+Each child has their own file [click on the child to open it], this file will contain:
+-general information about the child
+-good and bad actions the child have done in the past year [click on the action to open details]
+-the child's letter to you <--- NOT YET IMPLEMENTED
 
-after examining all the proofs, click choose, then drag the child to the right if you consider him good, and on the left if you consider him naughty
+After examining a child's file, click [Judge],
+then drag the child to the right if you consider him [Nice],
+or drag the child to the left if you consider him [Naughty].
 
-PS: 1 error will mean immediate termination of contract.
+PS: Error in judgement will result in immediate termination of your contract.
