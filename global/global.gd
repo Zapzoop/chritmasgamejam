@@ -1,7 +1,6 @@
 extends Node
 
 var score = 0
-var scoreholder
 
 var options = "res://main_menu/option/option.tscn"
 var credits = "res://main_menu/credits/credits.tscn"
@@ -11,7 +10,13 @@ signal change_scene(caller,callee)
 signal callback(callee)
 signal moveforward()
 
-var is_dragging = false
+signal playkill()
+signal gameover()
+
+signal modulatepresents()
+signal modulategullotine()
+signal modulatebackgullotine()
+signal modulatebackpresents()
 
 var levelins
 var remember
@@ -20,9 +25,32 @@ func _ready():
 	change_scene.connect(_on_change_scene)
 	callback.connect(_on_callback)
 	moveforward.connect(_on_moveforward)
+	playkill.connect(_on_playkill)
+	gameover.connect(_on_gameover)
+	
+	modulatepresents.connect(_on_modulatepresents)
+	modulategullotine.connect(_on_modulategullotine)
+	modulatebackgullotine.connect(_on_modulatebackgullotine)
+	modulatebackpresents.connect(_on_modulatebackpresents)
+	
+func _on_modulatepresents():
+	levelins.presents.modulate = Color(Color.DARK_GOLDENROD,0.4)
+	
+func _on_modulategullotine():
+	levelins.gullotine.modulate = Color(Color.DARK_GOLDENROD,0.4)
 
-func _on_Updatescore():
-	scoreholder.text = str(score)
+func _on_modulatebackgullotine():
+	levelins.gullotine.modulate = Color(Color.WHITE,1)
+	
+func _on_modulatebackpresents():
+	levelins.presents.modulate = Color(Color.WHITE,1)
+	
+
+func _on_playkill():
+	pass
+
+func _on_gameover():
+	levelins.gameover()
 
 func _on_change_scene(caller,callee):
 	remember = caller.duplicate()
@@ -50,7 +78,3 @@ func _on_callback(calleename,calleeobj):
 	
 func _on_moveforward():
 	levelins.move()
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass

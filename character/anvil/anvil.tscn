@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://character/anvil/anvil.gd" id="1_qooh8"]
 [ext_resource type="Texture2D" uid="uid://b26kru0dealmf" path="res://assets/characters/anvil.webp" id="1_xh2n2"]
-[ext_resource type="PackedScene" uid="uid://df08ijrktdbk6" path="res://assets/scenes&scripts/child_file.tscn" id="3_5cy4i"]
+[ext_resource type="PackedScene" uid="uid://df08ijrktdbk6" path="res://character/child/child_file.tscn" id="3_i8asy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hnckx"]
 
@@ -23,7 +23,7 @@ shape = SubResource("CircleShape2D_hnckx")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_7jnlm")
 
-[node name="paper" parent="." instance=ExtResource("3_5cy4i")]
+[node name="paper" parent="." instance=ExtResource("3_i8asy")]
 visible = false
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -129,18 +129,12 @@ texture = ExtResource("3_2apgr")
 position = Vector2(512, 320)
 
 [node name="Pos2" type="Node2D" parent="."]
-position = Vector2(504, 680)
+position = Vector2(512, 704)
 
 [node name="Pos3" type="Node2D" parent="."]
 position = Vector2(512, 752)
 
-[node name="Pos4" type="Node2D" parent="."]
-position = Vector2(512, 816)
-
-[node name="Pos5" type="Node2D" parent="."]
-position = Vector2(512, 864)
-
-[node name="presents" type="StaticBody2D" parent="." groups=["dropable"]]
+[node name="presents" type="StaticBody2D" parent="." groups=["dropable", "presents"]]
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
@@ -155,7 +149,7 @@ sprite_frames = SubResource("SpriteFrames_yyth6")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="gullotine" type="StaticBody2D" parent="." groups=["dropable"]]
+[node name="gullotine" type="StaticBody2D" parent="." groups=["dropable", "gullotine"]]
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
@@ -189,9 +183,9 @@ position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("8_0xtyj")
 
-[node name="an" type="AnimationPlayer" parent="YoureFired"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="YoureFired"]
 libraries = {
 "": SubResource("AnimationLibrary_kod8k")
 }
 
-[connection signal="animation_finished" from="YoureFired/an" to="." method="_on_an_animation_finished"]
+[connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
