@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=15 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b4fj3yrce0xxs" path="res://assets/grafics/tree/treeIdle2.png" id="4_1ok3f"]
 [ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/grafics/anvill/anvilIDLE1.png" id="5_423j7"]
 [ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/grafics/anvill/anvilIDLE2.png" id="6_hbgdg"]
+[ext_resource type="Texture2D" uid="uid://ch58l7lmh75we" path="res://assets/grafics/Youre_fired.png" id="8_0xtyj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
 size = Vector2(429, 616)
@@ -41,6 +42,39 @@ animations = [{
 "name": &"idle",
 "speed": 2.0
 }]
+
+[sub_resource type="Animation" id="Animation_pyjji"]
+resource_name = "death"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.6, 0.6), Vector2(0.8, 0.8)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_kod8k"]
+_data = {
+"death": SubResource("Animation_pyjji")
+}
 
 [node name="Level" type="Node2D"]
 script = ExtResource("1_xguva")
@@ -105,3 +139,16 @@ position = Vector2(120, 144)
 offset_top = -72.0001
 offset_right = 40.192
 offset_bottom = -72.0
+
+[node name="YoureFired" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(576, 324)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("8_0xtyj")
+
+[node name="an" type="AnimationPlayer" parent="YoureFired"]
+libraries = {
+"": SubResource("AnimationLibrary_kod8k")
+}
+
+[connection signal="animation_finished" from="YoureFired/an" to="." method="_on_an_animation_finished"]

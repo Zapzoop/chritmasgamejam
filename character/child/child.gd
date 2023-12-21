@@ -15,7 +15,7 @@ var verdictdone = false
 
 var offset
 
-var loose = preload("res://assets/scenes&scripts/loose.tscn")
+
 
 @onready var report = $paper
 @onready var anim = $paper/anim
@@ -47,8 +47,9 @@ func _process(delta):
 					Global.score += 5
 					Global.emit_signal("moveforward")
 				else:
-					$/root/Level.lost = true
-					get_tree().change_scene_to_packed(loose)
+					$/root/Level/YoureFired.show()
+					$/root/Level/YoureFired/an.play("death")
+					
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
 			

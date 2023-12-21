@@ -88,3 +88,8 @@ func reparentme(scene):
 	scene.newparent = $report
 	scene.position = Vector2(0,0)
 	
+
+var loose = preload("res://assets/scenes&scripts/loose.tscn")
+func _on_an_animation_finished(anim_name):
+	lost = true
+	get_tree().change_scene_to_packed(loose)
