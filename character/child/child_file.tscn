@@ -1,0 +1,160 @@
+[gd_scene load_steps=6 format=3 uid="uid://df08ijrktdbk6"]
+
+[ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
+[ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_agc6v"]
+
+[sub_resource type="Animation" id="Animation_xboi3"]
+resource_name = "close"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 90), Vector2(120, 130), Vector2(120, 200), Vector2(120, 664)]
+}
+
+[sub_resource type="Animation" id="Animation_plked"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 664), Vector2(120, 200), Vector2(120, 130), Vector2(120, 90)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_xxlrj"]
+_data = {
+"close": SubResource("Animation_xboi3"),
+"open": SubResource("Animation_plked")
+}
+
+[node name="ReportFile" type="Control"]
+top_level = true
+layout_mode = 3
+anchor_right = 0.291667
+anchor_bottom = 1.0
+offset_left = 120.0
+offset_top = 664.0
+offset_right = 120.0
+offset_bottom = 663.999
+grow_vertical = 2
+scale = Vector2(0.7, 0.7)
+script = ExtResource("1_fjgta")
+metadata/_edit_use_anchors_ = true
+
+[node name="Drawing" type="Sprite2D" parent="."]
+position = Vector2(520, 176)
+scale = Vector2(0.3, 0.3)
+
+[node name="Paper" type="Sprite2D" parent="."]
+
+[node name="TempBg" type="ColorRect" parent="Paper"]
+anchors_preset = -1
+anchor_right = 331.0
+anchor_bottom = 649.0
+grow_vertical = 2
+size_flags_vertical = 3
+color = Color(1, 1, 0.647059, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Profile" type="Control" parent="Paper/TempBg"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Name" type="RichTextLabel" parent="Paper/TempBg/Profile"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.208459
+anchor_right = 0.827795
+anchor_bottom = 0.0878274
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 35
+text = "Name"
+scroll_active = false
+metadata/_edit_use_anchors_ = true
+
+[node name="Data" type="RichTextLabel" parent="Paper/TempBg/Profile"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0332326
+anchor_top = 0.118644
+anchor_right = 1.0
+anchor_bottom = 0.312789
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Age: N.A
+From: N.A
+Height: N.A
+Occupation: N.A
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Story" type="RichTextLabel" parent="Paper/TempBg/Profile"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0483384
+anchor_top = 0.312789
+anchor_right = 0.951662
+anchor_bottom = 0.827427
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Decide" type="Button" parent="Paper/TempBg/Profile"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.268293
+anchor_top = 0.901235
+anchor_right = 0.756098
+anchor_bottom = 0.975309
+text = "Decide
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Close" type="Button" parent="Paper/TempBg/Profile"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.853659
+anchor_right = 0.989021
+anchor_bottom = 0.071605
+offset_right = 843.601
+offset_bottom = 881.6
+scale = Vector2(0.05, 0.05)
+icon = ExtResource("2_agc6v")
+metadata/_edit_use_anchors_ = true
+
+[node name="Photo" type="Sprite2D" parent="Paper"]
+
+[node name="Temporary" type="ColorRect" parent="Paper/Photo"]
+anchors_preset = -1
+anchor_left = 217.143
+anchor_top = 77.1429
+anchor_right = 313.143
+anchor_bottom = 189.143
+metadata/_edit_use_anchors_ = true
+
+[node name="Animation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_xxlrj")
+}
+
+[connection signal="meta_clicked" from="Paper/TempBg/Profile/Story" to="." method="_on_story_meta_clicked"]
+[connection signal="pressed" from="Paper/TempBg/Profile/Decide" to="." method="_on_decide_pressed"]
+[connection signal="pressed" from="Paper/TempBg/Profile/Close" to="." method="_on_close_pressed"]
+[connection signal="animation_finished" from="Animation" to="." method="_on_anim_animation_finished"]

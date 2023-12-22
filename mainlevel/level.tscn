@@ -2,21 +2,21 @@
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
-[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/grafics/bg.jpeg" id="3_2apgr"]
-[ext_resource type="Texture2D" uid="uid://bynxb35vi87sj" path="res://assets/grafics/tree/treeIdle1.png" id="3_uon42"]
-[ext_resource type="Texture2D" uid="uid://b4fj3yrce0xxs" path="res://assets/grafics/tree/treeIdle2.png" id="4_1ok3f"]
-[ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/grafics/anvill/anvilIDLE1.png" id="5_423j7"]
-[ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/grafics/anvill/anvilIDLE2.png" id="6_hbgdg"]
-[ext_resource type="Texture2D" uid="uid://dlo6er8dj16vv" path="res://assets/grafics/anvill/anvilKILL2.png" id="7_xsgw8"]
-[ext_resource type="Texture2D" uid="uid://ch58l7lmh75we" path="res://assets/grafics/Youre_fired.png" id="8_0xtyj"]
-[ext_resource type="Texture2D" uid="uid://d2c6b4i4rnti7" path="res://assets/grafics/anvill/anvilKILL1.png" id="8_6vg5y"]
-[ext_resource type="Texture2D" uid="uid://bvnnur8b5g67b" path="res://assets/grafics/anvill/anvilKILL3.png" id="9_0ehpn"]
-[ext_resource type="Texture2D" uid="uid://cpa2wtnge7n0q" path="res://assets/grafics/anvill/anvilKILL4.png" id="10_ntnmn"]
-[ext_resource type="Texture2D" uid="uid://dqdglcwei5hxk" path="res://assets/grafics/anvill/anvilKILL5.png" id="11_wcn31"]
-[ext_resource type="Texture2D" uid="uid://o5lnwqdfito4" path="res://assets/grafics/anvill/anvilKILL6.png" id="12_mfd3d"]
-[ext_resource type="Texture2D" uid="uid://lwpwlyahdvd3" path="res://assets/grafics/anvill/anvillKILL7.png" id="13_8as4i"]
-[ext_resource type="Texture2D" uid="uid://bjx1gto5cbqx6" path="res://assets/grafics/anvill/anvilKILL8.png" id="14_d3we6"]
-[ext_resource type="Texture2D" uid="uid://cj854hll8jpbe" path="res://assets/grafics/anvill/anvillKILL8.png" id="15_hanh1"]
+[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/graphics/bg.jpeg" id="3_2apgr"]
+[ext_resource type="Texture2D" uid="uid://bynxb35vi87sj" path="res://assets/graphics/tree/treeIdle1.png" id="3_uon42"]
+[ext_resource type="Texture2D" uid="uid://b4fj3yrce0xxs" path="res://assets/graphics/tree/treeIdle2.png" id="4_1ok3f"]
+[ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/graphics/anvill/anvilIDLE1.png" id="5_423j7"]
+[ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/graphics/anvill/anvilIDLE2.png" id="6_hbgdg"]
+[ext_resource type="Texture2D" uid="uid://dlo6er8dj16vv" path="res://assets/graphics/anvill/anvilKILL2.png" id="7_xsgw8"]
+[ext_resource type="Texture2D" uid="uid://ch58l7lmh75we" path="res://assets/graphics/Youre_fired.png" id="8_0xtyj"]
+[ext_resource type="Texture2D" uid="uid://d2c6b4i4rnti7" path="res://assets/graphics/anvill/anvilKILL1.png" id="8_6vg5y"]
+[ext_resource type="Texture2D" uid="uid://bvnnur8b5g67b" path="res://assets/graphics/anvill/anvilKILL3.png" id="9_0ehpn"]
+[ext_resource type="Texture2D" uid="uid://cpa2wtnge7n0q" path="res://assets/graphics/anvill/anvilKILL4.png" id="10_ntnmn"]
+[ext_resource type="Texture2D" uid="uid://dqdglcwei5hxk" path="res://assets/graphics/anvill/anvilKILL5.png" id="11_wcn31"]
+[ext_resource type="Texture2D" uid="uid://o5lnwqdfito4" path="res://assets/graphics/anvill/anvilKILL6.png" id="12_mfd3d"]
+[ext_resource type="Texture2D" uid="uid://lwpwlyahdvd3" path="res://assets/graphics/anvill/anvilKILL7.png" id="13_8as4i"]
+[ext_resource type="Texture2D" uid="uid://bjx1gto5cbqx6" path="res://assets/graphics/anvill/anvilKILL8.png" id="14_d3we6"]
+[ext_resource type="Texture2D" uid="uid://cj854hll8jpbe" path="res://assets/graphics/anvill/anvilKILL9.png" id="15_hanh1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
 size = Vector2(429, 616)
@@ -79,9 +79,9 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("15_hanh1")
 }],
-"loop": true,
+"loop": false,
 "name": &"kill",
-"speed": 8.0
+"speed": 7.0
 }]
 
 [sub_resource type="Animation" id="Animation_pyjji"]
@@ -129,18 +129,12 @@ texture = ExtResource("3_2apgr")
 position = Vector2(512, 320)
 
 [node name="Pos2" type="Node2D" parent="."]
-position = Vector2(504, 680)
+position = Vector2(512, 704)
 
 [node name="Pos3" type="Node2D" parent="."]
 position = Vector2(512, 752)
 
-[node name="Pos4" type="Node2D" parent="."]
-position = Vector2(512, 816)
-
-[node name="Pos5" type="Node2D" parent="."]
-position = Vector2(512, 864)
-
-[node name="presents" type="StaticBody2D" parent="." groups=["dropable"]]
+[node name="presents" type="StaticBody2D" parent="." groups=["dropable", "presents"]]
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
@@ -155,7 +149,7 @@ sprite_frames = SubResource("SpriteFrames_yyth6")
 animation = &"idle"
 autoplay = "idle"
 
-[node name="gullotine" type="StaticBody2D" parent="." groups=["dropable"]]
+[node name="gullotine" type="StaticBody2D" parent="." groups=["dropable", "gullotine"]]
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
@@ -189,9 +183,9 @@ position = Vector2(576, 324)
 scale = Vector2(0.6, 0.6)
 texture = ExtResource("8_0xtyj")
 
-[node name="an" type="AnimationPlayer" parent="YoureFired"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="YoureFired"]
 libraries = {
 "": SubResource("AnimationLibrary_kod8k")
 }
 
-[connection signal="animation_finished" from="YoureFired/an" to="." method="_on_an_animation_finished"]
+[connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
