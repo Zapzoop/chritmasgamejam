@@ -91,7 +91,7 @@ func create_child():
 		create_anvil()
 		return
 	const EVENT_COUNT = 5 # Number of events linked to child
-	var decider = ["good","bad"] # for each event thier is a 50% chance
+	var decider = ["good","bad"] # For each event thier is a 50% chance
 	for i in range(0,EVENT_COUNT):
 		var random = randi_range(0,1)
 		var final_decider = decider[random]
