@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://df08ijrktdbk6"]
+[gd_scene load_steps=7 format=3 uid="uid://ti4n5d5nwwpi"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
 [ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_agc6v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
+size = Vector2(308.571, 217.143)
 
 [sub_resource type="Animation" id="Animation_xboi3"]
 resource_name = "close"
@@ -54,8 +57,17 @@ script = ExtResource("1_fjgta")
 metadata/_edit_use_anchors_ = true
 
 [node name="Drawing" type="Sprite2D" parent="."]
+z_index = 1
 position = Vector2(520, 176)
-scale = Vector2(0.3, 0.3)
+scale = Vector2(0.8, 0.8)
+
+[node name="Detection" type="Area2D" parent="."]
+position = Vector2(520, 176)
+scale = Vector2(1, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detection"]
+position = Vector2(0, 1.14294)
+shape = SubResource("RectangleShape2D_fip30")
 
 [node name="Paper" type="Sprite2D" parent="."]
 
@@ -154,6 +166,8 @@ libraries = {
 "": SubResource("AnimationLibrary_xxlrj")
 }
 
+[connection signal="mouse_entered" from="Detection" to="." method="_on_detection_mouse_entered"]
+[connection signal="mouse_exited" from="Detection" to="." method="_on_detection_mouse_exited"]
 [connection signal="meta_clicked" from="Paper/TempBg/Profile/Story" to="." method="_on_story_meta_clicked"]
 [connection signal="pressed" from="Paper/TempBg/Profile/Decide" to="." method="_on_decide_pressed"]
 [connection signal="pressed" from="Paper/TempBg/Profile/Close" to="." method="_on_close_pressed"]

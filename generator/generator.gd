@@ -28,7 +28,7 @@ var bad_habits = {
 	"gave Mrs Huffman's cat to the animal shelter":-30,
 	"impersonated neighbour to falsely file for divorce":-30,
 	"reported Mr Grouche to the police as a Nazi":-40,
-	"crooked meth with his chemistry teacher!":-80,
+	"cooked meth with his chemistry teacher!":-80,
 	"dealt drugs to the Mexican cartel":-90,
 	"prank called the White House":-20,
 	"invested in OnlyFans":-30,
@@ -88,37 +88,37 @@ var neutral_habits = {
 
 
 var drawings = {
-	"was responsible for the dinosaurs to go extinct ":-150,
-	"wished for rain to ruin a picnic ":-10,
-	"bit his sister on average 3 times a day":-20,
-	"robbed a bank with a water gun":-80,
-	"helped overthrow the government to install a dictatorship":-130,
-	"told other kids Santa isn't real":-40,
-	"started arson on Nikki's tree house":-70,
-	"left Mr Clarke for dead after a hit 'n' run with tricycle":-60,
-	"sold nuclear warheads to China":-110,
-	"gave Mrs Huffman's cat to the animal shelter":-30,
-	"impersonated neighbour to falsely file for divorce":-30,
-	"reported Mr Grouche to the police as a Nazi":-40,
-	"crooked meth with his chemistry teacher!":-80,
-	"dealt drugs to the Mexican cartel":-90,
-	"prank called the White House":-20,
-	"invested in OnlyFans":-30,
-	"signed up grandma for OnlyFans":-50,
-	"got an F in Math":-20,
-	"burned down a church":-100,
-	"killed their family dog":-60,
-	"reported Mom to have Munchausen by proxy":-70,
-	"sent aunt Jane to the psych ward":-50,
-	"was late to school 56 times":-30,
-	"yelled \"BOMB\" at an airport":-70,
-	"participated in bull fighting":-80,
-	"threw the stock market into another depression":-120,
-	"ran away from home 4 times":-30,
-	"pronounces GIF as JIF all the time":-20,
-	"electrocuted uncle Steve":-90,
-	"became the boss of the Mafia in Naples":-130,
-	"kidnapped Aldo Moro in Italy in the 80's":-70
+	"was responsible for the dinosaurs to go extinct ":"res://assets/graphics/actions/was responsible for the dinosaurs to go extinct.jpg",
+	"wished for rain to ruin a picnic ":"res://assets/graphics/actions/wished for rain to ruin a picnic.jpg",
+	"bit his sister on average 3 times a day":"res://assets/graphics/actions/bit his sister on average 3 times a day.jpg",
+	"robbed a bank with a water gun":"res://assets/graphics/actions/test.png",
+	"helped overthrow the government to install a dictatorship":"res://assets/graphics/actions/helped overthrow the government to install a dictatorship.jpg",
+	"told other kids Santa isn't real":"res://assets/graphics/actions/told other kids Santa isnt real.jpg",
+	"started arson on Nikki's tree house":"res://assets/graphics/actions/started arson in Nikkis tree house.jpg",
+	"left Mr Clarke for dead after a hit 'n' run with tricycle":"res://assets/graphics/actions/left Mr Clarke for dead after a hitnrun with tricycle.jpg",
+	"sold nuclear warheads to China":"res://assets/graphics/actions/sold nuclear warheads to China.jpg",
+	"gave Mrs Huffman's cat to the animal shelter":"res://assets/graphics/actions/gave away Mrs Huffman's cat to the animal shelter.jpg",
+	"impersonated neighbour to falsely file for divorce":"res://assets/graphics/actions/impersonated neighbour to falsely file for divorce.jpg",
+	"reported Mr Grouche to the police as a Nazi":"res://assets/graphics/actions/reported Mr Grouche to the police as a Nazi.jpg",
+	"cooked meth with his chemistry teacher!":"res://assets/graphics/actions/cooked meth with their chemistry teacher.jpg",
+	"dealt drugs to the Mexican cartel":"res://assets/graphics/actions/dealt drugs to the Mexican cartel.jpg",
+	"prank called the White House":"res://assets/graphics/actions/prank called the White House.jpg",
+	"invested in OnlyFans":"res://assets/graphics/actions/invested in OnlyFans.jpg",
+	"signed up grandma for OnlyFans":"res://assets/graphics/actions/signed up grandma for OnlyFans.jpg",
+	"got an F in Math":"res://assets/graphics/actions/got an F in Math.jpg",
+	"burned down a church":"res://assets/graphics/actions/burned down a church.jpg",
+	"killed their family dog":"res://assets/graphics/actions/test.png",
+	"reported Mom to have Munchausen by proxy":"res://assets/graphics/actions/test.png",
+	"sent aunt Jane to the psych ward":"res://assets/graphics/actions/test.png",
+	"was late to school 56 times":"res://assets/graphics/actions/test.png",
+	"yelled \"BOMB\" at an airport":"res://assets/graphics/actions/test.png",
+	"participated in bull fighting":"res://assets/graphics/actions/test.png",
+	"threw the stock market into another depression":"res://assets/graphics/actions/test.png",
+	"ran away from home 4 times":"res://assets/graphics/actions/test.png",
+	"pronounces GIF as JIF all the time":"res://assets/graphics/actions/test.png",
+	"electrocuted uncle Steve":"res://assets/graphics/actions/test.png",
+	"became the boss of the Mafia in Naples":"res://assets/graphics/actions/test.png",
+	"kidnapped Aldo Moro in Italy in the 80's":"res://assets/graphics/actions/test.png"
 	}
 
 var anvil_things = ["destroyed a game jam",
@@ -277,3 +277,11 @@ func _on_anim_animation_finished(anim_name):
 func _on_decide_pressed():
 	$Animation.play("close")
 	parent.verdictdone = true
+
+func _on_detection_mouse_entered():
+	var tween = get_tree().create_tween()
+	tween.tween_property($Drawing,"scale",Vector2(1.5,1.5),0.2).set_ease(Tween.EASE_IN)
+
+func _on_detection_mouse_exited():
+	var tween = get_tree().create_tween()
+	tween.tween_property($Drawing,"scale",Vector2(0.8,0.8),0.2).set_ease(Tween.EASE_OUT)
