@@ -9,7 +9,7 @@ var lost = false
 @onready var animplayer = $YoureFired/AnimationPlayer
 @onready var presents = $presents
 @onready var gullotine = $gullotine
-
+@onready var anvilplayer = $gullotine/anvill
 
 func _ready():
 	fill_pos()
@@ -70,3 +70,8 @@ func _on_an_animation_finished(anim_name):
 	if anim_name == "death":
 		lost = true
 		get_tree().change_scene_to_packed(loose)
+		
+
+
+func _on_anvill_animation_finished():
+	$gullotine/anvill.play("idle",0.7)

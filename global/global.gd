@@ -52,8 +52,8 @@ func _on_playkillanvil():
 	pass
 
 func _on_playkillchild():
-	#DO playkill animation of child
-	pass
+	print("signalrecievedtokill")
+	levelins.anvilplayer.play("kill")
 
 func _on_gameover():
 	levelins.gameover()

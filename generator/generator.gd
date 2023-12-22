@@ -269,6 +269,7 @@ func _on_close_pressed():
 	$Animation.play("close")
 
 func _on_story_meta_clicked(meta):
+	print("clicked")
 	$Drawing.texture = ResourceLoader.load(drawings[meta])
 
 func _on_anim_animation_finished(anim_name):

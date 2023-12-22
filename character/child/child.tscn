@@ -28,6 +28,9 @@ scale = Vector2(0.3, 0.3)
 texture = ExtResource("2_1ohv5")
 
 [node name="ReportFile" parent="." instance=ExtResource("3_merfe")]
+visible = false
+offset_top = 664.0
+offset_bottom = 663.999
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
