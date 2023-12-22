@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=29 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
@@ -17,6 +17,11 @@
 [ext_resource type="Texture2D" uid="uid://lwpwlyahdvd3" path="res://assets/graphics/anvill/anvilKILL7.png" id="13_8as4i"]
 [ext_resource type="Texture2D" uid="uid://bjx1gto5cbqx6" path="res://assets/graphics/anvill/anvilKILL8.png" id="14_d3we6"]
 [ext_resource type="Texture2D" uid="uid://cj854hll8jpbe" path="res://assets/graphics/anvill/anvilKILL9.png" id="15_hanh1"]
+[ext_resource type="AudioStream" uid="uid://dqeqqjil2gxu" path="res://assets/sound/main theme.mp3" id="18_te7bk"]
+[ext_resource type="Script" path="res://mainlevel/sounds.gd" id="18_vxfo8"]
+[ext_resource type="AudioStream" uid="uid://c6lmaewdcb0x8" path="res://assets/sound/LoseTransition.wav" id="20_yti2b"]
+[ext_resource type="AudioStream" uid="uid://c5pek2lvf7fuq" path="res://assets/sound/MetalImpact(Special).wav" id="21_bbty6"]
+[ext_resource type="AudioStream" uid="uid://bbqmhlo1qughe" path="res://assets/sound/AmbienceLoop.wav" id="22_87cgb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
 size = Vector2(429, 616)
@@ -36,7 +41,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2upqx"]
-size = Vector2(344, 432)
+size = Vector2(488, 432)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_im6h1"]
 animations = [{
@@ -86,7 +91,7 @@ animations = [{
 
 [sub_resource type="Animation" id="Animation_pyjji"]
 resource_name = "death"
-length = 2.0
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -153,8 +158,7 @@ autoplay = "idle"
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
-visible = false
-position = Vector2(20, 72)
+position = Vector2(28, 72)
 shape = SubResource("RectangleShape2D_2upqx")
 
 [node name="anvill" type="AnimatedSprite2D" parent="gullotine"]
@@ -163,7 +167,8 @@ scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_im6h1")
 animation = &"kill"
 autoplay = "idle"
-frame_progress = 0.994008
+frame = 8
+frame_progress = 1.0
 
 [node name="center" type="Node2D" parent="."]
 position = Vector2(608, 296)
@@ -188,4 +193,57 @@ libraries = {
 "": SubResource("AnimationLibrary_kod8k")
 }
 
+[node name="sounds" type="Node" parent="."]
+script = ExtResource("18_vxfo8")
+
+[node name="theme" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("18_te7bk")
+volume_db = -80.0
+autoplay = true
+
+[node name="child_death" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="child_pick_up" type="AudioStreamPlayer2D" parent="sounds"]
+
+[node name="child_squashed" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="Timer" type="Timer" parent="sounds/child_squashed"]
+wait_time = 0.4
+
+[node name="click" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="drawing_show" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="laught_judgement" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="lost" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("20_yti2b")
+
+[node name="metal" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="metal2" type="AudioStreamPlayer" parent="sounds"]
+stream = ExtResource("21_bbty6")
+
+[node name="paper" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="Timer2" type="Timer" parent="sounds/paper"]
+wait_time = 1.5
+
+[node name="presents" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="squish" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="santa_file" type="AudioStreamPlayer" parent="sounds"]
+
+[node name="santa_drawing" type="AudioStreamPlayer2D" parent="sounds"]
+
+[node name="ambience" type="AudioStreamPlayer2D" parent="sounds"]
+stream = ExtResource("22_87cgb")
+volume_db = 5.0
+autoplay = true
+
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
+[connection signal="finished" from="sounds/theme" to="sounds" method="_on_theme_finished"]
+[connection signal="timeout" from="sounds/child_squashed/Timer" to="sounds" method="_on_timer_timeout"]
+[connection signal="timeout" from="sounds/paper/Timer2" to="sounds" method="_on_timer_2_timeout"]
+[connection signal="finished" from="sounds/ambience" to="sounds" method="_on_ambience_finished"]

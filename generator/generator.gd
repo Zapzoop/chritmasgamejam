@@ -14,6 +14,8 @@ var names = [males,females]
 var Name = names.pick_random().pick_random()
 var surname = surnames.pick_random()
 
+@onready var sfx = $/root/Level/sounds
+
 #Store as sentence:value
 var bad_habits = {
 	"robbed a bank with a water gun":-30,
@@ -67,8 +69,18 @@ var anvil_things = ["destroyed a game jam",
 	"was just awful for people's imaginations",
 	"brought down Christmas",
 	"removed happiness",
-	"created several teams to squabble"]
-var selected_anvil_things = []
+	"created several teams to squabble",
+	"temp1",
+	"temp2",
+	"temp3",
+	"temp4",
+	"temp5",
+	"temp6",
+	"temp7",
+	"temp8",
+	"temp9",
+	"temp10",]
+
 
 var selected_good_habits = {} #All selected good_habits
 var selected_bad_habits = {} #All selected bad_habits
@@ -157,6 +169,7 @@ func report_card():
 	selected_good_habits = {}
 
 func create_anvil():
+	var selected_anvil_things = []
 	for x in range(5):
 		var anv = anvil_things.pick_random()
 		while selected_anvil_things.has(anv):
@@ -186,3 +199,4 @@ func _on_anim_animation_finished(anim_name):
 func _on_decide_pressed():
 	$Animation.play("close")
 	parent.verdictdone = true
+	sfx.paper("close")

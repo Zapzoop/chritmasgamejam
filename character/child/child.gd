@@ -16,6 +16,7 @@ var offset
 
 @onready var report = $ReportFile
 @onready var anim = $ReportFile/Animation
+@onready var sfx = $/root/Level/sounds
 
 func _ready():
 	report.parent = self
@@ -24,36 +25,47 @@ func _ready():
 func _process(_delta):
 	if Input.is_action_just_pressed("click") and !verdictdone and can_show:
 		anim.play("open")
+		sfx.santa_file()
+		sfx.paper("")
 		report.visible = true
 	if can_drag:
 		if Input.is_action_just_pressed("click"):
 			initialPos = global_position
 			offset = get_global_mouse_position() - global_position
+			sfx.pick_up()
 		if Input.is_action_pressed("click"):
 			global_position = get_global_mouse_position() - offset
 		elif Input.is_action_just_released("click"):
 			var tween = get_tree().create_tween()
 			if is_inside_dropable:
+				sfx.laugh_judge()
 				tween.tween_property(self,"global_position",body_ref.position,0.2).set_ease(Tween.EASE_OUT)
 				if self.is_in_group("anvil"):
 					if (self.global_position.x < $/root/Level/center.global_position.x):
 						Global.emit_signal("playkillanvil")
+						sfx.childDeath("anvill")
 						self.free()
 						print("right")
 						Global.score += 5
 						Global.emit_signal("moveforward")
 					else:
 						Global.emit_signal("gameover")
+						sfx.lost()
 				else:
 					if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
 						if self.global_position.x < $/root/Level/center.global_position.x:
 							Global.emit_signal("playkillchild")
+							sfx.childDeath("kid")
+						if self.global_position.x > $/root/Level/center.global_position.x:
+							Global.emit_signal("playkillchild")
+							sfx.present()
 						self.free()
 						print("right") 
 						Global.score += 5
 						Global.emit_signal("moveforward")
 					else:
 						Global.emit_signal("gameover")
+						sfx.lost()
 			else:
 				tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)
 			

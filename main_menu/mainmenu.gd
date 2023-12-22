@@ -1,5 +1,7 @@
 extends Control
 
+
+
 func _on_start_pressed():
 	Global.emit_signal("change_scene",self,"level")
 

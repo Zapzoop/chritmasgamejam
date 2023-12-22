@@ -1,6 +1,7 @@
 extends Node
 
 var score = 0
+var volume = 80
 
 var options = "res://main_menu/option/option.tscn"
 var credits = "res://main_menu/credits/credits.tscn"
