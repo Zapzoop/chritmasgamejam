@@ -119,7 +119,8 @@ var drawings = {
 	"pronounces GIF as JIF all the time":"res://assets/graphics/actions/pronounced GIF as JIF all the time.jpg",
 	"electrocuted uncle Steve":"res://assets/graphics/actions/electrocuted uncle Steve.jpg",
 	"became the boss of the Mafia in Naples":"res://assets/graphics/actions/became the boss of the Mafia in Naples.jpg",
-	"kidnapped Aldo Moro in Italy in the 80's":"res://assets/graphics/actions/kidnapped Aldo Moro in Italy in the 80s.jpg"
+	"kidnapped Aldo Moro in Italy in the 80's":"res://assets/graphics/actions/kidnapped Aldo Moro in Italy in the 80s.jpg",
+	"rickrolled Santa's HQ":"res://assets/graphics/actions/rickrolled Santas headquarrters.jpg"
 	}
 
 var anvil_things = ["destroyed a game jam",
@@ -261,7 +262,7 @@ func create_anvil():
 	selected_anvil_things = []
 
 func data_anvil():
-	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 6 m" + "\nFrom: GameJam"
+	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 35 cm" + "\nFrom: GameJam"
 	$Paper/TempBg/Profile/Name.text = "Anvil"
 
 func _on_close_pressed():
