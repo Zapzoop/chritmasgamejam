@@ -16,49 +16,109 @@ var surname = surnames.pick_random()
 
 #Store as sentence:value
 var bad_habits = {
-	"robbed a bank with a water gun":-30,
-	"kidnapped Aldo Moro in the 80s in Italy":-70,
-	"helped overtrow a government to install a dicatorship":-10,
-	"said YOLO in 482 conversations this year":-40,
-	"Invests in Lockheed martin when word tension goes up":-20,
-	"told other kids Santa isn't real":-100,
-	"accused of arson on Nikki's tree house":-30,
-	"hit n run on neighbor with your three wheeler":-90,
-	"sold nuclear warheads to China":-2,
-	"gave Mrs Huffman's cat to the animal shelter, saying it was a stray":-70,
-	"impersonated neighbor to file for divorce with his wife":-50,
-	"reported Mr Grouche to the police as a Nazi":-20,
-	"crooked meth with his chemistry teacher!":-30,
-	"dealt drugs to the Mexican cartel":-55
+	"was responsible for the dinosaurs to go extinct ":-150,
+	"wished for rain to ruin a picnic ":-10,
+	"bit his sister on average 3 times a day":-20,
+	"robbed a bank with a water gun":-80,
+	"helped overthrow the government to install a dictatorship":-130,
+	"told other kids Santa isn't real":-40,
+	"started arson on Nikki's tree house":-70,
+	"left Mr Clarke for dead after a hit 'n' run with tricycle":-60,
+	"sold nuclear warheads to China":-110,
+	"gave Mrs Huffman's cat to the animal shelter":-30,
+	"impersonated neighbour to falsely file for divorce":-30,
+	"reported Mr Grouche to the police as a Nazi":-40,
+	"crooked meth with his chemistry teacher!":-80,
+	"dealt drugs to the Mexican cartel":-90,
+	"prank called the White House":-20,
+	"invested in OnlyFans":-30,
+	"signed up grandma for OnlyFans":-50,
+	"got an F in Math":-20,
+	"burned down a church":-100,
+	"killed their family dog":-60,
+	"reported Mom to have Munchausen by proxy":-70,
+	"sent aunt Jane to the psych ward":-50,
+	"was late to school 56 times":-30,
+	"yelled \"BOMB\" at an airport":-70,
+	"participated in bull fighting":-80,
+	"threw the stock market into another depression":-120,
+	"ran away from home 4 times":-30,
+	"pronounces GIF as JIF all the time":-20,
+	"electrocuted uncle Steve":-90,
+	"became the boss of the Mafia in Naples":-130,
+	"kidnapped Aldo Moro in Italy in the 80's":-70
 }
 var good_habits = {
-	"Gave all his allowance to the local animal scelter":55,
-	"he opened a charity found for kids with cancer" :5,
-	"temp1":8,
-	"temp2":90,
-	"temp3":99
+	"gave his full allowance to a local animal shelter":30,
+	"opened a charity fund for kids with cancer":60,
+	"solved poverty in 3 countries":140,
+	"learned Spanish to be able to speak with grandma":40,
+	"helped someone understand Taylor Swift lyrics":10,
+	"picked up a stranger's money on the ground and gave it back":20,
+	"helped overthrow the government's dictatorship":120,
+	"went back in time and assassinated Adolf Hitler":130,
+	"planted 700 trees":70,
+	"got an A+ in social sciences":20,
+	"sold cookies at a bake sale for charity":50,
+	"gave his little sister lots of attention":20,
+	"helped Mom with the dishes":10,
+	"attended long funeral without screaming a single time":10,
+	"won a Nobel Peace Prize":100,
+	"won an Oscar for Titanic III":80,
+	"cured 2 forms of cancer":150,
+	"invented the internet":100,
+	"got a phd in astrophysics":90,
+	"helped a kid in class to get a good grade":20,
+	"did NOT vote the anvil as the special object":30
 }
 
+var neutral_habits = {
+	"watched The God Father 7 times":0,
+	"wears pyjamas inside out all of the time":0,
+	"doesn't know the difference between a microwave and a oven":0,
+	"loves Disney movies":0,
+	"playes ice hockey":0,
+	"believes in aliens":0,
+	"doesn't know the difference between tomato sauce and ketchup":0,
+	"eats pineapple pizza":0,
+	"doesn't like mushroom":0,
+	"sleeps with a night light on":0,
+	"joined the chess club":0
+}
+
+
 var drawings = {
-	"robbed a bank with a water gun":"res://assets/grafics/actions/CancerFound.png",
-	"kidnapped Aldo Moro in the 80s in Italy":"res://assets/grafics/actions/CancerFound.png",
-	"helped overtrow a government to install a dicatorship":"res://assets/grafics/actions/CancerFound.png",
-	"said YOLO in 482 conversations this year":"res://assets/grafics/actions/CancerFound.png",
-	"Invests in Lockheed martin when word tension goes up":"res://assets/grafics/actions/CancerFound.png",
-	"told other kids Santa isn't real":"res://assets/grafics/actions/CancerFound.png",
-	"accused of arson on Nikki's tree house":"res://assets/grafics/actions/CancerFound.png",
-	"hit n run on neighbor with your three wheeler":"res://assets/grafics/actions/CancerFound.png",
-	"sold nuclear warheads to China":-2,
-	"gave Mrs Huffman's cat to the animal shelter, saying it was a stray":"res://assets/grafics/actions/CancerFound.png",
-	"impersonated neighbor to file for divorce with his wife":"res://assets/grafics/actions/CancerFound.png",
-	"reported Mr Grouche to the police as a Nazi":"res://assets/grafics/actions/CancerFound.png",
-	"crooked meth with his chemistry teacher!":"res://assets/grafics/actions/CancerFound.png",
-	"dealt drugs to the Mexican cartel":"res://assets/grafics/actions/CancerFound.png",
-	"Gave all his allowance to the local animal scelter":"res://assets/grafics/actions/test.png",
-	"he opened a charity found for kids with cancer" :"res://assets/grafics/actions/test.png",
-	"temp1":"res://assets/grafics/actions/test.png",
-	"temp2":"res://assets/grafics/actions/test.png",
-	"temp3":"res://assets/grafics/actions/test.png"
+	"was responsible for the dinosaurs to go extinct ":-150,
+	"wished for rain to ruin a picnic ":-10,
+	"bit his sister on average 3 times a day":-20,
+	"robbed a bank with a water gun":-80,
+	"helped overthrow the government to install a dictatorship":-130,
+	"told other kids Santa isn't real":-40,
+	"started arson on Nikki's tree house":-70,
+	"left Mr Clarke for dead after a hit 'n' run with tricycle":-60,
+	"sold nuclear warheads to China":-110,
+	"gave Mrs Huffman's cat to the animal shelter":-30,
+	"impersonated neighbour to falsely file for divorce":-30,
+	"reported Mr Grouche to the police as a Nazi":-40,
+	"crooked meth with his chemistry teacher!":-80,
+	"dealt drugs to the Mexican cartel":-90,
+	"prank called the White House":-20,
+	"invested in OnlyFans":-30,
+	"signed up grandma for OnlyFans":-50,
+	"got an F in Math":-20,
+	"burned down a church":-100,
+	"killed their family dog":-60,
+	"reported Mom to have Munchausen by proxy":-70,
+	"sent aunt Jane to the psych ward":-50,
+	"was late to school 56 times":-30,
+	"yelled \"BOMB\" at an airport":-70,
+	"participated in bull fighting":-80,
+	"threw the stock market into another depression":-120,
+	"ran away from home 4 times":-30,
+	"pronounces GIF as JIF all the time":-20,
+	"electrocuted uncle Steve":-90,
+	"became the boss of the Mafia in Naples":-130,
+	"kidnapped Aldo Moro in Italy in the 80's":-70
 	}
 
 var anvil_things = ["destroyed a game jam",
@@ -67,11 +127,23 @@ var anvil_things = ["destroyed a game jam",
 	"was just awful for people's imaginations",
 	"brought down Christmas",
 	"removed happiness",
-	"created several teams to squabble"]
+	"created several teams to squabble",
+	"temp1",
+	"temp2",
+	"temp3",
+	"temp4",
+	"temp5",
+	"temp6",
+	"temp7",
+	"temp8",
+	"temp9",
+	"temp10"]
+	
 var selected_anvil_things = []
 
 var selected_good_habits = {} #All selected good_habits
 var selected_bad_habits = {} #All selected bad_habits
+var selected_neutral_habits = {}
 
 func _ready():
 	if get_parent().is_in_group("anvil"):
@@ -91,15 +163,18 @@ func create_child():
 		create_anvil()
 		return
 	const EVENT_COUNT = 5 # Number of events linked to child
-	var decider = ["good","bad"] # For each event thier is a 50% chance
+	var decider = ["good","bad","neutral"] # For each event thier is a 50% chance
 	for i in range(0,EVENT_COUNT):
-		var random = randi_range(0,1)
-		var final_decider = decider[random]
-		match final_decider: 
+		var randomchoice = decider.pick_random()
+		while (randomchoice == "neutral" and len(selected_neutral_habits) >= 2):
+			randomchoice = decider.pick_random()
+		match randomchoice: 
 			"good":
 				mergedic(selected_good_habits,good_habit_selector()) # adding good and bad event one by one
 			"bad":
 				mergedic(selected_bad_habits,bad_habit_selector())
+			"neutral":
+				mergedic(selected_neutral_habits,neutral_habit_selector())
 	child()
 	
 func good_habit_selector():
@@ -126,14 +201,29 @@ func bad_habit_selector():
 	var dic = {key:bad_habits[key]}
 	return dic
 
+func neutral_habit_selector():
+	var length_of_habits = len(neutral_habits) - 1 
+	var random = randi_range(0,length_of_habits)
+	var keylist = neutral_habits.keys()
+	var key = keylist[random]
+	while selected_neutral_habits.has(key):
+		random = randi_range(0,len(neutral_habits)-1)
+		keylist = neutral_habits.keys()
+		key = keylist[random]
+	var dic = {key:neutral_habits[key]}
+	return dic
+
 func child(): 
 	$Paper/TempBg/Profile/Story.text = "It's been reported that little "+ Name + " "
 	var good = selected_good_habits.keys()
 	var bad = selected_bad_habits.keys()
+	var neutral = selected_neutral_habits.keys()
 	var all = []
 	for x in good:
 		all.append(x)
 	for x in bad:
+		all.append(x)
+	for x in neutral:
 		all.append(x)
 	all.shuffle()
 	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ all[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ all[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
@@ -155,6 +245,7 @@ func report_card():
 	print("My score " + str(total))
 	selected_bad_habits = {} #Emptying occupied habits
 	selected_good_habits = {}
+	selected_neutral_habits = {}
 
 func create_anvil():
 	for x in range(5):
