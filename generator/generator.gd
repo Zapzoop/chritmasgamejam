@@ -46,7 +46,8 @@ var bad_habits = {
 	"pronounces GIF as JIF all the time":-20,
 	"electrocuted uncle Steve":-90,
 	"became the boss of the Mafia in Naples":-130,
-	"kidnapped Aldo Moro in Italy in the 80's":-70
+	"kidnapped Aldo Moro in Italy in the 80's":-70,
+	"rickrolled Santa's HQ":-50
 }
 var good_habits = {
 	"gave his full allowance to a local animal shelter":30,
@@ -107,18 +108,18 @@ var drawings = {
 	"signed up grandma for OnlyFans":"res://assets/graphics/actions/signed up grandma for OnlyFans.jpg",
 	"got an F in Math":"res://assets/graphics/actions/got an F in Math.jpg",
 	"burned down a church":"res://assets/graphics/actions/burned down a church.jpg",
-	"killed their family dog":"res://assets/graphics/actions/test.png",
-	"reported Mom to have Munchausen by proxy":"res://assets/graphics/actions/test.png",
-	"sent aunt Jane to the psych ward":"res://assets/graphics/actions/test.png",
-	"was late to school 56 times":"res://assets/graphics/actions/test.png",
-	"yelled \"BOMB\" at an airport":"res://assets/graphics/actions/test.png",
-	"participated in bull fighting":"res://assets/graphics/actions/test.png",
+	"killed their family dog":"res://assets/graphics/actions/killed their family dog.jpg",
+	"reported Mom to have Munchausen by proxy":"res://assets/graphics/actions/reported Mom to have Munchausen by proxy.jpg",
+	"sent aunt Jane to the psych ward":"res://assets/graphics/actions/sent aunt Jane to the psych ward.jpg",
+	"was late to school 56 times":"res://assets/graphics/actions/was late to school 56 times.jpg",
+	"yelled \"BOMB\" at an airport":"res://assets/graphics/actions/yelled BOMB at an airport.jpg",
+	"participated in bull fighting":"res://assets/graphics/actions/participated in bull fighting.jpg",
 	"threw the stock market into another depression":"res://assets/graphics/actions/test.png",
-	"ran away from home 4 times":"res://assets/graphics/actions/test.png",
-	"pronounces GIF as JIF all the time":"res://assets/graphics/actions/test.png",
-	"electrocuted uncle Steve":"res://assets/graphics/actions/test.png",
-	"became the boss of the Mafia in Naples":"res://assets/graphics/actions/test.png",
-	"kidnapped Aldo Moro in Italy in the 80's":"res://assets/graphics/actions/test.png"
+	"ran away from home 4 times":"res://assets/graphics/actions/ran away from home 4 times.jpg",
+	"pronounces GIF as JIF all the time":"res://assets/graphics/actions/pronounced GIF as JIF all the time.jpg",
+	"electrocuted uncle Steve":"res://assets/graphics/actions/electrocuted uncle Steve.jpg",
+	"became the boss of the Mafia in Naples":"res://assets/graphics/actions/became the boss of the Mafia in Naples.jpg",
+	"kidnapped Aldo Moro in Italy in the 80's":"res://assets/graphics/actions/kidnapped Aldo Moro in Italy in the 80s.jpg"
 	}
 
 var anvil_things = ["destroyed a game jam",

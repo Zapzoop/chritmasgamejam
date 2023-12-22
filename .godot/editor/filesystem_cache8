@@ -1,10 +1,10 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703262462
+::res://::1703265140
 icon.svg::CompressedTexture2D::7578759187451317425::1703184615::1703226136::1::::<><>::
 README.md::TextFile::-1::1703184615::0::1::::<><>::
 score.gd::GDScript::-1::1703251620::0::1::::<>RichTextLabel<>::
 tutorial.gd::GDScript::-1::1703251620::0::1::::<>Control<>::
-::res://assets/::1703262498
+::res://assets/::1703265120
 Child2BlueAnvil1.png::CompressedTexture2D::3815189583836689131::1703251619::1703251619::1::::<><>::
 Child2BlueAnvil2.png::CompressedTexture2D::3641756995548992517::1703251619::1703251619::1::::<><>::
 Child2BlueAnvil3.png::CompressedTexture2D::4286694944409062719::1703251619::1703251619::1::::<><>::
@@ -88,53 +88,43 @@ AA_typewriter.ttf::FontFile::7048527951902906861::1703184615::1703184615::1::::<
 normal.tres::Theme::6186156579985719103::1703184615::0::1::::<><>::uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf
 Written On The Hand-Bold.otf::FontFile::8890170516079799065::1703184615::1703184615::1::::<><>::
 Written On The Hand.otf::FontFile::3385745802403308697::1703184615::1703184615::1::::<><>::
-::res://assets/grafics/::1703262461
-child_file.tscn::PackedScene::7563834159685182399::1703261664::0::1::::<><>::res://generator/generator.gd<>uid://cbkldmjmlvhyw::::res://assets/icons/close.jpg
-::res://assets/grafics/actions/::1703262451
-bit his sister on average 3 times a day.jpg::CompressedTexture2D::3922858070655840897::1703262440::1703262451::1::::<><>::
-burned down a church.jpg::CompressedTexture2D::5006164073791736025::1703262440::1703262451::1::::<><>::
-cooked meth with their chemistry teacher.jpg::CompressedTexture2D::8633401364030845707::1703262440::1703262451::1::::<><>::
-dealt drugs to the Mexican cartel.jpg::CompressedTexture2D::732016371843863163::1703262440::1703262451::1::::<><>::
-gave away Mrs Huffman's cat to the animal shelter.jpg::CompressedTexture2D::7721699607233432509::1703262440::1703262451::1::::<><>::
-got an F in Math.jpg::CompressedTexture2D::3016370558542860298::1703262440::1703262451::1::::<><>::
-helped overthrow the government to install a dictatorship.jpg::CompressedTexture2D::2990013592873555849::1703262440::1703262451::1::::<><>::
-impersonated neighbour to falsely file for divorce.jpg::CompressedTexture2D::732531656487391922::1703262440::1703262451::1::::<><>::
-invested in OnlyFans.jpg::CompressedTexture2D::6677676130044001738::1703262440::1703262451::1::::<><>::
-left Mr Clarke for dead after a hitnrun with tricycle.jpg::CompressedTexture2D::4815979731652968699::1703262440::1703262451::1::::<><>::
-opened a charity fund for kids with cancer.jpg::CompressedTexture2D::2979925728851808960::1703262440::1703262451::1::::<><>::
-prank called the White House.jpg::CompressedTexture2D::1629723318689047592::1703262440::1703262451::1::::<><>::
-reported Mr Grouche to the police as a Nazi.jpg::CompressedTexture2D::858815213367254348::1703262440::1703262451::1::::<><>::
-signed up grandma for OnlyFans.jpg::CompressedTexture2D::4634209325906211663::1703262440::1703262451::1::::<><>::
-sold nuclear warheads to China.jpg::CompressedTexture2D::94575855828291267::1703262440::1703262451::1::::<><>::
-started arson in Nikkis tree house.jpg::CompressedTexture2D::5927789300628561549::1703262440::1703262451::1::::<><>::
-told other kids Santa isnt real.jpg::CompressedTexture2D::3012610421458873633::1703262440::1703262451::1::::<><>::
-was responsible for the dinosaurs to go extinct.jpg::CompressedTexture2D::1126874740904118483::1703262440::1703262451::1::::<><>::
-wished for rain to ruin a picnic.jpg::CompressedTexture2D::2073823058348827678::1703262440::1703262451::1::::<><>::
 ::res://assets/graphics/::1703251619
 bg.jpeg::CompressedTexture2D::3972417944224575448::1703251619::1703251619::1::::<><>::
 Youre_fired.png::CompressedTexture2D::5328119608264395032::1703251619::1703251619::1::::<><>::
-::res://assets/graphics/actions/::1703262515
-bit his sister on average 3 times a day.jpg::CompressedTexture2D::3922858070655840897::1703262440::1703262560::1::::<><>::
-burned down a church.jpg::CompressedTexture2D::5006164073791736025::1703262440::1703262560::1::::<><>::
+::res://assets/graphics/actions/::1703265095
+became the boss of the Mafia in Naples.jpg::CompressedTexture2D::1743070769464465003::1703264824::1703265141::1::::<><>::
+bit his sister on average 3 times a day.jpg::CompressedTexture2D::3922858070655840897::1703265052::1703265052::1::::<><>::
+burned down a church.jpg::CompressedTexture2D::5006164073791736025::1703265052::1703265052::1::::<><>::
 CancerFound.png::CompressedTexture2D::465614578179181624::1703251619::1703251619::1::::<><>::
-cooked meth with their chemistry teacher.jpg::CompressedTexture2D::8633401364030845707::1703262440::1703262560::1::::<><>::
-dealt drugs to the Mexican cartel.jpg::CompressedTexture2D::732016371843863163::1703262440::1703262560::1::::<><>::
-gave away Mrs Huffman's cat to the animal shelter.jpg::CompressedTexture2D::7721699607233432509::1703262440::1703262560::1::::<><>::
-got an F in Math.jpg::CompressedTexture2D::3016370558542860298::1703262440::1703262560::1::::<><>::
-helped overthrow the government to install a dictatorship.jpg::CompressedTexture2D::2990013592873555849::1703262440::1703262560::1::::<><>::
-impersonated neighbour to falsely file for divorce.jpg::CompressedTexture2D::732531656487391922::1703262440::1703262560::1::::<><>::
-invested in OnlyFans.jpg::CompressedTexture2D::6677676130044001738::1703262440::1703262560::1::::<><>::
-left Mr Clarke for dead after a hitnrun with tricycle.jpg::CompressedTexture2D::4815979731652968699::1703262440::1703262560::1::::<><>::
-opened a charity fund for kids with cancer.jpg::CompressedTexture2D::2979925728851808960::1703262440::1703262560::1::::<><>::
-prank called the White House.jpg::CompressedTexture2D::1629723318689047592::1703262440::1703262560::1::::<><>::
-reported Mr Grouche to the police as a Nazi.jpg::CompressedTexture2D::858815213367254348::1703262440::1703262560::1::::<><>::
-signed up grandma for OnlyFans.jpg::CompressedTexture2D::4634209325906211663::1703262440::1703262560::1::::<><>::
-sold nuclear warheads to China.jpg::CompressedTexture2D::94575855828291267::1703262440::1703262560::1::::<><>::
-started arson in Nikkis tree house.jpg::CompressedTexture2D::5927789300628561549::1703262440::1703262560::1::::<><>::
+cooked meth with their chemistry teacher.jpg::CompressedTexture2D::8633401364030845707::1703265052::1703265052::1::::<><>::
+dealt drugs to the Mexican cartel.jpg::CompressedTexture2D::732016371843863163::1703265052::1703265052::1::::<><>::
+electrocuted uncle Steve.jpg::CompressedTexture2D::3247158214879140299::1703264824::1703265141::1::::<><>::
+gave away Mrs Huffman's cat to the animal shelter.jpg::CompressedTexture2D::7721699607233432509::1703265052::1703265052::1::::<><>::
+got an F in Math.jpg::CompressedTexture2D::3016370558542860298::1703265052::1703265052::1::::<><>::
+helped overthrow the government to install a dictatorship.jpg::CompressedTexture2D::2990013592873555849::1703265052::1703265052::1::::<><>::
+impersonated neighbour to falsely file for divorce.jpg::CompressedTexture2D::732531656487391922::1703265052::1703265052::1::::<><>::
+invested in OnlyFans.jpg::CompressedTexture2D::6677676130044001738::1703265052::1703265052::1::::<><>::
+kidnapped Aldo Moro in Italy in the 80s.jpg::CompressedTexture2D::1938039905933428207::1703264824::1703265141::1::::<><>::
+killed their family dog.jpg::CompressedTexture2D::3893420473174497327::1703264824::1703265141::1::::<><>::
+left Mr Clarke for dead after a hitnrun with tricycle.jpg::CompressedTexture2D::4815979731652968699::1703265052::1703265052::1::::<><>::
+opened a charity fund for kids with cancer.jpg::CompressedTexture2D::2979925728851808960::1703265052::1703265052::1::::<><>::
+participated in bull fighting.jpg::CompressedTexture2D::4918192961425410019::1703264824::1703265141::1::::<><>::
+prank called the White House.jpg::CompressedTexture2D::1629723318689047592::1703265052::1703265052::1::::<><>::
+pronounced GIF as JIF all the time.jpg::CompressedTexture2D::8740956316439669273::1703264824::1703265141::1::::<><>::
+ran away from home 4 times.jpg::CompressedTexture2D::3326870086704657779::1703264824::1703265141::1::::<><>::
+reported Mom to have Munchausen by proxy.jpg::CompressedTexture2D::4390436772364664451::1703264824::1703265141::1::::<><>::
+reported Mr Grouche to the police as a Nazi.jpg::CompressedTexture2D::858815213367254348::1703265052::1703265052::1::::<><>::
+rickrolled Santas headquarrters.jpg::CompressedTexture2D::71733625862032181::1703264824::1703265141::1::::<><>::
+sent aunt Jane to the psych ward.jpg::CompressedTexture2D::9144162127863473864::1703264824::1703265141::1::::<><>::
+signed up grandma for OnlyFans.jpg::CompressedTexture2D::4634209325906211663::1703265052::1703265052::1::::<><>::
+sold nuclear warheads to China.jpg::CompressedTexture2D::94575855828291267::1703265052::1703265052::1::::<><>::
+started arson in Nikkis tree house.jpg::CompressedTexture2D::5927789300628561549::1703265052::1703265052::1::::<><>::
 test.png::CompressedTexture2D::8422072304993328965::1703251619::1703251619::1::::<><>::
-told other kids Santa isnt real.jpg::CompressedTexture2D::3012610421458873633::1703262440::1703262560::1::::<><>::
-was responsible for the dinosaurs to go extinct.jpg::CompressedTexture2D::1126874740904118483::1703262440::1703262560::1::::<><>::
-wished for rain to ruin a picnic.jpg::CompressedTexture2D::2073823058348827678::1703262440::1703262560::1::::<><>::
+told other kids Santa isnt real.jpg::CompressedTexture2D::3012610421458873633::1703265052::1703265052::1::::<><>::
+was late to school 56 times.jpg::CompressedTexture2D::8051172451603928900::1703264824::1703265141::1::::<><>::
+was responsible for the dinosaurs to go extinct.jpg::CompressedTexture2D::1126874740904118483::1703265052::1703265052::1::::<><>::
+wished for rain to ruin a picnic.jpg::CompressedTexture2D::2073823058348827678::1703265052::1703265052::1::::<><>::
+yelled BOMB at an airport.jpg::CompressedTexture2D::6268377105909688727::1703264824::1703265141::1::::<><>::
 ::res://assets/graphics/anvill/::1703251619
 anvilIDLE1.png::CompressedTexture2D::2366828605711592038::1703251619::1703251619::1::::<><>::
 anvilIDLE2.png::CompressedTexture2D::282662708086728653::1703251619::1703251619::1::::<><>::
@@ -217,23 +207,23 @@ StartGame2ndOption.wav::AudioStreamWAV::8732239313998872983::1703184615::1703251
 StartGame(second layer).wav::AudioStreamWAV::7231714319082827380::1703184615::1703251620::1::::<><>::
 StartGame.wav::AudioStreamWAV::3838591436227028715::1703184615::1703251620::1::::<><>::
 ::res://character/::1703184615
-::res://character/anvil/::1703262461
-anvil.tscn::PackedScene::114508701755314026::1703262461::0::1::::<><>::res://character/child/child.gd<>uid://b26kru0dealmf::::res://assets/characters/anvil.webp<>uid://df08ijrktdbk6::::res://assets/grafics/child_file.tscn
-::res://character/child/::1703262557
+::res://character/anvil/::1703265052
+anvil.tscn::PackedScene::114508701755314026::1703265052::0::1::::<><>::res://character/child/child.gd<>uid://b26kru0dealmf::::res://assets/characters/anvil.webp<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn
+::res://character/child/::1703265052
 child.gd::GDScript::-1::1703262461::0::1::::<>CharacterBody2D<>::
-child.tscn::PackedScene::7367537772686235666::1703262461::0::1::::<><>::res://character/child/child.gd<>uid://df8hb6mrpqwrh::::res://icon.svg<>uid://df08ijrktdbk6::::res://assets/grafics/child_file.tscn
+child.tscn::PackedScene::7367537772686235666::1703265052::0::1::::<><>::res://character/child/child.gd<>uid://df8hb6mrpqwrh::::res://icon.svg<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn
 childquality.gd::GDScript::-1::1703184615::0::1::::<>Node<>::
-child_file.tscn::PackedScene::-1::1703261664::0::1::::<><>::
-::res://generator/::1703262461
-generator.gd::GDScript::-1::1703262461::0::1::::<>Node<>::
+child_file.tscn::PackedScene::1351888640982327902::1703265052::0::1::::<><>::res://generator/generator.gd<>uid://cbkldmjmlvhyw::::res://assets/icons/close.jpg
+::res://generator/::1703265052
+generator.gd::GDScript::-1::1703265052::0::1::::<>Node<>::
 ::res://global/::1703251620
 global.gd::GDScript::-1::1703251620::0::1::::<>Node<>::
 ::res://mainlevel/::1703261664
 level.gd::GDScript::-1::1703251620::0::1::::<>Node2D<>::
 level.tscn::PackedScene::1516234851076444278::1703261664::0::1::::<><>::res://mainlevel/level.gd<>uid://crd2ohkb3lewo::::res://assets/scenes&scripts/tutorial.tscn<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://b4fj3yrce0xxs::::res://assets/graphics/tree/treeIdle2.png<>uid://8yrk6p4wbuck::::res://assets/graphics/anvill/anvilIDLE1.png<>uid://ea6ocanfdiqf::::res://assets/graphics/anvill/anvilIDLE2.png<>uid://dlo6er8dj16vv::::res://assets/graphics/anvill/anvilKILL2.png<>uid://ch58l7lmh75we::::res://assets/graphics/Youre_fired.png<>uid://d2c6b4i4rnti7::::res://assets/graphics/anvill/anvilKILL1.png<>uid://bvnnur8b5g67b::::res://assets/graphics/anvill/anvilKILL3.png<>uid://cpa2wtnge7n0q::::res://assets/graphics/anvill/anvilKILL4.png<>uid://dqdglcwei5hxk::::res://assets/graphics/anvill/anvilKILL5.png<>uid://o5lnwqdfito4::::res://assets/graphics/anvill/anvilKILL6.png<>uid://lwpwlyahdvd3::::res://assets/graphics/anvill/anvilKILL7.png<>uid://bjx1gto5cbqx6::::res://assets/graphics/anvill/anvilKILL8.png<>uid://cj854hll8jpbe::::res://assets/graphics/anvill/anvilKILL9.png
-::res://main_menu/::1703261664
+::res://main_menu/::1703263970
 mainmenu.gd::GDScript::-1::1703251620::0::1::::<>Control<>::
-mainmenu.tscn::PackedScene::2481733112026175755::1703261664::0::1::::<><>::res://main_menu/mainmenu.gd
+mainmenu.tscn::PackedScene::2481733112026175755::1703263970::0::1::::<><>::res://main_menu/mainmenu.gd
 ::res://main_menu/credits/::1703184615
 credits.gd::GDScript::-1::1703184615::0::1::::<>Control<>::
 credits.tscn::PackedScene::5823629526697979744::1703184615::0::1::::<><>::res://main_menu/credits/credits.gd<>uid://5h6l2qocg6y4::::res://assets/icons/back.png
