@@ -19,18 +19,18 @@ func fill_pos():
 	for i in range(NUMBER_OF_CHILDREN): #Reducing number of childern
 		var pos = self.get_child(i+1) #Adding appropiate index
 		if i == 2:
-			var child_ins = anvil.instantiate()
-			pos.add_child(child_ins)
+			var anvil_ins = anvil.instantiate()
+			pos.add_child(anvil_ins)
 			continue
 		var child_ins = child.instantiate()
 		pos.add_child(child_ins)
 		
 func move():
 	reparentall()
-	var child = self.get_children()
+	var childtomove = self.get_children()
 	for i in range(NUMBER_OF_CHILDREN):
 		var tween = get_tree().create_tween()
-		var characters = child[i+1].get_child(0)
+		var characters = childtomove[i+1].get_child(0)
 		tween.tween_property(characters,"position",Vector2(0,0),0.5).set_ease(Tween.EASE_IN)
 
 func reparentall():
@@ -42,9 +42,9 @@ func reparentall():
 	generatechild()
 
 func generatechild():
-	var decider = decider()
+	var decided = decider()
 	if lost == false:
-		if decider == "anvil":
+		if decided == "anvil":
 			var child_ins = anvil.instantiate()
 			$Pos3.add_child(child_ins)
 			return
@@ -57,11 +57,6 @@ func decider():
 	var probab = ["","","","","","","","","","anvil"]
 	var rand = randi_range(0,9)
 	return probab[rand]
-
-func reparentme(scene):
-	scene.reparent($report,true)
-	scene.newparent = $report
-	scene.position = Vector2(0,0)
 
 func gameover():
 	$YoureFired.show()

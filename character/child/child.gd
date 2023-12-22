@@ -21,7 +21,7 @@ func _ready():
 	report.parent = self
 	report.create_child()
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("click") and !verdictdone and can_show:
 		anim.play("open")
 		report.visible = true
@@ -87,7 +87,3 @@ func _on_area_2d_body_exited(body):
 			Global.emit_signal("modulatebackgullotine")
 		body.modulate = Color(Color.WHITE,1)
 		body_ref = body
-
-
-
-

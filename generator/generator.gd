@@ -128,7 +128,6 @@ func bad_habit_selector():
 
 func child(): 
 	$Paper/TempBg/Profile/Story.text = "It's been reported that little "+ Name + " "
-	var rand = RandomNumberGenerator
 	var good = selected_good_habits.keys()
 	var bad = selected_bad_habits.keys()
 	var all = []
