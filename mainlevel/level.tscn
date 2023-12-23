@@ -89,6 +89,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_eua8q"]
+resource_name = "Killplayer"
+
 [sub_resource type="Animation" id="Animation_pyjji"]
 resource_name = "death"
 length = 2.0
@@ -117,9 +120,6 @@ tracks/1/keys = {
 "values": [Vector2(0.6, 0.6), Vector2(0.8, 0.8)]
 }
 
-[sub_resource type="Animation" id="Animation_eua8q"]
-resource_name = "Killplayer"
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kod8k"]
 _data = {
 "Killplayer": SubResource("Animation_eua8q"),
@@ -147,7 +147,6 @@ position = Vector2(512, 752)
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
-visible = false
 position = Vector2(-129.5, 52)
 shape = SubResource("RectangleShape2D_41rdw")
 
@@ -162,7 +161,6 @@ autoplay = "idle"
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
-visible = false
 position = Vector2(20, 72)
 shape = SubResource("RectangleShape2D_2upqx")
 

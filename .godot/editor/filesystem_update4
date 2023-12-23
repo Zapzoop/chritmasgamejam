@@ -1,10 +1,8 @@
 res://mainlevel/level.tscn
 res://character/child/child.gd
 res://generator/generator.gd
-res://assets/scenes&scripts/tutorial.tscn
 res://main_menu/mainmenu.tscn
 res://character/anvil/anvil.tscn
 res://character/child/child.tscn
-res://global/global.gd
-res://mainlevel/level.gd
+res://assets/scenes&scripts/tutorial.tscn
 res://character/child/child_file.tscn

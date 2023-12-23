@@ -52,7 +52,6 @@ func _on_playkillanvil():
 	pass
 
 func _on_playkillchild():
-	print("signalrecievedtokill")
 	levelins.anvilplayer.play("kill")
 
 func _on_gameover():
