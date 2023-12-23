@@ -12,7 +12,6 @@ var lost = false
 @onready var anvilplayer = $gullotine/anvill
 
 func _ready():
-	generatechild()
 	Global.levelins = self
 
 func generatechild():
