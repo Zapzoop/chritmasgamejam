@@ -275,11 +275,10 @@ func _on_story_meta_clicked(meta):
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":
 		self.visible = false
-		parent.can_drag = true
 
 func _on_decide_pressed():
 	$Animation.play("close")
-	parent.verdictdone = true
+	parent.clicked = true
 
 func _on_detection_mouse_entered():
 	var tween = get_tree().create_tween()

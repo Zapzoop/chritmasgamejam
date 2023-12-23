@@ -1,16 +1,9 @@
 extends CharacterBody2D
 
-var draggable = false
-var can_drag = false
-
 var can_move = false
 var is_moving = false
 
-
 var is_inside_dropable = false
-var can_drop = false
-
-var inside
 
 var body_ref
 
@@ -18,7 +11,7 @@ var initialPos : Vector2
 
 var child_score = 0
 
-var verdictdone = false
+var clicked = false
 
 var offset
 
@@ -30,7 +23,7 @@ func _ready():
 	report.create_child()
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("click") and can_move:
+	if Input.is_action_just_pressed("click") and can_move and clicked:
 		initialPos = self.global_position
 		is_moving = true
 	elif Input.is_action_pressed("click") and is_moving:
@@ -38,25 +31,25 @@ func _physics_process(delta):
 	elif Input.is_action_just_released("click") and is_moving:
 		if is_inside_dropable:
 			if self.is_in_group("anvil"):
-					if (self.global_position.x < $/root/Level/center.global_position.x):
-						Global.emit_signal("playkillanvil")
-						Global.score += 5
-						Global.emit_signal("moveforward")
-						self.queue_free()
-					else:
-						Global.emit_signal("gameover")
+				if (self.global_position.x < $/root/Level/center.global_position.x):
+					Global.emit_signal("playkillanvil")
+					Global.score += 5
+					Global.emit_signal("moveforward")
+					self.queue_free()
+				else:
+					Global.emit_signal("gameover")
 			else:
-					if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
-						if self.global_position.x < $/root/Level/center.global_position.x:
-							put_on_anvil_child()
-							Global.emit_signal("playkillchild")
-						if self.global_position.x > $/root/Level/center.global_position.x:
-							put_on_presents_child()
-						Global.score += 5
-						Global.emit_signal("moveforward")
-						self.queue_free()
-					else:
-						Global.emit_signal("gameover")
+				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+					if self.global_position.x < $/root/Level/center.global_position.x:
+						put_on_anvil_child()
+						Global.emit_signal("playkillchild")
+					if self.global_position.x > $/root/Level/center.global_position.x:
+						put_on_presents_child()
+					Global.score += 5
+					Global.emit_signal("moveforward")
+					self.queue_free()
+				else:
+					Global.emit_signal("gameover")
 		else:
 			reset()
 		is_moving = false
