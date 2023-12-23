@@ -52,8 +52,7 @@ func _on_playkillanvil():
 	pass
 
 func _on_playkillchild():
-	#DO playkill animation of child
-	pass
+	levelins.anvilplayer.play("kill")
 
 func _on_gameover():
 	levelins.gameover()
@@ -83,4 +82,4 @@ func _on_callback(calleename,calleeobj):
 	remember = null
 	
 func _on_moveforward():
-	levelins.move()
+	levelins.generatechild()

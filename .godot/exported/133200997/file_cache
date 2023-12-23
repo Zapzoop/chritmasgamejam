@@ -1,0 +1,14 @@
+res://assets/fonts/normal.tres::0e1c2b7f11004e3183162b115ebce4e3::1703184615::res://.godot/exported/133200997/export-21658d09b7afbeea47dbe6ff92920128-normal.res
+res://assets/scenes&scripts/bg.tscn::a84c69fd89b5578dcad764c681ce6ee3::1703272197::res://.godot/exported/133200997/export-6132d02ce94f690f90395535e2cb8789-bg.scn
+res://assets/scenes&scripts/loose.tscn::125e395279037f1fd9339be9b8d012c4::1703228038::res://.godot/exported/133200997/export-429f9a53d5d656d178e31ec7cc66ea1b-loose.scn
+res://assets/scenes&scripts/main.tscn::ffd65c0be18ed78fb1e25ee66a0c6c7e::1703228039::res://.godot/exported/133200997/export-de3dd3aad553b9654c7c31939d68b6ea-main.scn
+res://assets/scenes&scripts/tutorial.tscn::404c2410413093db474d5b0aeec4ec67::1703311800::res://.godot/exported/133200997/export-fc881820b154526cc43138a2d1afbd3a-tutorial.scn
+res://assets/sound/base.tscn::2634ffc4728f1bf6fb3bc00ea675118a::1703184615::res://.godot/exported/133200997/export-1775de3faf5dcf792c5f51d36a15bff0-base.scn
+res://assets/sound/musics.tscn::7ce6bb49c743f090133daffd78fca529::1703184615::res://.godot/exported/133200997/export-1a353068d59624c5f20a34827dc5097b-musics.scn
+res://character/anvil/anvil.tscn::5647effe28fca2176d67e692f778428b::1703311799::res://.godot/exported/133200997/export-fef799c666448afa555627d11f188639-anvil.scn
+res://character/child/child.tscn::efd6539c567da5352db7b66a308d7171::1703311799::res://.godot/exported/133200997/export-16cda4e87a8a01ef3c9b9846f5fe6374-child.scn
+res://character/child/child_file.tscn::f70070b2bca4b3fd47e84cd393348fe2::1703311800::res://.godot/exported/133200997/export-b146fd30a345c1b7e53a94122c27929c-child_file.scn
+res://mainlevel/level.tscn::38d40945a98cb10b5730170d48cdf6e2::1703311799::res://.godot/exported/133200997/export-540c8a4a4df9e9398474ba1c23ec2825-level.scn
+res://main_menu/credits/credits.tscn::bf3a8d5e6410b020579bbdcb8158d67a::1703184615::res://.godot/exported/133200997/export-e0a1d0275d953490e2b7448e008568f6-credits.scn
+res://main_menu/option/option.tscn::ecf83fb09802bc2a331b775242ef20b3::1703184615::res://.godot/exported/133200997/export-73a9fc5b428ac786b6fefa8165c7a8cd-option.scn
+res://main_menu/mainmenu.tscn::910a34d0566c016af7e8f086c1f1cfa1::1703311799::res://.godot/exported/133200997/export-2d1fb675dc87f482405ffbd1788eb109-mainmenu.scn

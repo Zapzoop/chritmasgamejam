@@ -1,14 +1,14 @@
+Button
+Node2D
 CollisionShape2D
 Area2D
 AnimationPlayer
 Sprite2D
 AnimatedSprite2D
-Node2D
 Node
 Control
 RichTextLabel
 ColorRect
-Button
 ProgressBar
 TextureProgressBar
 AudioStreamPlayer2D

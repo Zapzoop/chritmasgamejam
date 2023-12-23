@@ -1,3 +1,11 @@
-res://character/child/child_file.tscn
+res://mainlevel/level.tscn
 res://character/child/child.gd
 res://generator/generator.gd
+res://mainlevel/level.gd
+res://global/global.gd
+res://character/child/child.tscn
+res://main_menu/mainmenu.tscn
+res://character/anvil/anvil.tscn
+res://assets/scenes&scripts/tutorial.tscn
+res://character/child/child_file.tscn
+res://tutorial.gd
