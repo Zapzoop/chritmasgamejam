@@ -36,11 +36,37 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("click") and can_move:
 		initialPos = self.global_position
 		is_moving = true
+		print("pickedup")
 	elif Input.is_action_pressed("click") and is_moving:
 		global_position = lerp(global_position, get_global_mouse_position(),25*delta)
 	elif Input.is_action_just_released("click") and is_moving:
+		print("released")
 		if is_inside_dropable:
-			put_on_anvil()
+			if self.is_in_group("anvil"):
+					if (self.global_position.x < $/root/Level/center.global_position.x):
+						Global.emit_signal("playkillanvil")
+						self.free()
+						#print("right")
+						Global.score += 5
+						Global.emit_signal("moveforward")
+					else:
+						self.free()
+						Global.emit_signal("gameover")
+			else:
+					if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+						#print("First Layer")
+						if self.global_position.x < $/root/Level/center.global_position.x:
+							put_on_anvil_child()
+							Global.emit_signal("playkillchild")
+						if self.global_position.x > $/root/Level/center.global_position.x:
+							put_on_presents_child()
+						#print("right") 
+						Global.score += 5
+						Global.emit_signal("moveforward")
+						print("done")
+						self.queue_free()
+					else:
+						Global.emit_signal("gameover")
 		#	global_position = lerp(global_position,body_ref.global_position,10*delta)
 		else:
 			reset()
@@ -50,7 +76,10 @@ func _physics_process(delta):
 	#	global_position = lerp(global_position,body_ref.position,10*delta)
 	#elif can_drop:
 	#	global_position = lerp(global_position,initialPos,10*delta)
-func put_on_anvil():
+func put_on_anvil_child():
+	pass
+
+func put_on_presents_child():
 	pass
 
 func reset():

@@ -6,3 +6,5 @@ res://character/anvil/anvil.tscn
 res://character/child/child.tscn
 res://assets/scenes&scripts/tutorial.tscn
 res://character/child/child_file.tscn
+res://global/global.gd
+res://mainlevel/level.gd

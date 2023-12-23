@@ -138,10 +138,12 @@ texture = ExtResource("3_2apgr")
 position = Vector2(512, 320)
 
 [node name="Pos2" type="Node2D" parent="."]
-position = Vector2(512, 704)
+position = Vector2(512, 576)
 
 [node name="Pos3" type="Node2D" parent="."]
-position = Vector2(512, 752)
+position = Vector2(512, 616)
+
+[node name="child" type="Node2D" parent="."]
 
 [node name="presents" type="StaticBody2D" parent="." groups=["dropable", "presents"]]
 position = Vector2(1016, 272)

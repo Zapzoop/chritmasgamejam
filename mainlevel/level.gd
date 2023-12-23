@@ -16,22 +16,24 @@ func _ready():
 	Global.levelins = self
 
 func fill_pos():
-	for i in range(NUMBER_OF_CHILDREN): #Reducing number of childern
-		var pos = self.get_child(i+1) #Adding appropiate index
-		if i == 2:
-			var anvil_ins = anvil.instantiate()
-			pos.add_child(anvil_ins)
-			continue
-		var child_ins = child.instantiate()
-		pos.add_child(child_ins)
+	generatechild()
+	#for i in range(NUMBER_OF_CHILDREN): #Reducing number of childern
+	#	var pos = self.get_child(i+1) #Adding appropiate index
+	#	if i == 2:
+	#		var anvil_ins = anvil.instantiate()
+	#		pos.add_child(anvil_ins)
+	#		continue
+	#	var child_ins = child.instantiate()
+	#	pos.add_child(child_ins)
 		
 func move():
-	reparentall()
-	var childtomove = self.get_children()
-	for i in range(NUMBER_OF_CHILDREN):
-		var tween = get_tree().create_tween()
-		var characters = childtomove[i+1].get_child(0)
-		tween.tween_property(characters,"position",Vector2(0,0),0.5).set_ease(Tween.EASE_IN)
+	#reparentall()
+	generatechild()
+	var child = $child.get_child(0)
+	var tween = get_tree().create_tween()
+	tween.tween_property(child,"global_position",Vector2(512,320),0.5).set_ease(Tween.EASE_IN)
+	#var char1 = $Pos2.get_child(0)
+	#var char2 = $Pos3.get_child(0)
 
 func reparentall():
 	var pos2child = $Pos2.get_child(0)
@@ -39,6 +41,7 @@ func reparentall():
 	
 	pos2child.reparent($Pos1,true)
 	pos3child.reparent($Pos2,true)
+	print("reparented")
 	generatechild()
 
 func generatechild():
@@ -46,11 +49,13 @@ func generatechild():
 	if lost == false:
 		if decided == "anvil":
 			var child_ins = anvil.instantiate()
-			$Pos3.add_child(child_ins)
+			child_ins.global_position = $Pos3.global_position
+			$child.add_child(child_ins)
 			return
 		else:
 			var child_ins = child.instantiate()
-			$Pos3.add_child(child_ins)
+			child_ins.global_position = $Pos3.global_position
+			$child.add_child(child_ins)
 			return
 
 func decider():
