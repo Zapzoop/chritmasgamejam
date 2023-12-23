@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=27 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
@@ -120,10 +120,43 @@ tracks/1/keys = {
 "values": [Vector2(0.6, 0.6), Vector2(0.8, 0.8)]
 }
 
+[sub_resource type="Animation" id="Animation_tnrpt"]
+resource_name = "moveChild"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../child:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(512, 704), Vector2(512, 320)]
+}
+
+[sub_resource type="Animation" id="Animation_xuag6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../child:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(512, 704)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kod8k"]
 _data = {
 "Killplayer": SubResource("Animation_eua8q"),
-"death": SubResource("Animation_pyjji")
+"RESET": SubResource("Animation_xuag6"),
+"death": SubResource("Animation_pyjji"),
+"moveChild": SubResource("Animation_tnrpt")
 }
 
 [node name="Level" type="Node2D"]
@@ -144,6 +177,7 @@ position = Vector2(512, 576)
 position = Vector2(512, 616)
 
 [node name="child" type="Node2D" parent="."]
+position = Vector2(512, 704)
 
 [node name="presents" type="StaticBody2D" parent="." groups=["dropable", "presents"]]
 position = Vector2(1016, 272)
@@ -196,5 +230,13 @@ libraries = {
 "": SubResource("AnimationLibrary_kod8k")
 }
 
+[node name="File" type="Button" parent="."]
+offset_left = 32.0
+offset_top = 584.0
+offset_right = 88.0
+offset_bottom = 640.0
+text = "File"
+
 [connection signal="animation_finished" from="gullotine/anvill" to="." method="_on_anvill_animation_finished"]
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
+[connection signal="pressed" from="File" to="." method="_on_file_pressed"]
