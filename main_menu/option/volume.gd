@@ -8,13 +8,17 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	value = $/root/base.volume_db + 80
+	value = Global.volume
 
 
 
 func _on_minus_pressed():
-	$/root/base.volume_db -= 5
+	Global.volume -= 5
 
 
 func _on_plus_pressed():
-	$/root/base.volume_db += 5
+	Global.volume += 5
+
+
+func _on_button_pressed():
+	pass # Replace with function body.

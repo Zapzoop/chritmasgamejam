@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=3 uid="uid://cn6wa3pvcs31o"]
+
+[ext_resource type="Script" path="res://mainlevel/sounds.gd" id="1_gqdrv"]
+[ext_resource type="AudioStream" uid="uid://03fl7lk2yaam" path="res://assets/sound/main theme.mp3" id="2_u4bx6"]
+[ext_resource type="AudioStream" uid="uid://c6lmaewdcb0x8" path="res://assets/sound/LoseTransition.wav" id="3_r1yom"]
+[ext_resource type="AudioStream" uid="uid://c5pek2lvf7fuq" path="res://assets/sound/MetalImpact(Special).wav" id="4_5pc2n"]
+[ext_resource type="AudioStream" uid="uid://bbqmhlo1qughe" path="res://assets/sound/AmbienceLoop.wav" id="5_ppjjf"]
+
+[node name="sounds" type="Node"]
+script = ExtResource("1_gqdrv")
+
+[node name="theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_u4bx6")
+autoplay = true
+
+[node name="child_death" type="AudioStreamPlayer" parent="."]
+
+[node name="child_pick_up" type="AudioStreamPlayer2D" parent="."]
+
+[node name="child_squashed" type="AudioStreamPlayer" parent="."]
+
+[node name="Timer" type="Timer" parent="child_squashed"]
+wait_time = 0.4
+
+[node name="click" type="AudioStreamPlayer" parent="."]
+
+[node name="drawing_show" type="AudioStreamPlayer" parent="."]
+
+[node name="laught_judgement" type="AudioStreamPlayer" parent="."]
+
+[node name="lost" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_r1yom")
+
+[node name="metal" type="AudioStreamPlayer" parent="."]
+
+[node name="metal2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_5pc2n")
+
+[node name="paper" type="AudioStreamPlayer" parent="."]
+
+[node name="Timer2" type="Timer" parent="paper"]
+wait_time = 1.5
+
+[node name="presents" type="AudioStreamPlayer" parent="."]
+
+[node name="squish" type="AudioStreamPlayer" parent="."]
+
+[node name="santa_file" type="AudioStreamPlayer" parent="."]
+
+[node name="santa_drawing" type="AudioStreamPlayer2D" parent="."]
+
+[node name="ambience" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_ppjjf")
+volume_db = 5.0
+autoplay = true
+
+[connection signal="finished" from="theme" to="." method="_on_theme_finished"]
+[connection signal="timeout" from="child_squashed/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="paper/Timer2" to="." method="_on_timer_2_timeout"]
+[connection signal="finished" from="ambience" to="." method="_on_ambience_finished"]

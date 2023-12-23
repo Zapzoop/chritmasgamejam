@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://b7tk213b5gudl"]
+[gd_scene load_steps=7 format=3 uid="uid://b7tk213b5gudl"]
 
 [ext_resource type="Script" path="res://main_menu/option/option.gd" id="1_ek2sl"]
 [ext_resource type="Texture2D" uid="uid://5h6l2qocg6y4" path="res://assets/icons/back.png" id="2_c5mbi"]
+[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/graphics/bg.jpeg" id="2_klity"]
 [ext_resource type="Script" path="res://main_menu/option/volume.gd" id="3_mvdhv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ijdtj"]
@@ -22,11 +23,17 @@ grow_vertical = 2
 script = ExtResource("1_ek2sl")
 metadata/_edit_use_anchors_ = true
 
-[node name="bg" type="ColorRect" parent="."]
-layout_mode = 0
-offset_right = 1176.0
-offset_bottom = 664.0
-color = Color(1, 1, 0.415686, 1)
+[node name="bg" type="Sprite2D" parent="."]
+modulate = Color(0.85098, 0.686275, 0.745098, 0.384314)
+position = Vector2(576, 312)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_klity")
+
+[node name="tree" type="Sprite2D" parent="bg"]
+
+[node name="santa" type="Sprite2D" parent="bg"]
+
+[node name="anvill" type="Sprite2D" parent="bg"]
 
 [node name="back" type="Button" parent="."]
 layout_mode = 0
@@ -61,6 +68,7 @@ text = "-"
 flat = true
 
 [node name="plus" type="Button" parent="volume"]
+layout_mode = 0
 offset_left = 864.0
 offset_top = -40.0
 offset_right = 992.0
@@ -73,9 +81,8 @@ flat = true
 [node name="text" type="RichTextLabel" parent="volume"]
 layout_mode = 0
 offset_left = 256.0
-offset_top = -120.0
+offset_top = -104.0
 offset_right = 616.0
-offset_bottom = -16.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 50
 text = "music volume"

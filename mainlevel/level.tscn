@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=28 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
@@ -17,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://dv2xbgm042c6w" path="res://assets/graphics/anvill/KillChild/KillChild7.png" id="13_aohn4"]
 [ext_resource type="Texture2D" uid="uid://fal50oxwevwn" path="res://assets/graphics/anvill/KillChild/KillChild8.png" id="14_7s4k7"]
 [ext_resource type="Texture2D" uid="uid://c5m0162b6wbn6" path="res://assets/graphics/anvill/KillChild/KillChild9.png" id="15_1fpsj"]
+[ext_resource type="PackedScene" uid="uid://cn6wa3pvcs31o" path="res://assets/sound/sounds.tscn" id="18_tk7ho"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
 size = Vector2(429, 616)
@@ -92,6 +93,21 @@ animations = [{
 [sub_resource type="Animation" id="Animation_eua8q"]
 resource_name = "Killplayer"
 
+[sub_resource type="Animation" id="Animation_xuag6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../child:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(512, 704)]
+}
+
 [sub_resource type="Animation" id="Animation_pyjji"]
 resource_name = "death"
 length = 2.0
@@ -136,21 +152,6 @@ tracks/0/keys = {
 "values": [Vector2(512, 704), Vector2(512, 320)]
 }
 
-[sub_resource type="Animation" id="Animation_xuag6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../child:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(512, 704)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kod8k"]
 _data = {
 "Killplayer": SubResource("Animation_eua8q"),
@@ -183,6 +184,7 @@ position = Vector2(512, 704)
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
+visible = false
 position = Vector2(-129.5, 52)
 shape = SubResource("RectangleShape2D_41rdw")
 
@@ -197,6 +199,7 @@ autoplay = "idle"
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
+visible = false
 position = Vector2(20, 72)
 shape = SubResource("RectangleShape2D_2upqx")
 
@@ -236,6 +239,8 @@ offset_top = 584.0
 offset_right = 88.0
 offset_bottom = 640.0
 text = "File"
+
+[node name="sounds" parent="." instance=ExtResource("18_tk7ho")]
 
 [connection signal="animation_finished" from="gullotine/anvill" to="." method="_on_anvill_animation_finished"]
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
