@@ -1,7 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://ti4n5d5nwwpi"]
+[gd_scene load_steps=9 format=3 uid="uid://ti4n5d5nwwpi"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
+[ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="2_2bemc"]
 [ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_agc6v"]
+[ext_resource type="FontFile" uid="uid://cdjbwhckwxatn" path="res://assets/fonts/Childhood-Bold.otf" id="3_vadwe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
 size = Vector2(308.571, 217.143)
@@ -91,9 +93,11 @@ metadata/_edit_use_anchors_ = true
 [node name="Name" type="RichTextLabel" parent="Paper/TempBg/Profile"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.208459
-anchor_right = 0.827795
-anchor_bottom = 0.0878274
+anchor_left = 0.0332326
+anchor_top = 0.0308166
+anchor_right = 0.824773
+anchor_bottom = 0.118644
+theme = ExtResource("2_2bemc")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 35
 text = "Name"
@@ -107,6 +111,7 @@ anchor_left = 0.0332326
 anchor_top = 0.118644
 anchor_right = 1.0
 anchor_bottom = 0.312789
+theme = ExtResource("2_2bemc")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 text = "Age: N.A
 From: N.A
@@ -122,20 +127,37 @@ anchor_left = 0.0483384
 anchor_top = 0.312789
 anchor_right = 0.951662
 anchor_bottom = 0.827427
+theme = ExtResource("2_2bemc")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 17
 bbcode_enabled = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Decide" type="Button" parent="Paper/TempBg/Profile"]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.268293
 anchor_top = 0.901235
 anchor_right = 0.756098
 anchor_bottom = 0.975309
-text = "Decide
+theme = ExtResource("2_2bemc")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
+theme_override_font_sizes/font_size = 30
+text = "judge
 "
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Close" type="Button" parent="Paper/TempBg/Profile"]
@@ -164,6 +186,20 @@ metadata/_edit_use_anchors_ = true
 libraries = {
 "": SubResource("AnimationLibrary_xxlrj")
 }
+
+[node name="letter" type="RichTextLabel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 377.0
+offset_top = 374.0
+offset_right = 834.0
+offset_bottom = 580.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("3_vadwe")
+theme_override_font_sizes/normal_font_size = 27
+text = "Dear santa i want:"
+
+[node name="letter" type="Sprite2D" parent="letter"]
 
 [connection signal="mouse_entered" from="Detection" to="." method="_on_detection_mouse_entered"]
 [connection signal="mouse_exited" from="Detection" to="." method="_on_detection_mouse_exited"]

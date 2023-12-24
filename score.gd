@@ -4,4 +4,4 @@ var score
 
 func _ready():
 	score = Global.score
-	self.text = str(score)
+	self.text += "\n     "+str(score)
