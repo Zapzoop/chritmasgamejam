@@ -139,9 +139,12 @@ func paper(what):
 		$paper.play()
 		$paper/Timer2.start()
 		
-func present():
-	$presents.stream = presents.pick_random()
-	$presents.play()
+func present(what):
+	if what == "child":
+		$presents.stream = presents.pick_random()
+		$presents.play()
+	else:
+		$anvil_pre.play
 	
 func squish():
 	$squish.stream = presents.pick_random()

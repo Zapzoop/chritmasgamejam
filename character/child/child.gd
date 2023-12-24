@@ -41,6 +41,7 @@ func _physics_process(delta):
 					Global.emit_signal("moveforward")
 					self.queue_free()
 				else:
+					sfx.present("anvill")
 					Global.emit_signal("gameover")
 			else:
 				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
@@ -50,7 +51,7 @@ func _physics_process(delta):
 						Global.emit_signal("playkillchild")
 					if self.global_position.x > $/root/Level/center.global_position.x:
 						put_on_presents_child()
-						sfx.present()
+						sfx.present("child")
 					Global.score += 5
 					Global.emit_signal("moveforward")
 					self.queue_free()
