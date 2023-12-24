@@ -151,7 +151,7 @@ func _ready():
 	if get_parent().is_in_group("anvil"):
 		data_anvil()
 	else:
-		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(5,11))) + "\nHeight: " + str(int(rnd.randi_range(100,160))) + " cm \nFrom: " + country.pick_random()
+		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(4,8))) + "\nHeight: " + str(int(rnd.randi_range(70,120))) + " cm \nFrom: " + country.pick_random()
 		$Paper/TempBg/Profile/Name.text = Name + " " + surname
 		letter()
 
@@ -318,4 +318,4 @@ func _on_detection_mouse_exited():
 
 func letter():
 	var present = presents.pick_random()
-	$letter.text = $letter.text + "\n " + present + "\n" + "this christmas"
+	$letter/letter.text = $letter/letter.text + "\n " + present + "\n" + "this christmas"
