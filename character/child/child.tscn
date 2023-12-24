@@ -136,7 +136,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child1BlueAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -167,7 +167,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("10_0j8rf")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child1BluePresents",
 "speed": 4.0
 }, {
@@ -183,7 +183,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child1GreenAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -214,7 +214,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("19_8er5h")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child1GreenPresents",
 "speed": 4.0
 }, {
@@ -230,7 +230,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child1PinkAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -261,7 +261,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("28_u4xgv")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child1PinkPresents",
 "speed": 4.0
 }, {
@@ -277,7 +277,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child2BlueAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -308,7 +308,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("37_hsqep")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child2BluePresents",
 "speed": 4.0
 }, {
@@ -324,7 +324,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child2GreenAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -355,7 +355,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("46_bjchm")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child2GreenPresents",
 "speed": 4.0
 }, {
@@ -371,7 +371,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child2PinkAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -402,7 +402,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("55_um3wl")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child2PinkPresents",
 "speed": 4.0
 }, {
@@ -418,7 +418,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child3BlueAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -449,7 +449,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("64_dqjcq")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child3BluePresents",
 "speed": 4.0
 }, {
@@ -465,7 +465,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child3GreenAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -496,7 +496,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("73_mixma")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child3GreenPresents",
 "speed": 4.0
 }, {
@@ -512,7 +512,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child3PinkAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -543,7 +543,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("82_m2ihm")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child3PinkPresents",
 "speed": 4.0
 }, {
@@ -559,7 +559,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child4BlueAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -590,7 +590,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("91_8o02q")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child4BluePresents",
 "speed": 4.0
 }, {
@@ -606,7 +606,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child4GreenAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -637,7 +637,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("100_k6c3r")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child4GreenPresents",
 "speed": 4.0
 }, {
@@ -653,7 +653,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"Child4PinkAnvil",
-"speed": 3.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -684,7 +684,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("109_eiyhk")
 }],
-"loop": true,
+"loop": false,
 "name": &"Child4PinkPresents",
 "speed": 4.0
 }]
@@ -707,7 +707,7 @@ shape = SubResource("RectangleShape2D_orx65")
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_kg6aa")
-animation = &"Child1GreenAnvil"
+animation = &"Child1BlueIdle"
 
 [node name="ReportFile" parent="." instance=ExtResource("3_merfe")]
 visible = false

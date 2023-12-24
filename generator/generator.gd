@@ -135,17 +135,7 @@ var anvil_things = ["destroyed a game jam",
 	"was just awful for people's imaginations",
 	"brought down Christmas",
 	"removed happiness",
-	"created several teams to squabble",
-	"temp1",
-	"temp2",
-	"temp3",
-	"temp4",
-	"temp5",
-	"temp6",
-	"temp7",
-	"temp8",
-	"temp9",
-	"temp10"]
+	"created several teams to squabble"]
 	
 var presents = ["a gift card","make-up products","a pony","a unicorn","a PlayStation 5","a Nintendo Switch","new parents","death to Santa","socks","slippers","a fidget spinner","a cookbook for Mom","a new handbag","a bicycle","a beanie","a bean bag","a swing set","emancipation","a jet plane","world peace","a spa weekend","a teddy bear","a real Pokémon","a law degree","a new math book","a train set","a bodybuilding programme","the moon","a career in finance","a plushie","a new Mommy","10,000 V-bucks","Covid","a real snowy Christmas","to remove league of legends from existance","dad to come home","a lego set","1 million karma on Reddit","GTA VI","to know all government secrets"]
 	
@@ -298,7 +288,7 @@ func _on_story_meta_clicked(meta):
 			already_seen.append(meta)
 			drawings_seen +=1
 	else:
-		if meta == "see letter":
+		if meta == "See letter":
 			if $letter.visible == true:
 				$letter.visible = false
 				letter_seen = true
@@ -323,7 +313,7 @@ func _on_detection_mouse_entered():
 
 func _on_detection_mouse_exited():
 	var tween = get_tree().create_tween()
-	tween.tween_property($Drawing,"scale",Vector2(0.8,0.8),0.2).set_ease(Tween.EASE_OUT)
+	tween.tween_property($Drawing,"scale",Vector2(1.2,1.2),0.2).set_ease(Tween.EASE_OUT)
 
 
 func letter():

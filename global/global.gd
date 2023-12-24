@@ -53,7 +53,7 @@ func _on_presentschild():
 	pass
 
 func _on_anvilanvil():
-	pass
+	levelins.anvilplayer.play("anvilkill")
 
 func _on_presentsanvil():
 	pass

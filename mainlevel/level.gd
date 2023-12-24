@@ -22,6 +22,7 @@ func generatechild():
 		if decided == "anvil":
 			var child_ins = anvil.instantiate()
 			$child.add_child(child_ins)
+			child_ins.anvil_ins()
 			animplayer.play("moveChild")
 			return
 			
@@ -65,7 +66,8 @@ func decidecolor():
 func decider():
 	var probab = ["child1","child2","child3","child4","child1","child2","child3","child4","anvil"]
 	var rand = randi_range(0,8)
-	return probab[rand]
+	#return probab[rand]
+	return "anvil"
 
 func gameover():
 	$YoureFired.show()
@@ -83,3 +85,8 @@ func _on_an_animation_finished(anim_name):
 
 func _on_anvill_animation_finished():
 	$gullotine/anvill.play("idle",0.7)
+	if Global.current == "Anvil":
+		generatechild()
+
+func _on_anvill_sprite_frames_changed():
+	pass # Replace with function body.

@@ -1,24 +1,33 @@
-[gd_scene load_steps=39 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=47 format=3 uid="uid://vuqfwpbiwr2m"]
+
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
 [ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/graphics/bg.jpeg" id="3_2apgr"]
 [ext_resource type="Texture2D" uid="uid://bynxb35vi87sj" path="res://assets/graphics/tree/treeIdle1.png" id="3_uon42"]
 [ext_resource type="Texture2D" uid="uid://b4fj3yrce0xxs" path="res://assets/graphics/tree/treeIdle2.png" id="4_1ok3f"]
 [ext_resource type="Texture2D" uid="uid://8yrk6p4wbuck" path="res://assets/graphics/anvill/Idle/anvilIDLE1.png" id="5_423j7"]
+[ext_resource type="Texture2D" uid="uid://cbb2mp8j2xrxq" path="res://assets/characters/Anvil/IMG_7697.png" id="5_e2pnh"]
 [ext_resource type="Texture2D" uid="uid://ea6ocanfdiqf" path="res://assets/graphics/anvill/Idle/anvilIDLE2.png" id="6_hbgdg"]
+[ext_resource type="Texture2D" uid="uid://dr5fx4emrt33d" path="res://assets/characters/Anvil/IMG_7698.png" id="6_y0uqg"]
+[ext_resource type="Texture2D" uid="uid://dh3qqbc08ptjn" path="res://assets/characters/Anvil/IMG_7699.png" id="7_5v6kr"]
 [ext_resource type="Texture2D" uid="uid://dgd1dec4r3t1x" path="res://assets/graphics/anvill/KillChild/KillChild1.png" id="7_ehv1h"]
 [ext_resource type="Texture2D" uid="uid://ch58l7lmh75we" path="res://assets/graphics/Youre_fired.png" id="8_0xtyj"]
+[ext_resource type="Texture2D" uid="uid://bvknu3uxnmugb" path="res://assets/characters/Anvil/IMG_7700.png" id="8_m34pf"]
 [ext_resource type="Texture2D" uid="uid://b2514lp7rnbdt" path="res://assets/graphics/anvill/KillChild/KillChild2.png" id="8_u3q6v"]
+[ext_resource type="Texture2D" uid="uid://dlm3w0xtvsl0k" path="res://assets/characters/Anvil/IMG_7701.png" id="9_gshsd"]
 [ext_resource type="Texture2D" uid="uid://copyd58nj8skn" path="res://assets/graphics/anvill/KillChild/KillChild3.png" id="9_uwxdx"]
+[ext_resource type="Texture2D" uid="uid://xosxcm36v58b" path="res://assets/characters/Anvil/IMG_7702.png" id="10_1t7ir"]
 [ext_resource type="Texture2D" uid="uid://conpsmuc8t6bh" path="res://assets/graphics/anvill/KillChild/KillChild4.png" id="10_8m5i2"]
 [ext_resource type="Texture2D" uid="uid://bjt0k5lcew7wx" path="res://assets/graphics/anvill/KillChild/KillChild5.png" id="11_0voot"]
+[ext_resource type="Texture2D" uid="uid://fe80nqr3abt3" path="res://assets/characters/Anvil/IMG_7703.png" id="11_grwdw"]
 [ext_resource type="Texture2D" uid="uid://ctkum1maf03hg" path="res://assets/graphics/anvill/KillChild/KillChild6.png" id="12_as6rr"]
+[ext_resource type="Texture2D" uid="uid://buqi3523w4xvv" path="res://assets/characters/Anvil/IMG_7704.png" id="12_p4tdo"]
 [ext_resource type="Texture2D" uid="uid://dv2xbgm042c6w" path="res://assets/graphics/anvill/KillChild/KillChild7.png" id="13_aohn4"]
 [ext_resource type="Texture2D" uid="uid://fal50oxwevwn" path="res://assets/graphics/anvill/KillChild/KillChild8.png" id="14_7s4k7"]
 [ext_resource type="Texture2D" uid="uid://c5m0162b6wbn6" path="res://assets/graphics/anvill/KillChild/KillChild9.png" id="15_1fpsj"]
 [ext_resource type="Texture2D" uid="uid://dqi7ig3mvpehr" path="res://assets/graphics/Santa/Idle/SantaIDLE.png" id="18_pdscm"]
-[ext_resource type="PackedScene" uid="uid://cn6wa3pvcs31o" path="res://assets/sound/sounds.tscn" id="18_tk7ho"]
 [ext_resource type="Texture2D" uid="uid://dsrjap5xaol6u" path="res://assets/graphics/Santa/Win/SantaWin1.png" id="18_rto45"]
+[ext_resource type="PackedScene" uid="uid://cn6wa3pvcs31o" path="res://assets/sound/sounds.tscn" id="18_tk7ho"]
 [ext_resource type="Texture2D" uid="uid://cfh8aewvu57j" path="res://assets/graphics/Santa/Win/SantaWin2.png" id="19_u04an"]
 [ext_resource type="Texture2D" uid="uid://jge1gmxxwaei" path="res://assets/graphics/Santa/Win/SantaWin3.png" id="20_kmcug"]
 [ext_resource type="Texture2D" uid="uid://bmx84irvxs8tk" path="res://assets/graphics/Santa/Win/SantaWin4.png" id="21_eanpc"]
@@ -46,10 +55,39 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2upqx"]
-size = Vector2(344, 432)
+size = Vector2(240, 432)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_im6h1"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_e2pnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_y0uqg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_5v6kr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_m34pf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_gshsd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_1t7ir")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_grwdw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_p4tdo")
+}],
+"loop": false,
+"name": &"anvilkill",
+"speed": 7.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("5_423j7")
@@ -92,11 +130,6 @@ animations = [{
 "loop": false,
 "name": &"kill",
 "speed": 7.0
-}, {
-"frames": [],
-"loop": true,
-"name": &"new_animation",
-"speed": 5.0
 }]
 
 [sub_resource type="Animation" id="Animation_eua8q"]
@@ -241,16 +274,17 @@ autoplay = "idle"
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
-visible = false
-position = Vector2(20, 72)
+position = Vector2(32, 72)
 shape = SubResource("RectangleShape2D_2upqx")
 
 [node name="anvill" type="AnimatedSprite2D" parent="gullotine"]
 position = Vector2(360, 60)
 scale = Vector2(0.6, 0.6)
 sprite_frames = SubResource("SpriteFrames_im6h1")
-animation = &"kill"
+animation = &"anvilkill"
 autoplay = "idle"
+frame = 7
+frame_progress = 1.0
 
 [node name="center" type="Node2D" parent="."]
 position = Vector2(608, 296)
@@ -266,6 +300,7 @@ offset_bottom = 566.001
 [node name="YoureFired" type="Sprite2D" parent="."]
 visible = false
 modulate = Color(0.6, 0.6, 0.6, 1)
+z_index = 9
 position = Vector2(576, 324)
 scale = Vector2(0.72, 0.72)
 texture = ExtResource("8_0xtyj")
@@ -283,4 +318,5 @@ sprite_frames = SubResource("SpriteFrames_pfy8u")
 [node name="sounds" parent="." instance=ExtResource("18_tk7ho")]
 
 [connection signal="animation_finished" from="gullotine/anvill" to="." method="_on_anvill_animation_finished"]
+[connection signal="sprite_frames_changed" from="gullotine/anvill" to="." method="_on_anvill_sprite_frames_changed"]
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
