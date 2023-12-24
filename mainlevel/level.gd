@@ -10,6 +10,7 @@ var lost = false
 @onready var presents = $presents
 @onready var gullotine = $gullotine
 @onready var anvilplayer = $gullotine/anvill
+@onready var sfx = $sounds
 
 func _ready():
 	Global.levelins = self
@@ -69,6 +70,7 @@ func decider():
 func gameover():
 	$YoureFired.show()
 	animplayer.play("death")
+	sfx.lost()
 
 func killanim():
 	#Playkillanimation
@@ -81,3 +83,10 @@ func _on_an_animation_finished(anim_name):
 
 func _on_anvill_animation_finished():
 	$gullotine/anvill.play("idle",0.7)
+
+func _on_file_pressed():
+	if $child.get_child_count():
+		sfx.paper("show")
+		sfx.santa_file()
+		$child.get_child(0).report.visible = true
+		$child.get_child(0).anim.play("open")

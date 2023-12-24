@@ -241,6 +241,7 @@ autoplay = "idle"
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
+visible = false
 position = Vector2(20, 72)
 shape = SubResource("RectangleShape2D_2upqx")
 
@@ -278,6 +279,8 @@ libraries = {
 position = Vector2(520, 376)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_pfy8u")
+
+[node name="sounds" parent="." instance=ExtResource("18_tk7ho")]
 
 [connection signal="animation_finished" from="gullotine/anvill" to="." method="_on_anvill_animation_finished"]
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bbmf1tywq1u2v"]
+[gd_scene load_steps=3 format=3 uid="uid://bbmf1tywq1u2v"]
 
 [ext_resource type="Script" path="res://main_menu/mainmenu.gd" id="1_fpnir"]
+[ext_resource type="Script" path="res://main_menu/sfx.gd" id="2_kvo1x"]
 
 [node name="Mainmenu" type="Control"]
 layout_mode = 3
@@ -42,6 +43,9 @@ text = "Credits"
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "Exit"
+
+[node name="sfx" type="AudioStreamPlayer2D" parent="."]
+script = ExtResource("2_kvo1x")
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]

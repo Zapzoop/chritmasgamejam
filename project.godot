@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://global/global.gd"
-base="*res://assets/sound/base.tscn"
 
 [display]
 
