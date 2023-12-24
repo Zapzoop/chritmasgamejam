@@ -1,15 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703357433
+::res://::1703411089
 export_presets.cfg::TextFile::-1::1703343163::0::1::::<><>::
-icon.svg::CompressedTexture2D::7578759187451317425::1702905503::1703343195::1::::<><>::
+icon.svg::CompressedTexture2D::7578759187451317425::1702905503::1703404696::1::::<><>::
 README.md::TextFile::-1::1702905503::0::1::::<><>::
-score.gd::GDScript::-1::1703251529::0::1::::<>RichTextLabel<>::
-tutorial.gd::GDScript::-1::1703343163::0::1::::<>Control<>::
+score.gd::GDScript::-1::1703411089::0::1::::<>RichTextLabel<>::
+tutorial.gd::GDScript::-1::1703410419::0::1::::<>Control<>::
 ::res://assets/::1703357424
 ::res://assets/characters/::1703011479
 anvil.webp::CompressedTexture2D::4346153789948654377::1703011479::1703011479::1::::<><>::
-::res://assets/fonts/::1703094760
+::res://assets/fonts/::1703408629
 AA_typewriter.ttf::FontFile::7048527951902906861::1703089129::1703089129::1::::<><>::
+Childhood-Bold.otf::FontFile::5002087673783229547::1703408629::1703408629::1::::<><>::
 normal.tres::Theme::6186156579985719103::1703094760::0::1::::<><>::uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf
 Written On The Hand-Bold.otf::FontFile::8890170516079799065::1703089129::1703089129::1::::<><>::
 Written On The Hand.otf::FontFile::3385745802403308697::1703089129::1703089129::1::::<><>::
@@ -258,12 +259,12 @@ back.png::CompressedTexture2D::2122019267414469849::1703011479::1703011479::1:::
 close.jpg::CompressedTexture2D::4864347877611178618::1703011479::1703011479::1::::<><>::
 ::res://assets/Report/::1703343161
 Report.png::CompressedTexture2D::6526024992810072132::1703343161::1703343161::1::::<><>::
-::res://assets/scenes&scripts/::1703343163
+::res://assets/scenes&scripts/::1703412071
 bg.tscn::PackedScene::5860211336105416219::1703343163::0::1::::<><>::uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg
-loose.tscn::PackedScene::3019424750563842566::1703195391::0::1::::<><>::res://score.gd
+loose.tscn::PackedScene::3019424750563842566::1703412071::0::1::::<><>::res://score.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/mainmenu.gd
 main.tscn::PackedScene::3007063402395734495::1703195392::0::1::::<><>::
-tutorial.tscn::PackedScene::5973909585609080770::1703343163::0::1::::<><>::res://tutorial.gd<>uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres
-::res://assets/sound/::1703357653
+tutorial.tscn::PackedScene::5973909585609080770::1703408629::0::1::::<><>::res://tutorial.gd<>uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres
+::res://assets/sound/::1703412071
 AmbienceLoop.wav::AudioStreamWAV::2490381276454230762::1703181757::1703251529::1::::<><>::
 base.gd::GDScript::-1::1703251529::0::1::::<>AudioStreamPlayer2D<>::
 base.tscn::PackedScene::6904232030497653518::1703011479::0::1::::<><>::uid://bncbi3ycbieu8::::res://assets/sound/obbiezzione.mp3<>res://assets/sound/base.gd
@@ -290,7 +291,7 @@ LaughAfterJudgement1.wav::AudioStreamWAV::5239969271285165756::1703181757::17032
 LaughAfterJudgement2.wav::AudioStreamWAV::913295320156076640::1703181757::1703251529::1::::<><>::
 LaughAfterJudgement3.wav::AudioStreamWAV::565765193395178453::1703181757::1703251529::1::::<><>::
 LoseTransition.wav::AudioStreamWAV::6972132523591206811::1703181757::1703251529::1::::<><>::
-main theme.mp3::AudioStreamMP3::1812848594992701308::1703252106::1703357656::1::::<><>::
+main theme.mp3::AudioStreamMP3::1812848594992701308::1703408620::1703408620::1::::<><>::
 MenuEnterSublevel1.wav::AudioStreamWAV::5431292328658556862::1703181757::1703251529::1::::<><>::
 MenuEnterSublevel2.wav::AudioStreamWAV::8585084330733762799::1703181757::1703251529::1::::<><>::
 MenuEnterSublevel3.wav::AudioStreamWAV::724857589958308536::1703181757::1703251529::1::::<><>::
@@ -315,14 +316,14 @@ PaperShow4.wav::AudioStreamWAV::7720002427386601996::1703181758::1703251529::1::
 PileofPresents1.wav::AudioStreamWAV::6149107095098243051::1703181758::1703251529::1::::<><>::
 PileofPresents2.wav::AudioStreamWAV::4239669392554701763::1703181758::1703251529::1::::<><>::
 PileofPresents3.wav::AudioStreamWAV::1337500201355897535::1703181758::1703251529::1::::<><>::
-SantaOpeningFile1.wav::AudioStreamWAV::4125214490129028825::1703270385::1703357656::1::::<><>::
-SantaOpeningFile2.wav::AudioStreamWAV::1691012381213039574::1703270390::1703357656::1::::<><>::
-SantaOpeningFile3.wav::AudioStreamWAV::6406934158957046138::1703270392::1703357656::1::::<><>::
-SantaOpeningFile4.wav::AudioStreamWAV::5716828065687124685::1703270396::1703357656::1::::<><>::
-SantaWhenLookingAtDrawing1.wav::AudioStreamWAV::6372572706465457806::1703270400::1703357656::1::::<><>::
-SantaWhenLookingAtDrawing2.wav::AudioStreamWAV::6381754981764594011::1703270403::1703357656::1::::<><>::
-SantaWhenLookingAtDrawing3.wav::AudioStreamWAV::6146901366020089121::1703270407::1703357656::1::::<><>::
-sounds.tscn::PackedScene::-1::1703339418::0::1::::<><>::
+SantaOpeningFile1.wav::AudioStreamWAV::4125214490129028825::1703408620::1703408620::1::::<><>::
+SantaOpeningFile2.wav::AudioStreamWAV::1691012381213039574::1703408620::1703408620::1::::<><>::
+SantaOpeningFile3.wav::AudioStreamWAV::6406934158957046138::1703408620::1703408620::1::::<><>::
+SantaOpeningFile4.wav::AudioStreamWAV::5716828065687124685::1703408620::1703408620::1::::<><>::
+SantaWhenLookingAtDrawing1.wav::AudioStreamWAV::6372572706465457806::1703408620::1703408620::1::::<><>::
+SantaWhenLookingAtDrawing2.wav::AudioStreamWAV::6381754981764594011::1703408620::1703408620::1::::<><>::
+SantaWhenLookingAtDrawing3.wav::AudioStreamWAV::6146901366020089121::1703408620::1703408620::1::::<><>::
+sounds.tscn::PackedScene::5750629313680765954::1703412071::0::1::::<><>::res://mainlevel/sounds.gd<>uid://03fl7lk2yaam::::res://assets/sound/main theme.mp3<>uid://c6lmaewdcb0x8::::res://assets/sound/LoseTransition.wav<>uid://c5pek2lvf7fuq::::res://assets/sound/MetalImpact(Special).wav<>uid://bbqmhlo1qughe::::res://assets/sound/AmbienceLoop.wav
 Squish1.wav::AudioStreamWAV::7945155996608039420::1703181758::1703251529::1::::<><>::
 Squish2.wav::AudioStreamWAV::8162224913180381191::1703181758::1703251529::1::::<><>::
 Squish3.wav::AudioStreamWAV::1884437418151440123::1703181758::1703251529::1::::<><>::
@@ -331,28 +332,31 @@ StartGame2ndOption.wav::AudioStreamWAV::8732239313998872983::1703181758::1703251
 StartGame(second layer).wav::AudioStreamWAV::7231714319082827380::1703181758::1703251529::1::::<><>::
 StartGame.wav::AudioStreamWAV::3838591436227028715::1703181758::1703251529::1::::<><>::
 ::res://character/::1703011479
-::res://character/anvil/::1703343163
-anvil.tscn::PackedScene::114508701755314026::1703343163::0::1::::<><>::res://character/child/child.gd<>uid://b26kru0dealmf::::res://assets/characters/anvil.webp<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn
-::res://character/child/::1703343761
-child.gd::GDScript::-1::1703343207::0::1::::<>CharacterBody2D<>::
-child.tscn::PackedScene::7367537772686235666::1703343761::0::1::::<><>::res://character/child/child.gd<>uid://df8hb6mrpqwrh::::res://icon.svg<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn
+::res://character/anvil/::1703407199
+anvil.tscn::PackedScene::114508701755314026::1703407199::0::1::::<><>::res://character/child/child.gd<>uid://b26kru0dealmf::::res://assets/characters/anvil.webp<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn
+::res://character/child/::1703412071
+child.gd::GDScript::-1::1703410418::0::1::::<>CharacterBody2D<>::
+child.tscn::PackedScene::7367537772686235666::1703412071::0::1::::<><>::res://character/child/child.gd<>uid://df8hb6mrpqwrh::::res://icon.svg<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn
 childquality.gd::GDScript::-1::1703011479::0::1::::<>Node<>::
-child_file.tscn::PackedScene::1351888640982327902::1703343761::0::1::::<><>::res://generator/generator.gd<>uid://cbkldmjmlvhyw::::res://assets/icons/close.jpg
-::res://generator/::1703343748
-generator.gd::GDScript::-1::1703343748::0::1::::<>Node<>::
-::res://global/::1703343163
-global.gd::GDScript::-1::1703343163::0::1::::<>Node<>::
-::res://mainlevel/::1703343982
-level.gd::GDScript::-1::1703343430::0::1::::<>Node2D<>::
-level.tscn::PackedScene::1516234851076444278::1703343982::0::1::::<><>::res://mainlevel/level.gd<>uid://crd2ohkb3lewo::::res://assets/scenes&scripts/tutorial.tscn<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://b4fj3yrce0xxs::::res://assets/graphics/tree/treeIdle2.png<>uid://8yrk6p4wbuck::::res://assets/graphics/anvill/Idle/anvilIDLE1.png<>uid://ea6ocanfdiqf::::res://assets/graphics/anvill/Idle/anvilIDLE2.png<>uid://dgd1dec4r3t1x::::res://assets/graphics/anvill/KillChild/KillChild1.png<>uid://ch58l7lmh75we::::res://assets/graphics/Youre_fired.png<>uid://b2514lp7rnbdt::::res://assets/graphics/anvill/KillChild/KillChild2.png<>uid://copyd58nj8skn::::res://assets/graphics/anvill/KillChild/KillChild3.png<>uid://conpsmuc8t6bh::::res://assets/graphics/anvill/KillChild/KillChild4.png<>uid://bjt0k5lcew7wx::::res://assets/graphics/anvill/KillChild/KillChild5.png<>uid://ctkum1maf03hg::::res://assets/graphics/anvill/KillChild/KillChild6.png<>uid://dv2xbgm042c6w::::res://assets/graphics/anvill/KillChild/KillChild7.png<>uid://fal50oxwevwn::::res://assets/graphics/anvill/KillChild/KillChild8.png<>uid://c5m0162b6wbn6::::res://assets/graphics/anvill/KillChild/KillChild9.png
-::res://main_menu/::1703357433
-mainmenu.gd::GDScript::-1::1703343163::0::1::::<>Control<>::
-mainmenu.tscn::PackedScene::2481733112026175755::1703343761::0::1::::<><>::res://main_menu/mainmenu.gd
-sounds.gd::GDScript::-1::1703279007::0::1::::<>Node<>::
-::res://main_menu/credits/::1703011479
+child_file.tscn::PackedScene::1351888640982327902::1703412071::0::1::::<><>::res://generator/generator.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://cbkldmjmlvhyw::::res://assets/icons/close.jpg<>uid://cdjbwhckwxatn::::res://assets/fonts/Childhood-Bold.otf
+::res://generator/::1703410418
+generator.gd::GDScript::-1::1703410418::0::1::::<>Node<>::
+::res://global/::1703410418
+global.gd::GDScript::-1::1703410418::0::1::::<>Node<>::
+::res://mainlevel/::1703412071
+level.gd::GDScript::-1::1703410418::0::1::::<>Node2D<>::
+level.tscn::PackedScene::1516234851076444278::1703412071::0::1::::<><>::res://mainlevel/level.gd<>uid://crd2ohkb3lewo::::res://assets/scenes&scripts/tutorial.tscn<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://b4fj3yrce0xxs::::res://assets/graphics/tree/treeIdle2.png<>uid://8yrk6p4wbuck::::res://assets/graphics/anvill/Idle/anvilIDLE1.png<>uid://ea6ocanfdiqf::::res://assets/graphics/anvill/Idle/anvilIDLE2.png<>uid://dgd1dec4r3t1x::::res://assets/graphics/anvill/KillChild/KillChild1.png<>uid://ch58l7lmh75we::::res://assets/graphics/Youre_fired.png<>uid://b2514lp7rnbdt::::res://assets/graphics/anvill/KillChild/KillChild2.png<>uid://copyd58nj8skn::::res://assets/graphics/anvill/KillChild/KillChild3.png<>uid://conpsmuc8t6bh::::res://assets/graphics/anvill/KillChild/KillChild4.png<>uid://bjt0k5lcew7wx::::res://assets/graphics/anvill/KillChild/KillChild5.png<>uid://ctkum1maf03hg::::res://assets/graphics/anvill/KillChild/KillChild6.png<>uid://dv2xbgm042c6w::::res://assets/graphics/anvill/KillChild/KillChild7.png<>uid://fal50oxwevwn::::res://assets/graphics/anvill/KillChild/KillChild8.png<>uid://c5m0162b6wbn6::::res://assets/graphics/anvill/KillChild/KillChild9.png<>uid://cn6wa3pvcs31o::::res://assets/sound/sounds.tscn
+sounds.gd::GDScript::-1::1703410419::0::1::::<>Node<>::
+::res://main_menu/::1703412248
+loose.mp3::AudioStreamMP3::8111325904195576154::1703412224::1703412252::1::::<><>::
+mainmenu.gd::GDScript::-1::1703412105::0::1::::<>Control<>::
+mainmenu.tscn::PackedScene::2481733112026175755::1703412105::0::1::::<><>::res://main_menu/mainmenu.gd<>res://main_menu/sfx.gd<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://dywp2r20vvy4h::::res://assets/fonts/Written On The Hand-Bold.otf<>uid://buxasyd8x5xsq::::res://main_menu/mermello_pastello.mp3
+mermello_pastello.mp3::AudioStreamMP3::3837711655813539472::1703412000::1703412029::1::::<><>::
+sfx.gd::GDScript::-1::1703410419::0::1::::<>AudioStreamPlayer2D<>::
+::res://main_menu/credits/::1703412071
 credits.gd::GDScript::-1::1703011479::0::1::::<>Control<>::
-credits.tscn::PackedScene::5823629526697979744::1703011479::0::1::::<><>::res://main_menu/credits/credits.gd<>uid://5h6l2qocg6y4::::res://assets/icons/back.png
-::res://main_menu/option/::1703011479
-option.gd::GDScript::-1::1703011479::0::1::::<>Control<>::
-option.tscn::PackedScene::4672343652747781873::1703011479::0::1::::<><>::res://main_menu/option/option.gd<>uid://5h6l2qocg6y4::::res://assets/icons/back.png<>res://main_menu/option/volume.gd
-volume.gd::GDScript::-1::1703011479::0::1::::<>ProgressBar<>::
+credits.tscn::PackedScene::5823629526697979744::1703412071::0::1::::<><>::res://main_menu/credits/credits.gd<>uid://5h6l2qocg6y4::::res://assets/icons/back.png
+::res://main_menu/option/::1703412071
+option.gd::GDScript::-1::1703410418::0::1::::<>Control<>::
+option.tscn::PackedScene::4672343652747781873::1703412071::0::1::::<><>::res://main_menu/option/option.gd<>uid://5h6l2qocg6y4::::res://assets/icons/back.png<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>res://main_menu/option/volume.gd
+volume.gd::GDScript::-1::1703410419::0::1::::<>ProgressBar<>::

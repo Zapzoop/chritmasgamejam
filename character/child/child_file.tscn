@@ -189,6 +189,7 @@ libraries = {
 
 [node name="letter" type="RichTextLabel" parent="."]
 visible = false
+layout_mode = 0
 offset_left = 377.0
 offset_top = 374.0
 offset_right = 834.0
@@ -199,7 +200,6 @@ theme_override_font_sizes/normal_font_size = 27
 text = "Dear santa i want:"
 
 [node name="letter" type="Sprite2D" parent="letter"]
-scale = Vector2(1, 1)
 
 [connection signal="mouse_entered" from="Detection" to="." method="_on_detection_mouse_entered"]
 [connection signal="mouse_exited" from="Detection" to="." method="_on_detection_mouse_exited"]

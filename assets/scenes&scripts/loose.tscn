@@ -1,6 +1,9 @@
-[gd_scene load_steps=2 format=3 uid="uid://bjavqqcysec67"]
+[gd_scene load_steps=5 format=3 uid="uid://bjavqqcysec67"]
 
 [ext_resource type="Script" path="res://score.gd" id="1_3foxm"]
+[ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="1_ax5tw"]
+[ext_resource type="Script" path="res://main_menu/mainmenu.gd" id="1_ds84n"]
+[ext_resource type="AudioStream" uid="uid://dntgl8tebgjuo" path="res://main_menu/loose.mp3" id="4_c7wrf"]
 
 [node name="loose" type="Control"]
 process_mode = 3
@@ -10,6 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ds84n")
 metadata/_edit_use_anchors_ = true
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -25,22 +29,74 @@ metadata/_edit_use_anchors_ = true
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.159722
-anchor_top = 0.148148
-anchor_right = 0.777778
+anchor_left = 0.243056
+anchor_top = 0.0864198
+anchor_right = 0.763889
 anchor_bottom = 0.271605
 offset_bottom = 1.52588e-05
-theme_override_font_sizes/normal_font_size = 32
-text = "you loose"
+theme = ExtResource("1_ax5tw")
+theme_override_font_sizes/normal_font_size = 114
+text = "YOU LOST"
 metadata/_edit_use_anchors_ = true
 
 [node name="score" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.319444
-anchor_top = 0.345679
-anchor_right = 0.451389
-anchor_bottom = 0.469136
+anchor_left = 0.409722
+anchor_top = 0.283951
+anchor_right = 0.583333
+anchor_bottom = 0.432099
 theme_override_font_sizes/normal_font_size = 29
+text = "YOUR SCORE"
 script = ExtResource("1_3foxm")
 metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 0.209877
+anchor_right = 0.611979
+anchor_bottom = 1.20988
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 49
+alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="start" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_ax5tw")
+theme_override_font_sizes/font_size = 30
+text = "Restart"
+flat = true
+
+[node name="option" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_ax5tw")
+theme_override_font_sizes/font_size = 30
+text = "Option"
+flat = true
+
+[node name="credits" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_ax5tw")
+theme_override_font_sizes/font_size = 30
+text = "Credits"
+flat = true
+
+[node name="exit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_ax5tw")
+theme_override_font_sizes/font_size = 30
+text = "Exit"
+flat = true
+
+[node name="theme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_c7wrf")
+autoplay = true
+
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="VBoxContainer/credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
