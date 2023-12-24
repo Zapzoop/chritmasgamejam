@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=3 uid="uid://cn6wa3pvcs31o"]
 
 [ext_resource type="Script" path="res://mainlevel/sounds.gd" id="1_gqdrv"]
-[ext_resource type="AudioStream" uid="uid://03fl7lk2yaam" path="res://assets/sound/main theme.mp3" id="2_u4bx6"]
+[ext_resource type="AudioStream" uid="uid://6s7oi41g33fq" path="res://assets/sound/main_theme.mp3" id="2_tuj2n"]
 [ext_resource type="AudioStream" uid="uid://c6lmaewdcb0x8" path="res://assets/sound/LoseTransition.wav" id="3_r1yom"]
 [ext_resource type="AudioStream" uid="uid://c5pek2lvf7fuq" path="res://assets/sound/MetalImpact(Special).wav" id="4_5pc2n"]
 [ext_resource type="AudioStream" uid="uid://bbqmhlo1qughe" path="res://assets/sound/AmbienceLoop.wav" id="5_ppjjf"]
@@ -11,7 +11,7 @@
 script = ExtResource("1_gqdrv")
 
 [node name="theme" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_u4bx6")
+stream = ExtResource("2_tuj2n")
 autoplay = true
 
 [node name="child_death" type="AudioStreamPlayer" parent="."]

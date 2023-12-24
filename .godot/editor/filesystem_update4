@@ -1,13 +1,11 @@
-res://mainlevel/level.tscn
+res://assets/sound/sounds.tscn
 res://character/child/child.gd
 res://generator/generator.gd
-res://mainlevel/level.gd
 res://main_menu/mainmenu.tscn
 res://character/child/child.tscn
+res://mainlevel/level.tscn
 res://assets/scenes&scripts/loose.tscn
-res://assets/sound/sounds.tscn
 res://character/child/child_file.tscn
-res://global/global.gd
 res://main_menu/pause.tscn
-res://main_menu/pause.gd
 res://main_menu/option/option.tscn
+res://main_menu/credits/credits.tscn
