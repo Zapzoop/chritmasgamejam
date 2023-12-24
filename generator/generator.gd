@@ -3,6 +3,7 @@ extends Node
 var parent
 
 var rnd = RandomNumberGenerator.new()
+var santa_drawings_done = false
 
 var males = ["Timmy","Moe","Oliver","Ethan","Luca","Billy","Frank","Noah","Enzo","Felix","Diego","Tomasz","Alberto","Mohamed","Magnus","Mario","Sergei"]
 var females = ["Linda","Sarah","Paula","Meredith","Amelia","Chloe","Marie","Antonia","Alice","Heidi","Mitsuki","Martina","Anastasia"]
@@ -147,6 +148,8 @@ var selected_good_habits = {} #All selected good_habits
 var selected_bad_habits = {} #All selected bad_habits
 var selected_neutral_habits = {}
 
+@onready var sfx = $/root/Level/sounds
+
 func _ready():
 	if get_parent().is_in_group("anvil"):
 		data_anvil()
@@ -270,15 +273,22 @@ func _on_close_pressed():
 
 func _on_story_meta_clicked(meta):
 	print("clicked")
-	$Drawing.texture = ResourceLoader.load(drawings[meta])
+	if drawings.keys().has(meta):
+		$Drawing.texture = ResourceLoader.load(drawings[meta])
+		sfx.drawing_show()
+		if santa_drawings_done == false:
+			sfx.santa_drawing()
+			santa_drawings_done = true
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":
 		self.visible = false
+		santa_drawings_done = false
 
 func _on_decide_pressed():
 	$Animation.play("close")
 	parent.clicked = true
+	sfx.paper("hide")
 
 func _on_detection_mouse_entered():
 	var tween = get_tree().create_tween()

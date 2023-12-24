@@ -17,6 +17,7 @@ var offset
 
 @onready var report = $ReportFile
 @onready var anim = $ReportFile/Animation
+@onready var sfx = $/root/Level/sounds
 
 func _ready():
 	report.parent = self
@@ -26,13 +27,16 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("click") and can_move and clicked:
 		initialPos = self.global_position
 		is_moving = true
+		sfx.pick_up()
 	elif Input.is_action_pressed("click") and is_moving:
 		global_position = lerp(global_position, get_global_mouse_position(),25*delta)
 	elif Input.is_action_just_released("click") and is_moving:
 		if is_inside_dropable:
+			sfx.laugh_judge()
 			if self.is_in_group("anvil"):
 				if (self.global_position.x < $/root/Level/center.global_position.x):
 					Global.emit_signal("playkillanvil")
+					sfx.childDeath("anvill")
 					Global.score += 5
 					Global.emit_signal("moveforward")
 					self.queue_free()
@@ -42,9 +46,11 @@ func _physics_process(delta):
 				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
 					if self.global_position.x < $/root/Level/center.global_position.x:
 						put_on_anvil_child()
+						sfx.childDeath("child")
 						Global.emit_signal("playkillchild")
 					if self.global_position.x > $/root/Level/center.global_position.x:
 						put_on_presents_child()
+						sfx.present()
 					Global.score += 5
 					Global.emit_signal("moveforward")
 					self.queue_free()
