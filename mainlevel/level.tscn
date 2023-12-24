@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://vuqfwpbiwr2m"]
+[gd_scene load_steps=38 format=3 uid="uid://vuqfwpbiwr2m"]
 
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
@@ -17,9 +17,19 @@
 [ext_resource type="Texture2D" uid="uid://dv2xbgm042c6w" path="res://assets/graphics/anvill/KillChild/KillChild7.png" id="13_aohn4"]
 [ext_resource type="Texture2D" uid="uid://fal50oxwevwn" path="res://assets/graphics/anvill/KillChild/KillChild8.png" id="14_7s4k7"]
 [ext_resource type="Texture2D" uid="uid://c5m0162b6wbn6" path="res://assets/graphics/anvill/KillChild/KillChild9.png" id="15_1fpsj"]
+[ext_resource type="Texture2D" uid="uid://dqi7ig3mvpehr" path="res://assets/graphics/Santa/Idle/SantaIDLE.png" id="18_pdscm"]
+[ext_resource type="Texture2D" uid="uid://dsrjap5xaol6u" path="res://assets/graphics/Santa/Win/SantaWin1.png" id="18_rto45"]
+[ext_resource type="Texture2D" uid="uid://cfh8aewvu57j" path="res://assets/graphics/Santa/Win/SantaWin2.png" id="19_u04an"]
+[ext_resource type="Texture2D" uid="uid://jge1gmxxwaei" path="res://assets/graphics/Santa/Win/SantaWin3.png" id="20_kmcug"]
+[ext_resource type="Texture2D" uid="uid://bmx84irvxs8tk" path="res://assets/graphics/Santa/Win/SantaWin4.png" id="21_eanpc"]
+[ext_resource type="Texture2D" uid="uid://b7o3pvojuvg3c" path="res://assets/graphics/Santa/Win/SantaWin5.png" id="22_o7qtk"]
+[ext_resource type="Texture2D" uid="uid://dufaeex42clnc" path="res://assets/graphics/Santa/Win/SantaWin6.png" id="23_8ni2q"]
+[ext_resource type="Texture2D" uid="uid://di4q23i8qdp2i" path="res://assets/graphics/Santa/Win/SantaWin7.png" id="24_omr2v"]
+[ext_resource type="Texture2D" uid="uid://dyw1d2qkfayqi" path="res://assets/graphics/Santa/Win/SantaWin8.png" id="25_b11kv"]
+[ext_resource type="Texture2D" uid="uid://vp5x6nrw3w1s" path="res://assets/graphics/Santa/Win/SantaWin9.png" id="26_86hk4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_41rdw"]
-size = Vector2(429, 616)
+size = Vector2(381, 616)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yyth6"]
 animations = [{
@@ -92,6 +102,21 @@ animations = [{
 [sub_resource type="Animation" id="Animation_eua8q"]
 resource_name = "Killplayer"
 
+[sub_resource type="Animation" id="Animation_xuag6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../child:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(512, 704)]
+}
+
 [sub_resource type="Animation" id="Animation_pyjji"]
 resource_name = "death"
 length = 2.0
@@ -133,22 +158,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 0.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(512, 704), Vector2(512, 320)]
-}
-
-[sub_resource type="Animation" id="Animation_xuag6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../child:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(512, 704)]
+"values": [Vector2(488, 704), Vector2(488, 440)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_kod8k"]
@@ -159,6 +169,49 @@ _data = {
 "moveChild": SubResource("Animation_tnrpt")
 }
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_pfy8u"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_rto45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_u04an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_kmcug")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_eanpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_o7qtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8ni2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_omr2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_b11kv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_86hk4")
+}],
+"loop": true,
+"name": &"SantaWin",
+"speed": 9.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_pdscm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Level" type="Node2D"]
 script = ExtResource("1_xguva")
 
@@ -167,15 +220,6 @@ position = Vector2(576, 322)
 scale = Vector2(0.6, 0.603704)
 texture = ExtResource("3_2apgr")
 
-[node name="Pos1" type="Node2D" parent="."]
-position = Vector2(512, 320)
-
-[node name="Pos2" type="Node2D" parent="."]
-position = Vector2(512, 576)
-
-[node name="Pos3" type="Node2D" parent="."]
-position = Vector2(512, 616)
-
 [node name="child" type="Node2D" parent="."]
 position = Vector2(512, 704)
 
@@ -183,7 +227,7 @@ position = Vector2(512, 704)
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
-position = Vector2(-129.5, 52)
+position = Vector2(-105.5, 52)
 shape = SubResource("RectangleShape2D_41rdw")
 
 [node name="tree" type="AnimatedSprite2D" parent="presents"]
@@ -230,13 +274,10 @@ libraries = {
 "": SubResource("AnimationLibrary_kod8k")
 }
 
-[node name="File" type="Button" parent="."]
-offset_left = 32.0
-offset_top = 584.0
-offset_right = 88.0
-offset_bottom = 640.0
-text = "File"
+[node name="Santa" type="AnimatedSprite2D" parent="."]
+position = Vector2(520, 376)
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("SpriteFrames_pfy8u")
 
 [connection signal="animation_finished" from="gullotine/anvill" to="." method="_on_anvill_animation_finished"]
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
-[connection signal="pressed" from="File" to="." method="_on_file_pressed"]
