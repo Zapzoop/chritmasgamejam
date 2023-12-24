@@ -140,7 +140,21 @@ anchor_left = 0.268293
 anchor_top = 0.901235
 anchor_right = 0.756098
 anchor_bottom = 0.975309
+theme = ExtResource("3_2j0yg")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 0)
+theme_override_colors/icon_hover_pressed_color = Color(1, 1, 1, 0.203922)
+theme_override_colors/icon_focus_color = Color(1, 1, 1, 0.203922)
+theme_override_colors/icon_disabled_color = Color(1, 1, 1, 0.203922)
 text = "Let's Play"
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="anim" type="AnimationPlayer" parent="."]
