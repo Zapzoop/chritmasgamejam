@@ -258,5 +258,4 @@ func _on_sprite_2d_animation_finished():
 
 func _on_anvil_sprite_animation_finished():
 	if "PAresents" in currentanim:
-		#Global.emit_signal("gameover")
-		pass
+		Global.emit_signal("gameover")
