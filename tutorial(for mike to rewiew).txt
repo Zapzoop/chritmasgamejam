@@ -1,0 +1,19 @@
+from: The Holidays' Central Office
+to: Santa Claus
+
+Good morning, Mr Claus! We are happy to have you working with us!
+As this is your first day on the job, here are some guidelines -
+
+Children all around the world have been both naughty and nice,
+and it's your job to judge them!
+Each child has their own file [click on the child to open it],
+this file will contain:
+-general information about the child
+-good and bad actions the child has done in the past year [click on the action to get details]
+-the child's letter to you [click letter to open]
+
+After examining a child's file, click [Judge],
+then drag the child to the right if you consider them [Nice],
+or drag the child to the left if you consider them [Naughty].
+
+PS: Error in judgement will result in immediate termination of your contract.
