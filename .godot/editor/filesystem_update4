@@ -9,3 +9,5 @@ res://character/child/child_file.tscn
 res://main_menu/pause.tscn
 res://main_menu/option/option.tscn
 res://main_menu/credits/credits.tscn
+res://mainlevel/sounds.gd
+res://assets/scenes&scripts/tutorial.tscn

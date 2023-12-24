@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cn6wa3pvcs31o"]
+[gd_scene load_steps=8 format=3 uid="uid://cn6wa3pvcs31o"]
 
 [ext_resource type="Script" path="res://mainlevel/sounds.gd" id="1_gqdrv"]
 [ext_resource type="AudioStream" uid="uid://6s7oi41g33fq" path="res://assets/sound/main_theme.mp3" id="2_tuj2n"]
@@ -6,6 +6,7 @@
 [ext_resource type="AudioStream" uid="uid://c5pek2lvf7fuq" path="res://assets/sound/MetalImpact(Special).wav" id="4_5pc2n"]
 [ext_resource type="AudioStream" uid="uid://bbqmhlo1qughe" path="res://assets/sound/AmbienceLoop.wav" id="5_ppjjf"]
 [ext_resource type="AudioStream" uid="uid://do351b0pslbcb" path="res://assets/sound/CrushedPresents.mp3" id="6_uvey4"]
+[ext_resource type="AudioStream" uid="uid://b1mscsk0rhl2h" path="res://assets/sound/Rick_Astley_-_Never_Gonna_Give_You_Up_Official_Music_Video_mp3cut.net.mp3" id="7_61cf0"]
 
 [node name="sounds" type="Node"]
 script = ExtResource("1_gqdrv")
@@ -56,6 +57,9 @@ autoplay = true
 
 [node name="anvil_pre" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_uvey4")
+
+[node name="rick" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_61cf0")
 
 [connection signal="finished" from="theme" to="." method="_on_theme_finished"]
 [connection signal="timeout" from="child_squashed/Timer" to="." method="_on_timer_timeout"]
