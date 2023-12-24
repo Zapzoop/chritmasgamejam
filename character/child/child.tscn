@@ -695,12 +695,14 @@ input_pickable = true
 script = ExtResource("1_hh13i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2(64, 56)
 shape = SubResource("RectangleShape2D_du40w")
 
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 position = Vector2(64, 56)
 shape = SubResource("RectangleShape2D_orx65")
 

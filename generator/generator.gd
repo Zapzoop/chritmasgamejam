@@ -151,7 +151,7 @@ func _ready():
 	if get_parent().is_in_group("anvil"):
 		data_anvil()
 	else:
-		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(5,11))) + "\nHeight: " + str(int(rnd.randi_range(100,160))) + " cm \nFrom: " + country.pick_random()
+		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(4,8))) + "\nHeight: " + str(int(rnd.randi_range(70,120))) + " cm \nFrom: " + country.pick_random()
 		$Paper/TempBg/Profile/Name.text = Name + " " + surname
 		letter()
 
@@ -229,7 +229,7 @@ func child():
 	for x in neutral:
 		all.append(x)
 	all.shuffle()
-	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ all[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ all[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
+	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ all[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ all[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid"
 	for x in range(2,5):
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + all[x] + "[/url][/color]"
 	$Paper/TempBg/Profile/Story.text += "\n\n" + "		[color=red][url]See letter[/url][/color]"
@@ -294,7 +294,7 @@ func _on_story_meta_clicked(meta):
 				letter_seen = true
 			else:
 				$letter.visible = true
-	if drawings_seen == drawings_to_be_seen:
+	if drawings_seen == drawings_to_be_seen and letter_seen:
 		$Paper/TempBg/Profile/Decide.show()
 
 func _on_anim_animation_finished(anim_name):
@@ -318,4 +318,4 @@ func _on_detection_mouse_exited():
 
 func letter():
 	var present = presents.pick_random()
-	$letter.text = $letter.text + "\n " + present + "\n" + "this christmas"
+	$Letter/letter.text = $Letter/letter.text + "\n " + present + "\n" + "this christmas"

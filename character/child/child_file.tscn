@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://ti4n5d5nwwpi"]
+[gd_scene load_steps=11 format=3 uid="uid://ti4n5d5nwwpi"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="2_2bemc"]
 [ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_agc6v"]
 [ext_resource type="Texture2D" uid="uid://cy8ixb7xri7pw" path="res://assets/Report/Report.png" id="3_ti85i"]
 [ext_resource type="FontFile" uid="uid://cdjbwhckwxatn" path="res://assets/fonts/Childhood-Bold.otf" id="3_vadwe"]
+[ext_resource type="Texture2D" uid="uid://mtra06pd0wke" path="res://assets/Report/letter.png" id="5_wonmm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
 size = Vector2(457.143, 320)
@@ -68,8 +69,8 @@ scale = Vector2(1.2, 1.2)
 position = Vector2(617.143, 157.143)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection"]
+visible = false
 position = Vector2(0, 3.05176e-05)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_fip30")
 
 [node name="Paper" type="Sprite2D" parent="."]
@@ -178,19 +179,20 @@ libraries = {
 "": SubResource("AnimationLibrary_xxlrj")
 }
 
-[node name="letter" type="RichTextLabel" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 377.0
-offset_top = 374.0
-offset_right = 834.0
-offset_bottom = 580.0
+[node name="Letter" type="Sprite2D" parent="."]
+position = Vector2(594.286, 464.214)
+scale = Vector2(0.96, 0.710342)
+texture = ExtResource("5_wonmm")
+
+[node name="letter" type="RichTextLabel" parent="Letter"]
+offset_left = -226.269
+offset_top = -118.147
+offset_right = 230.731
+offset_bottom = 87.8532
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_vadwe")
-theme_override_font_sizes/normal_font_size = 27
-text = "Dear santa i want:"
-
-[node name="letter" type="Sprite2D" parent="letter"]
+theme_override_font_sizes/normal_font_size = 36
+text = "Dear santa i want"
 
 [connection signal="mouse_entered" from="Detection" to="." method="_on_detection_mouse_entered"]
 [connection signal="mouse_exited" from="Detection" to="." method="_on_detection_mouse_exited"]

@@ -260,6 +260,7 @@ position = Vector2(512, 704)
 position = Vector2(1016, 272)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="presents"]
+visible = false
 position = Vector2(-105.5, 52)
 shape = SubResource("RectangleShape2D_41rdw")
 
@@ -274,6 +275,7 @@ autoplay = "idle"
 position = Vector2(216, 264)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gullotine"]
+visible = false
 position = Vector2(32, 72)
 shape = SubResource("RectangleShape2D_2upqx")
 
