@@ -3,6 +3,10 @@ extends Node
 var parent
 
 var rnd = RandomNumberGenerator.new()
+var drawings_to_be_seen = 0
+var drawings_seen = 0
+var already_seen = []
+var letter_seen = false
 
 var males = ["Timmy","Moe","Oliver","Ethan","Luca","Billy","Frank","Noah","Enzo","Felix","Diego","Tomasz","Alberto","Mohamed","Magnus","Mario","Sergei"]
 var females = ["Linda","Sarah","Paula","Meredith","Amelia","Chloe","Marie","Antonia","Alice","Heidi","Mitsuki","Martina","Anastasia"]
@@ -236,7 +240,11 @@ func child():
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + all[x] + "[/url][/color]"
 	$Paper/TempBg/Profile/Story.text += "\n" + "[color=red][url]see letter[/ulr][/color]"
 	report_card()
-
+	
+	for x in all:
+		if drawings.keys().has(x):
+			drawings_to_be_seen += 1
+	
 func report_card():
 	var positive_score = 0
 	var negative_score = 0
@@ -276,12 +284,18 @@ func _on_story_meta_clicked(meta):
 	print("clicked")
 	if drawings.keys().has(meta):
 		$Drawing.texture = ResourceLoader.load(drawings[meta])
+		if not already_seen.has(meta):
+			already_seen.append(meta)
+			drawings_seen +=1
 	else:
 		if meta == "see letter":
 			if $letter.visible == true:
 				$letter.visible = false
+				letter_seen = true
 			else:
 				$letter.visible = true
+	if drawings_seen == drawings_to_be_seen:
+		$Paper/TempBg/Profile/Decide.show()
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":
