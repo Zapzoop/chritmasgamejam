@@ -141,6 +141,8 @@ var anvil_things = ["destroyed a game jam",
 	"temp9",
 	"temp10"]
 	
+var presents = ["a gift card","make-up products","a pony","a unicorn","a PlayStation 5","a Nintendo Switch","new parents","death to Santa","socks","slippers","a fidget spinner","a cookbook for Mom","a new handbag","a bicycle","a beanie","a bean bag","a swing set","emancipation","a jet plane","world peace","a spa weekend","a teddy bear","a real Pokémon","a law degree","a new math book","a train set","a bodybuilding programme","the moon","a career in finance","a plushie","a new Mommy","10,000 V-bucks","Covid","a real snowy Christmas","to remove league of legends from existance","dad to come home","a lego set","1 million karma on Reddit","GTA VI","to know all government secrets"]
+	
 var selected_anvil_things = []
 
 var selected_good_habits = {} #All selected good_habits
@@ -153,6 +155,7 @@ func _ready():
 	else:
 		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(5,11))) + "\nHeight: " + str(int(rnd.randi_range(100,160))) + " cm \nFrom: " + country.pick_random()
 		$Paper/TempBg/Profile/Name.text = Name + " " + surname
+		letter()
 
 func mergedic(dic1,dic2): #Merging two dictionaries Adding dic2 to dic1
 	var key_list = dic2.keys()
@@ -231,6 +234,7 @@ func child():
 	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ all[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ all[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
 	for x in range(2,5):
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + all[x] + "[/url][/color]"
+	$Paper/TempBg/Profile/Story.text += "\n" + "[color=red][url]see letter[/ulr][/color]"
 	report_card()
 
 func report_card():
@@ -270,7 +274,14 @@ func _on_close_pressed():
 
 func _on_story_meta_clicked(meta):
 	print("clicked")
-	$Drawing.texture = ResourceLoader.load(drawings[meta])
+	if drawings.keys().has(meta):
+		$Drawing.texture = ResourceLoader.load(drawings[meta])
+	else:
+		if meta == "see letter":
+			if $letter.visible == true:
+				$letter.visible = false
+			else:
+				$letter.visible = true
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":
@@ -287,3 +298,8 @@ func _on_detection_mouse_entered():
 func _on_detection_mouse_exited():
 	var tween = get_tree().create_tween()
 	tween.tween_property($Drawing,"scale",Vector2(0.8,0.8),0.2).set_ease(Tween.EASE_OUT)
+
+
+func letter():
+	var present = presents.pick_random()
+	$letter.text = $letter.text + "\n " + present + "\n" + "this christmas"
