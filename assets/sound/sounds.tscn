@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cn6wa3pvcs31o"]
+[gd_scene load_steps=7 format=3 uid="uid://cn6wa3pvcs31o"]
 
 [ext_resource type="Script" path="res://mainlevel/sounds.gd" id="1_gqdrv"]
 [ext_resource type="AudioStream" uid="uid://03fl7lk2yaam" path="res://assets/sound/main theme.mp3" id="2_u4bx6"]
 [ext_resource type="AudioStream" uid="uid://c6lmaewdcb0x8" path="res://assets/sound/LoseTransition.wav" id="3_r1yom"]
 [ext_resource type="AudioStream" uid="uid://c5pek2lvf7fuq" path="res://assets/sound/MetalImpact(Special).wav" id="4_5pc2n"]
 [ext_resource type="AudioStream" uid="uid://bbqmhlo1qughe" path="res://assets/sound/AmbienceLoop.wav" id="5_ppjjf"]
+[ext_resource type="AudioStream" uid="uid://do351b0pslbcb" path="res://assets/sound/CrushedPresents.mp3" id="6_uvey4"]
 
 [node name="sounds" type="Node"]
 script = ExtResource("1_gqdrv")
@@ -21,8 +22,6 @@ autoplay = true
 
 [node name="Timer" type="Timer" parent="child_squashed"]
 wait_time = 0.4
-
-[node name="click" type="AudioStreamPlayer" parent="."]
 
 [node name="drawing_show" type="AudioStreamPlayer" parent="."]
 
@@ -42,6 +41,7 @@ stream = ExtResource("4_5pc2n")
 wait_time = 1.5
 
 [node name="presents" type="AudioStreamPlayer" parent="."]
+volume_db = 3.5
 
 [node name="squish" type="AudioStreamPlayer" parent="."]
 
@@ -53,6 +53,9 @@ wait_time = 1.5
 stream = ExtResource("5_ppjjf")
 volume_db = 5.0
 autoplay = true
+
+[node name="anvil_pre" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_uvey4")
 
 [connection signal="finished" from="theme" to="." method="_on_theme_finished"]
 [connection signal="timeout" from="child_squashed/Timer" to="." method="_on_timer_timeout"]

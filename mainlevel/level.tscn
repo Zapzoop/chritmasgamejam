@@ -299,10 +299,10 @@ offset_bottom = 566.001
 
 [node name="YoureFired" type="Sprite2D" parent="."]
 visible = false
-modulate = Color(0.6, 0.6, 0.6, 1)
+modulate = Color(0, 0, 0, 1)
 z_index = 9
 position = Vector2(576, 324)
-scale = Vector2(0.72, 0.72)
+scale = Vector2(0.6, 0.6)
 texture = ExtResource("8_0xtyj")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="YoureFired"]

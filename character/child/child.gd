@@ -81,6 +81,7 @@ func _physics_process(delta):
 					Global.score += 5
 					self.queue_free()
 				else:
+					sfx.present("anvill")
 					anvildown = true
 					scaledown()
 					presents_on_anvil()
@@ -93,14 +94,14 @@ func _physics_process(delta):
 						Global.emit_signal("playkillchild")
 					if self.global_position.x > $/root/Level/center.global_position.x:
 						put_on_presents_child()
-						sfx.present()
+						sfx.present("child")
 					Global.score += 5
 				else:
+					Global.emit_signal("gameover")
 					if self.global_position.x < $/root/Level/center.global_position.x:
 						put_on_anvil_child()
 					if self.global_position.x > $/root/Level/center.global_position.x:
 						put_on_presents_child()
-					Global.emit_signal("gameover")
 		else:
 			reset()
 		is_moving = false
@@ -250,10 +251,12 @@ func child4(color):
 func _on_sprite_2d_animation_finished():
 	if "Anvil" in currentanim:
 		self.queue_free()
-		Global.emit_signal("moveforward")
+		if Global.levelins.lost == false:
+			Global.emit_signal("moveforward")
 	if "Presents" in currentanim:
 		self.queue_free()
-		Global.emit_signal("moveforward")
+		if Global.levelins.lost == false:
+			Global.emit_signal("moveforward")
 
 
 func _on_anvil_sprite_animation_finished():

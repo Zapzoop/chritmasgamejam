@@ -70,13 +70,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$theme.volume_db = Global.volume - 80
-	if Input.is_action_just_pressed("click"):
-		$click.stream = click[0]
-		$click.play()
-	if Input.is_action_just_released("click"):
-		$click.stream = click[1]
-		$click.play()
+	$theme.volume_db = Global.volume - 10
+	
 
 func _on_theme_finished():
 	$theme.play()
@@ -144,9 +139,12 @@ func paper(what):
 		$paper.play()
 		$paper/Timer2.start()
 		
-func present():
-	$presents.stream = presents.pick_random()
-	$presents.play()
+func present(what):
+	if what == "child":
+		$presents.stream = presents.pick_random()
+		$presents.play()
+	else:
+		$anvil_pre.play
 	
 func squish():
 	$squish.stream = presents.pick_random()
