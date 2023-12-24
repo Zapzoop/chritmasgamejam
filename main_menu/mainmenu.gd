@@ -14,9 +14,8 @@ func _on_credits_pressed():
 	Global.emit_signal("change_scene",self,"credits")
 
 func _ready():
-	$sfx.enter()
-
-
+	if not self.is_in_group("loose"):
+		$sfx.enter()
 
 func _on_theme_finished():
 	$theme.play()

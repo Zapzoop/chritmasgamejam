@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://main_menu/mainmenu.gd" id="1_ds84n"]
 [ext_resource type="AudioStream" uid="uid://dntgl8tebgjuo" path="res://main_menu/loose.mp3" id="4_c7wrf"]
 
-[node name="loose" type="Control"]
+[node name="loose" type="Control" groups=["loose"]]
 process_mode = 3
 layout_mode = 3
 anchors_preset = 15
@@ -96,6 +96,8 @@ flat = true
 stream = ExtResource("4_c7wrf")
 volume_db = 3.0
 autoplay = true
+
+[node name="sfx" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]

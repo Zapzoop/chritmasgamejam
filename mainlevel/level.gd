@@ -71,6 +71,7 @@ func decider():
 func gameover():
 	$YoureFired.show()
 	animplayer.play("death")
+	lost = true
 	sfx.lost()
 
 func killanim():
@@ -79,7 +80,6 @@ func killanim():
 
 func _on_an_animation_finished(anim_name):
 	if anim_name == "death":
-		lost = true
 		get_tree().change_scene_to_packed(loose)
 
 func _on_anvill_animation_finished():
