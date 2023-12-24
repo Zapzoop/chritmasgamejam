@@ -1,5 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://vuqfwpbiwr2m"]
-
+[gd_scene load_steps=39 format=3 uid="uid://vuqfwpbiwr2m"]
 [ext_resource type="Script" path="res://mainlevel/level.gd" id="1_xguva"]
 [ext_resource type="PackedScene" uid="uid://crd2ohkb3lewo" path="res://assets/scenes&scripts/tutorial.tscn" id="2_prt3w"]
 [ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/graphics/bg.jpeg" id="3_2apgr"]
@@ -18,6 +17,7 @@
 [ext_resource type="Texture2D" uid="uid://fal50oxwevwn" path="res://assets/graphics/anvill/KillChild/KillChild8.png" id="14_7s4k7"]
 [ext_resource type="Texture2D" uid="uid://c5m0162b6wbn6" path="res://assets/graphics/anvill/KillChild/KillChild9.png" id="15_1fpsj"]
 [ext_resource type="Texture2D" uid="uid://dqi7ig3mvpehr" path="res://assets/graphics/Santa/Idle/SantaIDLE.png" id="18_pdscm"]
+[ext_resource type="PackedScene" uid="uid://cn6wa3pvcs31o" path="res://assets/sound/sounds.tscn" id="18_tk7ho"]
 [ext_resource type="Texture2D" uid="uid://dsrjap5xaol6u" path="res://assets/graphics/Santa/Win/SantaWin1.png" id="18_rto45"]
 [ext_resource type="Texture2D" uid="uid://cfh8aewvu57j" path="res://assets/graphics/Santa/Win/SantaWin2.png" id="19_u04an"]
 [ext_resource type="Texture2D" uid="uid://jge1gmxxwaei" path="res://assets/graphics/Santa/Win/SantaWin3.png" id="20_kmcug"]

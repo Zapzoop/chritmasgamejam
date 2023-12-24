@@ -31,6 +31,8 @@ func _ready():
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("click") and can_move and !clicked:
+		Global.levelins.sfx.paper("show")
+		Global.levelins.sfx.santa_file()
 		report.visible = true
 		anim.play("open")
 	if Input.is_action_just_pressed("click") and can_move and clicked:
@@ -75,8 +77,6 @@ func _physics_process(delta):
 						put_on_presents_child()
 						sfx.present()
 					Global.score += 5
-					
-					
 				else:
 					if self.global_position.x < $/root/Level/center.global_position.x:
 						put_on_anvil_child()

@@ -244,6 +244,8 @@ func report_card():
 	for i in range(len(selected_bad_habits)):
 		negative_score += selected_bad_habits[keylist_bad[i]]
 	var total = positive_score + negative_score #Calculates the score
+	if total == 0:
+		total += 1
 	parent.child_score = total
 	print("My score " + str(total))
 	selected_bad_habits = {} #Emptying occupied habits
