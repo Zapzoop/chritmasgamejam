@@ -1,12 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://ti4n5d5nwwpi"]
+[gd_scene load_steps=10 format=3 uid="uid://ti4n5d5nwwpi"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="2_2bemc"]
 [ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_agc6v"]
+[ext_resource type="Texture2D" uid="uid://cy8ixb7xri7pw" path="res://assets/Report/Report.png" id="3_ti85i"]
 [ext_resource type="FontFile" uid="uid://cdjbwhckwxatn" path="res://assets/fonts/Childhood-Bold.otf" id="3_vadwe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
-size = Vector2(308.571, 217.143)
+size = Vector2(457.143, 320)
 
 [sub_resource type="Animation" id="Animation_xboi3"]
 resource_name = "close"
@@ -60,32 +61,34 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Drawing" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(520, 176)
-scale = Vector2(0.8, 0.8)
+position = Vector2(617.143, 157.143)
+scale = Vector2(1.2, 1.2)
 
 [node name="Detection" type="Area2D" parent="."]
-position = Vector2(520, 176)
+position = Vector2(617.143, 157.143)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection"]
-position = Vector2(0, 1.14294)
+position = Vector2(0, 3.05176e-05)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_fip30")
 
 [node name="Paper" type="Sprite2D" parent="."]
 
-[node name="TempBg" type="ColorRect" parent="Paper"]
-anchors_preset = -1
-anchor_right = 331.0
-anchor_bottom = 649.0
-grow_vertical = 2
-size_flags_vertical = 3
-color = Color(1, 1, 0.647059, 1)
+[node name="TempBg" type="Sprite2D" parent="Paper"]
+position = Vector2(708.571, 328.571)
+texture = ExtResource("3_ti85i")
 metadata/_edit_use_anchors_ = true
 
 [node name="Profile" type="Control" parent="Paper/TempBg"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+layout_mode = 3
+anchor_left = 0.0833333
+anchor_top = 0.172222
+anchor_right = 0.315625
+anchor_bottom = 0.817593
+offset_left = -960.0
+offset_top = -540.0
+offset_right = -960.0
+offset_bottom = -540.0
 grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_use_anchors_ = true
@@ -93,43 +96,41 @@ metadata/_edit_use_anchors_ = true
 [node name="Name" type="RichTextLabel" parent="Paper/TempBg/Profile"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0332326
-anchor_top = 0.0308166
-anchor_right = 0.824773
-anchor_bottom = 0.118644
+anchor_top = 0.0301291
+anchor_right = 0.825112
+anchor_bottom = 0.117647
 theme = ExtResource("2_2bemc")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/normal_font_size = 35
 text = "Name"
+fit_content = true
 scroll_active = false
+autowrap_mode = 0
 metadata/_edit_use_anchors_ = true
 
 [node name="Data" type="RichTextLabel" parent="Paper/TempBg/Profile"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0332326
-anchor_top = 0.118644
-anchor_right = 1.0
-anchor_bottom = 0.312789
+anchor_top = 0.17934
+anchor_right = 0.565022
+anchor_bottom = 0.360115
 theme = ExtResource("2_2bemc")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 27
 text = "Age: N.A
 From: N.A
-Height: N.A
-Occupation: N.A
-"
+Height: N.A"
 metadata/_edit_use_anchors_ = true
 
 [node name="Story" type="RichTextLabel" parent="Paper/TempBg/Profile"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0483384
-anchor_top = 0.312789
-anchor_right = 0.951662
-anchor_bottom = 0.827427
+anchor_top = 0.408895
+anchor_right = 0.903587
+anchor_bottom = 0.836442
 theme = ExtResource("2_2bemc")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 17
+theme_override_font_sizes/normal_font_size = 25
 bbcode_enabled = true
 metadata/_edit_use_anchors_ = true
 
@@ -137,14 +138,14 @@ metadata/_edit_use_anchors_ = true
 visible = false
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.268293
-anchor_top = 0.901235
-anchor_right = 0.756098
-anchor_bottom = 0.975309
+anchor_left = 0.179372
+anchor_top = 0.836442
+anchor_right = 0.742152
+anchor_bottom = 0.918221
 theme = ExtResource("2_2bemc")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
-theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
@@ -155,7 +156,7 @@ theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
 theme_override_colors/icon_disabled_color = Color(0, 0, 0, 0)
 theme_override_font_sizes/font_size = 30
-text = "judge
+text = "Judge
 "
 flat = true
 metadata/_edit_use_anchors_ = true
@@ -170,16 +171,6 @@ offset_right = 843.601
 offset_bottom = 881.6
 scale = Vector2(0.05, 0.05)
 icon = ExtResource("2_agc6v")
-metadata/_edit_use_anchors_ = true
-
-[node name="Photo" type="Sprite2D" parent="Paper"]
-
-[node name="Temporary" type="ColorRect" parent="Paper/Photo"]
-anchors_preset = -1
-anchor_left = 217.143
-anchor_top = 77.1429
-anchor_right = 313.143
-anchor_bottom = 189.143
 metadata/_edit_use_anchors_ = true
 
 [node name="Animation" type="AnimationPlayer" parent="."]

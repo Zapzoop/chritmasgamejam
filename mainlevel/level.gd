@@ -18,20 +18,54 @@ func _ready():
 func generatechild():
 	var decided = decider()
 	if lost == false:
+		print(decided)
 		if decided == "anvil":
 			var child_ins = anvil.instantiate()
 			$child.add_child(child_ins)
+			child_ins.anvil_ins()
 			animplayer.play("moveChild")
 			return
-		else:
+			
+		elif decided == "child1":
 			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
 			$child.add_child(child_ins)
+			child_ins.child1(decidecolored)
+			animplayer.play("moveChild")
+			return
+			
+		elif decided == "child2":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child2(decidecolored)
+			animplayer.play("moveChild")
+			return
+			
+		elif decided == "child3":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child3(decidecolored)
+			animplayer.play("moveChild")
+			return
+			
+		elif decided == "child4":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child4(decidecolored)
 			animplayer.play("moveChild")
 			return
 
+func decidecolor():
+	var probab = ["blue","green","pink"]
+	var rand = probab.pick_random()
+	return rand
+
 func decider():
-	var probab = ["","","","","","","","","","anvil"]
-	var rand = randi_range(0,9)
+	var probab = ["child1","child2","child3","child4","child1","child2","child3","child4","anvil"]
+	var rand = randi_range(0,8)
 	return probab[rand]
 
 func gameover():
@@ -50,9 +84,8 @@ func _on_an_animation_finished(anim_name):
 
 func _on_anvill_animation_finished():
 	$gullotine/anvill.play("idle",0.7)
+	if Global.current == "Anvil":
+		generatechild()
 
-func _on_file_pressed():
-	if $child.get_child_count():
-		sfx.paper("show")
-		$child.get_child(0).report.visible = true
-		$child.get_child(0).anim.play("open")
+func _on_anvill_sprite_frames_changed():
+	pass # Replace with function body.
