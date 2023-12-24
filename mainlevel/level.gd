@@ -66,8 +66,7 @@ func decidecolor():
 func decider():
 	var probab = ["child1","child2","child3","child4","child1","child2","child3","child4","anvil"]
 	var rand = randi_range(0,8)
-	#return probab[rand]
-	return "anvil"
+	return probab[rand]
 
 func gameover():
 	$YoureFired.show()
