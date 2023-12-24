@@ -169,6 +169,7 @@ var selected_neutral_habits = {}
 func _ready():
 	if get_parent().is_in_group("anvil"):
 		data_anvil()
+		letter_seen = true
 	else:
 		$Paper/TempBg/Profile/Data.text = "Age: " + str(int(rnd.randi_range(4,8))) + "\nHeight: " + str(int(rnd.randi_range(70,120))) + " cm \nFrom: " + country.pick_random()
 		$Paper/TempBg/Profile/Name.text = Name + " " + surname
