@@ -54,6 +54,5 @@ func _on_anvill_animation_finished():
 func _on_file_pressed():
 	if $child.get_child_count():
 		sfx.paper("show")
-		sfx.santa_file()
 		$child.get_child(0).report.visible = true
 		$child.get_child(0).anim.play("open")

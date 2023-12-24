@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bbmf1tywq1u2v"]
+[gd_scene load_steps=9 format=3 uid="uid://bbmf1tywq1u2v"]
 
 [ext_resource type="Script" path="res://main_menu/mainmenu.gd" id="1_fpnir"]
 [ext_resource type="Script" path="res://main_menu/sfx.gd" id="2_kvo1x"]
@@ -7,6 +7,7 @@
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="4_h5vgx"]
 [ext_resource type="FontFile" uid="uid://dywp2r20vvy4h" path="res://assets/fonts/Written On The Hand-Bold.otf" id="6_2ov01"]
 [ext_resource type="AudioStream" uid="uid://buxasyd8x5xsq" path="res://main_menu/mermello_pastello.mp3" id="7_877fo"]
+[ext_resource type="Script" path="res://main_menu/theme.gd" id="8_5nm75"]
 
 [node name="Mainmenu" type="Control"]
 layout_mode = 3
@@ -84,7 +85,9 @@ text = "SANTA'S
 
 [node name="theme" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_877fo")
+volume_db = -10.0
 autoplay = true
+script = ExtResource("8_5nm75")
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]

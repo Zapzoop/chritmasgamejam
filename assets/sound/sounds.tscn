@@ -22,8 +22,6 @@ autoplay = true
 [node name="Timer" type="Timer" parent="child_squashed"]
 wait_time = 0.4
 
-[node name="click" type="AudioStreamPlayer" parent="."]
-
 [node name="drawing_show" type="AudioStreamPlayer" parent="."]
 
 [node name="laught_judgement" type="AudioStreamPlayer" parent="."]
@@ -42,6 +40,7 @@ stream = ExtResource("4_5pc2n")
 wait_time = 1.5
 
 [node name="presents" type="AudioStreamPlayer" parent="."]
+volume_db = 3.5
 
 [node name="squish" type="AudioStreamPlayer" parent="."]
 

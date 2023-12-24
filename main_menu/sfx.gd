@@ -1,10 +1,10 @@
 extends AudioStreamPlayer2D
 
-var enter = [preload("res://assets/sound/MenuEnterSublevel1.wav"),
+var enters = [preload("res://assets/sound/MenuEnterSublevel1.wav"),
 	preload("res://assets/sound/MenuEnterSublevel2.wav"),
 	preload("res://assets/sound/MenuEnterSublevel3.wav")]
 	
-var exist = [preload("res://assets/sound/MenuExitSublevel1.wav"),
+var exists = [preload("res://assets/sound/MenuExitSublevel1.wav"),
 	preload("res://assets/sound/MenuExitSublevel2.wav"),
 	preload("res://assets/sound/MenuExitSublevel3.wav")]
 
@@ -17,3 +17,12 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func enter():
+	stream = enters.pick_random()
+	play()
+	
+func exit():
+	stream = exists.pick_random()
+	play()

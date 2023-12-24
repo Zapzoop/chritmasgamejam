@@ -94,6 +94,7 @@ flat = true
 
 [node name="theme" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_c7wrf")
+volume_db = 3.0
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
