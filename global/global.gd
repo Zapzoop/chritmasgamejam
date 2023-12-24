@@ -19,8 +19,14 @@ signal modulategullotine()
 signal modulatebackgullotine()
 signal modulatebackpresents()
 
+signal anvilchild()
+signal presentschild()
+signal anvilanvil()
+signal presentsanvil()
+
 var levelins
 var remember
+var current
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	change_scene.connect(_on_change_scene)
@@ -34,6 +40,23 @@ func _ready():
 	modulategullotine.connect(_on_modulategullotine)
 	modulatebackgullotine.connect(_on_modulatebackgullotine)
 	modulatebackpresents.connect(_on_modulatebackpresents)
+	
+	anvilchild.connect(_on_anvilchild)
+	presentschild.connect(_on_presentschild)
+	anvilanvil.connect(_on_anvilanvil)
+	presentsanvil.connect(_on_presentsanvil)
+	
+func _on_anvilchild():
+	pass
+
+func _on_presentschild():
+	pass
+
+func _on_anvilanvil():
+	levelins.anvilplayer.play("anvilkill")
+
+func _on_presentsanvil():
+	pass
 	
 func _on_modulatepresents():
 	levelins.presents.modulate = Color(Color.DARK_GOLDENROD,0.4)
