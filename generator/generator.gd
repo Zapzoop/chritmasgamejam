@@ -244,7 +244,7 @@ func child():
 	$Paper/TempBg/Profile/Story.text +="has "+ "[color=red][url]"+ all[0]+ "[/url][/color]" + " and " + "[color=red][url]"+ all[1]+ "[/url][/color]" + ". Furthermore, the list goes on stating that this kid "
 	for x in range(2,5):
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + all[x] + "[/url][/color]"
-	$Paper/TempBg/Profile/Story.text += "\n" + "[color=red][url]see letter[/ulr][/color]"
+	$Paper/TempBg/Profile/Story.text += "\n\n" + "		[color=red][url]See letter[/url][/color]"
 	report_card()
 	
 	for x in all:
