@@ -106,3 +106,5 @@ func _on_callback(calleename,calleeobj):
 	
 func _on_moveforward():
 	levelins.generatechild()
+	
+

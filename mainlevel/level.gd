@@ -11,6 +11,8 @@ var lost = false
 @onready var gullotine = $gullotine
 @onready var anvilplayer = $gullotine/anvill
 @onready var sfx = $sounds
+@onready var pausemenu = $CanvasLayer
+
 
 func _ready():
 	Global.levelins = self
@@ -89,3 +91,5 @@ func _on_anvill_animation_finished():
 
 func _on_anvill_sprite_frames_changed():
 	pass # Replace with function body.
+
+
