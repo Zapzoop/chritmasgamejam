@@ -22,6 +22,7 @@ click="*res://assets/sound/click.tscn"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="ignore"
 
