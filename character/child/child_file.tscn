@@ -179,15 +179,16 @@ libraries = {
 }
 
 [node name="letter" type="Sprite2D" parent="."]
+z_index = 2
 position = Vector2(617.143, 500)
 scale = Vector2(1, 1)
 texture = ExtResource("5_7pqky")
 
 [node name="letter" type="RichTextLabel" parent="letter"]
 offset_left = -217.143
-offset_top = -102.857
+offset_top = -80.0
 offset_right = 239.857
-offset_bottom = 103.143
+offset_bottom = 126.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_vadwe")
 theme_override_font_sizes/normal_font_size = 39
