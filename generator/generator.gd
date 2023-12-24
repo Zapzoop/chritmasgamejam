@@ -58,7 +58,6 @@ var bad_habits = {
 }
 var good_habits = {
 	"gave his full allowance to a local animal shelter":30,
-	"opened a charity fund for kids with cancer":60,
 	"solved poverty in 3 countries":140,
 	"learned Spanish to be able to speak with grandma":40,
 	"helped someone understand Taylor Swift lyrics":10,
@@ -99,7 +98,7 @@ var drawings = {
 	"was responsible for the dinosaurs to go extinct ":"res://assets/graphics/actions/was responsible for the dinosaurs to go extinct.jpg",
 	"wished for rain to ruin a picnic ":"res://assets/graphics/actions/wished for rain to ruin a picnic.jpg",
 	"bit his sister on average 3 times a day":"res://assets/graphics/actions/bit his sister on average 3 times a day.jpg",
-	"robbed a bank with a water gun":"res://assets/graphics/actions/test.png",
+	"robbed a bank with a water gun":"res://assets/grafics/actions/robbed a bank with a water gun.jpg",
 	"helped overthrow the government to install a dictatorship":"res://assets/graphics/actions/helped overthrow the government to install a dictatorship.jpg",
 	"told other kids Santa isn't real":"res://assets/graphics/actions/told other kids Santa isnt real.jpg",
 	"started arson on Nikki's tree house":"res://assets/graphics/actions/started arson in Nikkis tree house.jpg",
@@ -126,7 +125,27 @@ var drawings = {
 	"electrocuted uncle Steve":"res://assets/graphics/actions/electrocuted uncle Steve.jpg",
 	"became the boss of the Mafia in Naples":"res://assets/graphics/actions/became the boss of the Mafia in Naples.jpg",
 	"kidnapped Aldo Moro in Italy in the 80's":"res://assets/graphics/actions/kidnapped Aldo Moro in Italy in the 80s.jpg",
-	"rickrolled Santa's HQ":"res://assets/graphics/actions/rickrolled Santas headquarrters.jpg"
+	"rickrolled Santa's HQ":"res://assets/graphics/actions/rickrolled Santas headquarrters.jpg",
+	"gave his full allowance to a local animal shelter":"res://assets/grafics/actions/gave his full allowance to a local animal shelter.jpg",
+	"solved poverty in 3 countries":"res://assets/grafics/actions/solved poverty in 3 countries.jpg",
+	"learned Spanish to be able to speak with grandma":"res://assets/grafics/actions/learned Spanish to be able to speak with grandma.jpg",
+	"helped someone understand Taylor Swift lyrics":"res://assets/grafics/actions/helped someone understand Taylor Swift lyrics.jpg",
+	"picked up a stranger's money on the ground and gave it back":"res://assets/grafics/actions/picked up strangers money and gave it back.jpg",
+	"helped overthrow the government's dictatorship":"res://assets/grafics/actions/helped overthrow the governments dictatorship.jpg",
+	"went back in time and assassinated Adolf Hitler":"res://assets/grafics/actions/went back in time and assassinated Adolf Hitler.jpg",
+	"planted 700 trees":"res://assets/grafics/actions/planted 700 trees.jpg",
+	"got an A+ in social sciences":"res://assets/grafics/actions/got an A in social sciences.jpg",
+	"sold cookies at a bake sale for charity":"res://assets/grafics/actions/sold cookies at a bake sale for charity.jpg",
+	"gave his little sister lots of attention":"res://assets/grafics/actions/gave their little sister lots of attention.jpg",
+	"helped Mom with the dishes":"res://assets/grafics/actions/helped Mom with the dishes.jpg",
+	"attended long funeral without screaming a single time":"res://assets/grafics/actions/attended a long funeral without screaming a single time.jpg",
+	"won a Nobel Peace Prize":"res://assets/grafics/actions/won a Nobel Peace Prize.jpg",
+	"won an Oscar for Titanic III":"res://assets/grafics/actions/won an Oscar for Titanic III.jpg",
+	"cured 2 forms of cancer":"res://assets/grafics/actions/cured 2 forms of cancer.jpg",
+	"invented the internet":"res://assets/grafics/actions/invented the internet.jpg",
+	"got a phd in astrophysics":"res://assets/grafics/actions/got a phd in astrophysics.jpg",
+	"helped a kid in class to get a good grade":"res://assets/grafics/actions/helped a kid in class to get a good grade.jpg",
+	"did NOT vote the anvil as the special object":"res://assets/grafics/actions/did NOT vote the anvil as the special object.jpg"
 	}
 
 var anvil_things = ["destroyed a game jam",
