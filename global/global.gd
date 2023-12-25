@@ -24,6 +24,8 @@ signal presentschild()
 signal anvilanvil()
 signal presentsanvil()
 
+signal santaplay
+
 var levelins
 var remember
 var current
@@ -47,6 +49,11 @@ func _ready():
 	anvilanvil.connect(_on_anvilanvil)
 	presentsanvil.connect(_on_presentsanvil)
 	
+	santaplay.connect(_on_santaplay)
+
+func _on_santaplay():
+	levelins.santaplayer.play("SantaWin")
+
 func _on_anvilchild():
 	pass
 
@@ -106,7 +113,7 @@ func _on_callback(calleename,calleeobj):
 	remember = null
 	
 func _on_moveforward():
-	print("called")
+
 	levelins.generatechild()
 	
 

@@ -14,9 +14,10 @@ var lost = false
 @onready var anvilplayer = $gullotine/anvill
 @onready var sfx = $sounds
 @onready var pausemenu = $CanvasLayer
-
+@onready var santaplayer = $Santa
 
 func _ready():
+	santaplayer.play("default")
 	Global.levelins = self
 
 func generatechild():
@@ -98,3 +99,7 @@ func _on_anvill_sprite_frames_changed():
 	pass # Replace with function body.
 
 
+
+
+func _on_santa_animation_finished():
+	santaplayer.play("default")

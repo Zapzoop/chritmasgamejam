@@ -79,6 +79,7 @@ func _physics_process(delta):
 			sfx.laugh_judge()
 			if self.is_in_group("anvil"):
 				if (self.global_position.x < $/root/Level/center.global_position.x):
+					Global.emit_signal("santaplay")
 					anvil_on_anvil()
 					Global.emit_signal("playkillanvil")
 					sfx.childDeath("anvill")
@@ -92,6 +93,7 @@ func _physics_process(delta):
 					
 			else:
 				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+					Global.emit_signal("santaplay")
 					if self.global_position.x < $/root/Level/center.global_position.x:
 						put_on_anvil_child()
 						sfx.childDeath("child")
