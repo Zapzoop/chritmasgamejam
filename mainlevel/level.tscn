@@ -233,7 +233,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("26_86hk4")
 }],
-"loop": true,
+"loop": false,
 "name": &"SantaWin",
 "speed": 9.0
 }, {
@@ -243,6 +243,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"new_animation",
 "speed": 5.0
 }]
 
@@ -318,9 +323,11 @@ libraries = {
 position = Vector2(520, 376)
 scale = Vector2(0.5, 0.5)
 sprite_frames = SubResource("SpriteFrames_pfy8u")
+animation = &"SantaWin"
 
 [node name="sounds" parent="." instance=ExtResource("18_tk7ho")]
 
 [connection signal="animation_finished" from="gullotine/anvill" to="." method="_on_anvill_animation_finished"]
 [connection signal="sprite_frames_changed" from="gullotine/anvill" to="." method="_on_anvill_sprite_frames_changed"]
 [connection signal="animation_finished" from="YoureFired/AnimationPlayer" to="." method="_on_an_animation_finished"]
+[connection signal="animation_finished" from="Santa" to="." method="_on_santa_animation_finished"]

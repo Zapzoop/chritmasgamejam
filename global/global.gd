@@ -24,9 +24,12 @@ signal presentschild()
 signal anvilanvil()
 signal presentsanvil()
 
+signal santaplay
+
 var levelins
 var remember
 var current
+var currentanimplaying
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	change_scene.connect(_on_change_scene)
@@ -46,6 +49,11 @@ func _ready():
 	anvilanvil.connect(_on_anvilanvil)
 	presentsanvil.connect(_on_presentsanvil)
 	
+	santaplay.connect(_on_santaplay)
+
+func _on_santaplay():
+	levelins.santaplayer.play("SantaWin")
+
 func _on_anvilchild():
 	pass
 
@@ -105,6 +113,7 @@ func _on_callback(calleename,calleeobj):
 	remember = null
 	
 func _on_moveforward():
+
 	levelins.generatechild()
 	
 

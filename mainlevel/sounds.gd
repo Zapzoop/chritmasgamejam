@@ -69,7 +69,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	$theme.volume_db = Global.volume - 10
 	
 
@@ -144,7 +144,7 @@ func present(what):
 		$presents.stream = presents.pick_random()
 		$presents.play()
 	else:
-		$anvil_pre.play
+		$anvil_pre.play()
 	
 func squish():
 	$squish.stream = presents.pick_random()

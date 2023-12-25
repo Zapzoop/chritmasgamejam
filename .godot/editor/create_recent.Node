@@ -1,6 +1,6 @@
-AudioStreamPlayer2D
-Button
 Label
+Button
+AudioStreamPlayer2D
 ColorRect
 CanvasLayer
 AudioStreamPlayer

@@ -33,7 +33,7 @@ func _ready():
 	report.create_child()
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("click") and can_move and !clicked:
+	if Input.is_action_just_pressed("click") and can_move and !clicked and report.visible == false:
 		Global.levelins.sfx.paper("show")
 		Global.levelins.sfx.santa_file()
 		report.visible = true
@@ -53,11 +53,13 @@ func _physics_process(delta):
 			anvilspri.position = Vector2(-192,156)
 			anvilspri.play(string)
 			currentanim = string
+			Global.currentanimplaying = currentanim
 		else:
 			var string = Global.current + "Dragged"
 			sprite.position = Vector2(-192,136)
 			sprite.play(string)
 			currentanim = string
+			Global.currentanimplaying = currentanim
 		global_position = lerp(global_position - Vector2(56,-26), get_global_mouse_position(),25*delta)
 	elif Input.is_action_just_released("click") and is_moving:
 		dragged = false
@@ -66,15 +68,18 @@ func _physics_process(delta):
 			anvilspri.position = Vector2(0,0)
 			anvilspri.play(string)
 			currentanim = string
+			Global.currentanimplaying = currentanim
 		else:
 			var string = Global.current + "Idle"
 			sprite.position = Vector2(0,0)
 			sprite.play(string)
 			currentanim = string
+			Global.currentanimplaying = currentanim
 		if is_inside_dropable:
 			sfx.laugh_judge()
 			if self.is_in_group("anvil"):
 				if (self.global_position.x < $/root/Level/center.global_position.x):
+					Global.emit_signal("santaplay")
 					anvil_on_anvil()
 					Global.emit_signal("playkillanvil")
 					sfx.childDeath("anvill")
@@ -88,6 +93,7 @@ func _physics_process(delta):
 					
 			else:
 				if ((self.child_score > 0) and (self.global_position.x > $/root/Level/center.global_position.x)) or ((self.child_score < 0) and (self.global_position.x < $/root/Level/center.global_position.x)):
+					Global.emit_signal("santaplay")
 					if self.global_position.x < $/root/Level/center.global_position.x:
 						put_on_anvil_child()
 						sfx.childDeath("child")
@@ -111,6 +117,7 @@ func put_on_anvil_child():
 	Global.emit_signal("anvilchild")
 	var string = Global.current + "Anvil"
 	currentanim = string
+	Global.currentanimplaying = currentanim
 	sprite.play(string)
 
 func put_on_presents_child():
@@ -118,9 +125,11 @@ func put_on_presents_child():
 	Global.emit_signal("presentschild")
 	var string = Global.current + "Presents"
 	currentanim = string
+	Global.currentanimplaying = currentanim
 	sprite.play(string)
 
 func anvil_on_anvil():
+	Global.currentanimplaying = "anvilanvil"
 	Global.emit_signal("anvilanvil")
 
 func presents_on_anvil():
@@ -130,6 +139,7 @@ func presents_on_anvil():
 	Global.emit_signal("presentsanvil")
 	var string = Global.current + "PAresents"
 	currentanim = string
+	Global.currentanimplaying = currentanim
 	anvilspri.play(string)
 
 func reset():
@@ -192,14 +202,17 @@ func child1(color):
 		"blue":
 			sprite.play("Child1BlueIdle")
 			currentanim = "Child1BlueIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child1Blue"
 		"green":
 			sprite.play("Child1GreenIdle")
 			currentanim = "Child1GreenIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child1Green"
 		"pink":
 			sprite.play("Child1PinkIdle")
 			currentanim = "Child1PinkIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child1Pink"
 
 func child2(color):
@@ -207,14 +220,17 @@ func child2(color):
 		"blue":
 			sprite.play("Child2BlueIdle")
 			currentanim = "Child2BlueIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child2Blue"
 		"green":
 			sprite.play("Child2GreenIdle")
 			currentanim = "Child2GreenIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child2Green"
 		"pink":
 			sprite.play("Child2PinkIdle")
 			currentanim = "Child2PinkIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child2Pink"
 
 func child3(color):
@@ -222,14 +238,17 @@ func child3(color):
 		"blue":
 			sprite.play("Child3BlueIdle")
 			currentanim = "Child3BlueIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child3Blue"
 		"green":
 			sprite.play("Child3GreenIdle")
 			currentanim = "Child3GreenIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child3Green"
 		"pink":
 			sprite.play("Child3PinkIdle")
 			currentanim = "Child3PinkIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child3Pink"
 	
 func child4(color):
@@ -237,14 +256,17 @@ func child4(color):
 		"blue":
 			sprite.play("Child4BlueIdle")
 			currentanim = "Child4BlueIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child4Blue"
 		"green":
 			sprite.play("Child4GreenIdle")
 			currentanim = "Child4GreenIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child4Green"
 		"pink":
 			sprite.play("Child4PinkIdle")
 			currentanim = "Child4PinkIdle"
+			Global.currentanimplaying = currentanim
 			Global.current = "Child4Pink"
 
 

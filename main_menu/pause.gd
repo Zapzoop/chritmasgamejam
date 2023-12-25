@@ -6,11 +6,12 @@ func _ready():
 	pass # Replace with function body.
 
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("pause") and !ispaused:
 		self.visible = true
 		get_tree().paused = true
 		ispaused=true
+		$Score.text = "Score: " + str(Global.score)
 	elif Input.is_action_just_pressed("pause") and ispaused:
 		self.visible = false
 		ispaused=false
@@ -21,3 +22,9 @@ func _on_button_2_pressed():
 
 func _on_button_pressed():
 	get_tree().quit()
+
+
+func _on_button_3_pressed():
+	self.visible = false
+	ispaused=false
+	get_tree().paused = false

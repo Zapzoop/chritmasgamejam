@@ -85,7 +85,8 @@ animation = &"AnvilIdle"
 [node name="ReportFile" parent="." instance=ExtResource("3_i8asy")]
 visible = false
 offset_top = 664.0
-offset_bottom = 663.999
+offset_right = 456.0
+offset_bottom = 1312.0
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
