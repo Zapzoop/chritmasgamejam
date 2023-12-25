@@ -149,7 +149,18 @@ var drawings = {
 	"invented the internet":"res://assets/grafics/actions/invented the internet.jpg",
 	"got a phd in astrophysics":"res://assets/grafics/actions/got a phd in astrophysics.jpg",
 	"helped a kid in class to get a good grade":"res://assets/grafics/actions/helped a kid in class to get a good grade.jpg",
-	"did NOT vote the anvil as the special object":"res://assets/grafics/actions/did NOT vote the anvil as the special object.jpg"
+	"did NOT vote the anvil as the special object":"res://assets/grafics/actions/did NOT vote the anvil as the special object.jpg",
+	"watched The God Father 7 times":"res://assets/Forgottenpostcards/whatched the godfather 7 timers.png",
+	"wears pyjamas inside out all of the time":"res://assets/Forgottenpostcards/wears pyjamas inside out all of the time.png",
+	"doesn't know the difference between a microwave and a oven":"res://assets/Forgottenpostcards/doesn't know the difference between a microwave and a oven.png",
+	"loves Disney movies":"res://assets/Forgottenpostcards/loves Disney movies.png",
+	"playes ice hockey":"res://assets/Forgottenpostcards/playsicehockey.png",
+	"believes in aliens":"res://assets/Forgottenpostcards/believes in aliens.png",
+	"doesn't know the difference between tomato sauce and ketchup":"res://assets/Forgottenpostcards/doesn't know the difference between tomato sauce and ketchup.png",
+	"eats pineapple pizza":"res://assets/Forgottenpostcards/eatspineapplepizza.png",
+	"doesn't like mushroom":"res://assets/Forgottenpostcards/dosentlikemushroom.png",
+	"sleeps with a night light on":"res://assets/Forgottenpostcards/sleepswithanightlighton.png",
+	"joined the chess club":"res://assets/Forgottenpostcards/joinschessclub.png"
 	}
 
 var anvil_things = ["destroyed a game jam",
@@ -160,7 +171,7 @@ var anvil_things = ["destroyed a game jam",
 	"removed happiness",
 	"created several teams to squabble"]
 	
-var presents = ["a gift card","make-up products","a pony","a unicorn","a PlayStation 5","a Nintendo Switch","new parents","death to Santa","socks","slippers","a fidget spinner","a cookbook for Mom","a new handbag","a bicycle","a beanie","a bean bag","a swing set","emancipation","a jet plane","world peace","a spa weekend","a teddy bear","a real Pokémon","a law degree","a new math book","a train set","a bodybuilding programme","the moon","a career in finance","a plushie","a new Mommy","10,000 V-bucks","Covid","a real snowy Christmas","to remove league of legends from existance","dad to come home","a lego set","1 million karma on Reddit","GTA VI","to know all government secrets"]
+var presents = ["a gift card","make-up products","a pony","a unicorn","a PlayStation 5","a Nintendo Switch","new parents","death to Santa","socks","slippers","a fidget spinner","a cookbook for Mom","a new handbag","a bicycle","a beanie","a bean bag","a swing set","emancipation","a jet plane","world peace","a spa weekend","a teddy bear","a real Pokémon","a law degree","a new math book","a train set","a bodybuilding programme","the moon","a career in finance","a plushie","a new Mommy","10,000 V-bucks","Covid","a real snowy Christmas","to remove league of legends from existance","dad to come home","a lego set","one million karma on Reddit","GTA VI","to know all government secrets"]
 	
 var selected_anvil_things = []
 
