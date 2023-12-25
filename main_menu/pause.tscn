@@ -17,34 +17,69 @@ color = Color(0.427451, 0.427451, 0.427451, 0.537255)
 metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="."]
-offset_left = 104.0
-offset_top = 104.0
-offset_right = 144.0
-offset_bottom = 127.0
+anchors_preset = -1
+anchor_left = 0.0902778
+anchor_top = 0.160494
+anchor_right = 0.296875
+anchor_bottom = 0.283951
+offset_right = -198.0
+offset_bottom = -57.0
 theme = ExtResource("1_nhpiu")
 theme_override_font_sizes/font_size = 80
 text = "Paused"
+metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="."]
-offset_left = 120.0
-offset_top = 304.0
-offset_right = 181.0
-offset_bottom = 343.0
+anchors_preset = -1
+anchor_left = 0.0972222
+anchor_top = 0.555556
+anchor_right = 0.150174
+anchor_bottom = 0.615741
+offset_top = -3.05176e-05
+offset_bottom = 3.05176e-05
 theme = ExtResource("1_nhpiu")
 theme_override_font_sizes/font_size = 30
 text = "Exit"
 flat = true
+metadata/_edit_use_anchors_ = true
 
 [node name="Button2" type="Button" parent="."]
 visible = false
-offset_left = 120.0
-offset_top = 248.0
-offset_right = 225.0
-offset_bottom = 287.0
+offset_left = 112.0
+offset_top = 304.0
+offset_right = 217.0
+offset_bottom = 343.0
 theme = ExtResource("1_nhpiu")
 theme_override_font_sizes/font_size = 30
 text = "Options"
 flat = true
 
+[node name="Button3" type="Button" parent="."]
+anchors_preset = -1
+anchor_left = 0.0972222
+anchor_top = 0.493827
+anchor_right = 0.1875
+anchor_bottom = 0.554012
+theme = ExtResource("1_nhpiu")
+theme_override_font_sizes/font_size = 30
+text = "Resume"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Score" type="Label" parent="."]
+anchors_preset = -1
+anchor_left = 0.423611
+anchor_top = 0.358025
+anchor_right = 0.555556
+anchor_bottom = 0.41358
+offset_left = -88.0
+offset_right = -88.0
+offset_bottom = 15.0
+theme = ExtResource("1_nhpiu")
+theme_override_font_sizes/font_size = 50
+text = "Score:"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
