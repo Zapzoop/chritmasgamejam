@@ -6,6 +6,8 @@ var rnd = RandomNumberGenerator.new()
 
 var santa_drawings_done = false
 
+var switcher = true
+
 var drawings_to_be_seen = 0
 var drawings_seen = 0
 var already_seen = []
@@ -294,6 +296,10 @@ func data_anvil():
 	$Paper/TempBg/Profile/Name.text = "Anvil"
 
 func _on_close_pressed():
+	close()
+		
+
+func close():
 	$Animation.play("close")
 
 func _on_story_meta_clicked(meta):
@@ -302,6 +308,8 @@ func _on_story_meta_clicked(meta):
 		sfx.rick()
 	if drawings.keys().has(meta):
 		$Drawing.texture = ResourceLoader.load(drawings[meta])
+		if $Drawing.visible == false:
+			$Animation.play("Drawings")
 		sfx.drawing_show()
 		if santa_drawings_done == false:
 			sfx.santa_drawing()
@@ -311,12 +319,9 @@ func _on_story_meta_clicked(meta):
 			drawings_seen +=1
 		
 	else:
-		if meta == "See letter":
-			if $letter.visible == true:
-				$letter.visible = false
-				letter_seen = true
-			else:
-				$letter.visible = true
+		if meta == "See letter" and letter_seen == false:
+			letter_seen = true
+			$Animation.play("lettershow")
 	if drawings_seen == drawings_to_be_seen:
 		$Paper/TempBg/Profile/Decide.show()
 
@@ -326,7 +331,7 @@ func _on_anim_animation_finished(anim_name):
 		santa_drawings_done = false
 
 func _on_decide_pressed():
-	$Animation.play("close")
+	close()
 	parent.clicked = true
 	sfx.paper("hide")
 
