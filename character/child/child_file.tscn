@@ -1,10 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://ti4n5d5nwwpi"]
+[gd_scene load_steps=12 format=3 uid="uid://ti4n5d5nwwpi"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="2_2bemc"]
-[ext_resource type="Texture2D" uid="uid://cbkldmjmlvhyw" path="res://assets/icons/close.jpg" id="2_agc6v"]
 [ext_resource type="Texture2D" uid="uid://cy8ixb7xri7pw" path="res://assets/Report/Report.png" id="3_ti85i"]
 [ext_resource type="FontFile" uid="uid://cdjbwhckwxatn" path="res://assets/fonts/Childhood-Bold.otf" id="3_vadwe"]
+[ext_resource type="Texture2D" uid="uid://c1s7mowljpc60" path="res://assets/icons/buttonclose.png" id="4_uhwsp"]
 [ext_resource type="Texture2D" uid="uid://cei4aanvdavik" path="res://generator/letter.png" id="5_7pqky"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
@@ -40,8 +40,12 @@ tracks/0/keys = {
 "values": [Vector2(120, 664), Vector2(120, 200), Vector2(120, 130), Vector2(120, 90)]
 }
 
+[sub_resource type="Animation" id="Animation_fs4j3"]
+resource_name = "Drawings"
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xxlrj"]
 _data = {
+"Drawings": SubResource("Animation_fs4j3"),
 "close": SubResource("Animation_xboi3"),
 "open": SubResource("Animation_plked")
 }
@@ -62,11 +66,11 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Drawing" type="Sprite2D" parent="."]
 z_index = 1
-position = Vector2(617.143, 157.143)
+position = Vector2(125.714, 145.714)
 scale = Vector2(1.2, 1.2)
 
 [node name="Detection" type="Area2D" parent="."]
-position = Vector2(617.143, 157.143)
+position = Vector2(125.714, 145.714)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Detection"]
 position = Vector2(0, 3.05176e-05)
@@ -164,13 +168,15 @@ metadata/_edit_use_anchors_ = true
 [node name="Close" type="Button" parent="Paper/TempBg/Profile"]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.853659
-anchor_right = 0.989021
-anchor_bottom = 0.071605
-offset_right = 843.601
-offset_bottom = 881.6
-scale = Vector2(0.05, 0.05)
-icon = ExtResource("2_agc6v")
+anchor_left = 0.845613
+anchor_top = -0.000408944
+anchor_right = 0.977227
+anchor_bottom = 0.0625752
+offset_right = 528.3
+offset_bottom = 395.1
+scale = Vector2(0.1, 0.1)
+icon = ExtResource("4_uhwsp")
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Animation" type="AnimationPlayer" parent="."]
@@ -181,7 +187,7 @@ libraries = {
 [node name="letter" type="Sprite2D" parent="."]
 visible = false
 z_index = 2
-position = Vector2(617.143, 500)
+position = Vector2(102.857, 477.143)
 texture = ExtResource("5_7pqky")
 
 [node name="letter" type="RichTextLabel" parent="letter"]

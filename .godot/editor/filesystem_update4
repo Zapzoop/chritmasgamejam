@@ -11,3 +11,10 @@ res://main_menu/option/option.tscn
 res://main_menu/credits/credits.tscn
 res://assets/scenes&scripts/tutorial.tscn
 res://character/anvil/anvil.tscn
+res://mainlevel/sounds.gd
+res://assets/sound/click.gd
+res://main_menu/pause.gd
+res://main_menu/sfx.gd
+res://main_menu/theme.gd
+res://mainlevel/level.gd
+res://global/global.gd

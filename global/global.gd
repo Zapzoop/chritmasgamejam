@@ -105,6 +105,7 @@ func _on_callback(calleename,calleeobj):
 	remember = null
 	
 func _on_moveforward():
+	print("called")
 	levelins.generatechild()
 	
 

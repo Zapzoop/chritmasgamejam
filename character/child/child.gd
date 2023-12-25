@@ -33,7 +33,7 @@ func _ready():
 	report.create_child()
 
 func _physics_process(delta):
-	if Input.is_action_just_pressed("click") and can_move and !clicked:
+	if Input.is_action_just_pressed("click") and can_move and !clicked and report.visible == false:
 		Global.levelins.sfx.paper("show")
 		Global.levelins.sfx.santa_file()
 		report.visible = true

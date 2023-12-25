@@ -2,6 +2,8 @@ extends Node2D
 
 const NUMBER_OF_CHILDREN = 3
 
+var count = 0
+
 var child = preload("res://character/child/child.tscn")
 var anvil = preload("res://character/anvil/anvil.tscn")
 var loose = preload("res://assets/scenes&scripts/loose.tscn")
@@ -18,7 +20,11 @@ func _ready():
 	Global.levelins = self
 
 func generatechild():
+	count += 1
+	print("generatefunction called") #dont remove
 	var decided = decider()
+	if count == 3:
+		decided = "anvil"
 	if lost == false:
 		print(decided)
 		if decided == "anvil":
