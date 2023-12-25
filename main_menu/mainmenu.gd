@@ -16,6 +16,20 @@ func _on_credits_pressed():
 func _ready():
 	if not self.is_in_group("loose"):
 		$sfx.enter()
+	else:
+		var hight_score = int(loads())
+		if hight_score < Global.score:
+			save(Global.score)
+		
 
 func _on_theme_finished():
 	$theme.play()
+
+func loads():
+	var file = FileAccess.open("res://global/hight.txt", FileAccess.READ)
+	var content = file.get_as_text()
+	return content
+	
+func save(content):
+	var file = FileAccess.open("hight_Score.txt.txt", FileAccess.WRITE)
+	file.store_string(content)

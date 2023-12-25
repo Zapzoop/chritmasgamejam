@@ -290,6 +290,7 @@ func create_anvil():
 	for x in range(2,5):
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + selected_anvil_things[x] + "[/url][/color]"
 	selected_anvil_things = []
+	$Paper/TempBg/Profile/Decide.show()
 
 func data_anvil():
 	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 35 cm" + "\nFrom: JameGam"
@@ -322,8 +323,9 @@ func _on_story_meta_clicked(meta):
 		if meta == "See letter" and letter_seen == false:
 			letter_seen = true
 			$Animation.play("lettershow")
-	if drawings_seen == drawings_to_be_seen:
-		$Paper/TempBg/Profile/Decide.show()
+			$Paper/TempBg/Profile/Decide.show()
+	
+		
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":

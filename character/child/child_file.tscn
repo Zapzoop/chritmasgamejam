@@ -10,6 +10,21 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
 size = Vector2(457.143, 320)
 
+[sub_resource type="Animation" id="Animation_61pcg"]
+resource_name = "Drawingclose"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Drawing:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(685.714, 145.714), Vector2(125.714, 145.714)]
+}
+
 [sub_resource type="Animation" id="Animation_fs4j3"]
 resource_name = "Drawings"
 tracks/0/type = "value"
@@ -47,36 +62,6 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [0, 1]
-}
-
-[sub_resource type="Animation" id="Animation_xboi3"]
-resource_name = "close"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.5, 0.9),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(120, 90), Vector2(120, 130), Vector2(120, 200), Vector2(120, 664)]
-}
-
-[sub_resource type="Animation" id="Animation_plked"]
-resource_name = "open"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.4, 0.7, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector2(120, 664), Vector2(120, 200), Vector2(120, 130), Vector2(120, 90)]
 }
 
 [sub_resource type="Animation" id="Animation_bovg6"]
@@ -154,19 +139,19 @@ tracks/5/keys = {
 "values": [false]
 }
 
-[sub_resource type="Animation" id="Animation_61pcg"]
-resource_name = "Drawingclose"
+[sub_resource type="Animation" id="Animation_xboi3"]
+resource_name = "close"
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Drawing:position")
+tracks/0/path = NodePath(".:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
+"times": PackedFloat32Array(0, 0.2, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": [Vector2(685.714, 145.714), Vector2(125.714, 145.714)]
+"values": [Vector2(120, 90), Vector2(120, 130), Vector2(120, 200), Vector2(120, 664)]
 }
 
 [sub_resource type="Animation" id="Animation_gmflr"]
@@ -223,6 +208,21 @@ tracks/2/keys = {
 "values": [false, true, true]
 }
 
+[sub_resource type="Animation" id="Animation_plked"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.7, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(120, 664), Vector2(120, 200), Vector2(120, 130), Vector2(120, 90)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xxlrj"]
 _data = {
 "Drawingclose": SubResource("Animation_61pcg"),
@@ -241,8 +241,8 @@ anchor_right = 0.291667
 anchor_bottom = 1.0
 offset_left = 120.0
 offset_top = 90.0
-offset_right = 456.0
-offset_bottom = 737.998
+offset_right = 792.0
+offset_bottom = 1386.0
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 script = ExtResource("1_fjgta")
