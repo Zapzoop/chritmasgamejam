@@ -19,7 +19,8 @@ var lost = false
 func _ready():
 	santaplayer.play("default")
 	Global.levelins = self
-
+	Global.score = 0
+	
 func generatechild():
 	count += 1
 	var decided = decider()

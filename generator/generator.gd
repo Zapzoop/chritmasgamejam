@@ -8,6 +8,8 @@ var santa_drawings_done = false
 
 var switcher = true
 
+var seen = false
+
 var drawings_to_be_seen = 0
 var drawings_seen = 0
 var already_seen = []
@@ -290,6 +292,7 @@ func create_anvil():
 	for x in range(2,5):
 		$Paper/TempBg/Profile/Story.text += ",[color=red] [url]"  + selected_anvil_things[x] + "[/url][/color]"
 	selected_anvil_things = []
+	$Paper/TempBg/Profile/Decide.show()
 
 func data_anvil():
 	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 35 cm" + "\nFrom: JameGam"
@@ -304,26 +307,31 @@ func close():
 
 func _on_story_meta_clicked(meta):
 	print("clicked")
-	if meta == "rickrolled Santa's HQ":
-		sfx.rick()
-	if drawings.keys().has(meta):
-		$Drawing.texture = ResourceLoader.load(drawings[meta])
-		if $Drawing.visible == false:
-			$Animation.play("Drawings")
-		sfx.drawing_show()
-		if santa_drawings_done == false:
-			sfx.santa_drawing()
-			santa_drawings_done = true
-		if not already_seen.has(meta):
-			already_seen.append(meta)
-			drawings_seen +=1
-		
+	if parent.is_in_group("anvil") and !seen:
+		seen = true
+		$Animation.play("crushed")
 	else:
-		if meta == "See letter" and letter_seen == false:
-			letter_seen = true
-			$Animation.play("lettershow")
-	if drawings_seen == drawings_to_be_seen:
-		$Paper/TempBg/Profile/Decide.show()
+		if meta == "rickrolled Santa's HQ":
+			sfx.rick()
+		if drawings.keys().has(meta):
+			$Drawing.texture = ResourceLoader.load(drawings[meta])
+			if $Drawing.visible == false:
+				$Animation.play("Drawings")
+			sfx.drawing_show()
+			if santa_drawings_done == false:
+				sfx.santa_drawing()
+				santa_drawings_done = true
+			if not already_seen.has(meta):
+				already_seen.append(meta)
+				drawings_seen +=1
+			
+		else:
+			if meta == "See letter" and letter_seen == false:
+				letter_seen = true
+				$Animation.play("lettershow")
+				$Paper/TempBg/Profile/Decide.show()
+	
+		
 
 func _on_anim_animation_finished(anim_name):
 	if anim_name == "close":
