@@ -27,6 +27,7 @@ signal presentsanvil()
 var levelins
 var remember
 var current
+var currentanimplaying
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	change_scene.connect(_on_change_scene)

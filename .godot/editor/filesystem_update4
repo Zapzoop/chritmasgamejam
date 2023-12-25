@@ -8,3 +8,5 @@ res://main_menu/option/option.tscn
 res://main_menu/credits/credits.tscn
 res://assets/scenes&scripts/tutorial.tscn
 res://character/anvil/anvil.tscn
+res://mainlevel/level.gd
+res://global/global.gd

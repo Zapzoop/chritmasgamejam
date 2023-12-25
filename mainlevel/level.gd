@@ -21,7 +21,6 @@ func _ready():
 
 func generatechild():
 	count += 1
-	print("generatefunction called") #dont remove
 	var decided = decider()
 	if count == 3:
 		decided = "anvil"
@@ -92,7 +91,7 @@ func _on_an_animation_finished(anim_name):
 
 func _on_anvill_animation_finished():
 	$gullotine/anvill.play("idle",0.7)
-	if Global.current == "Anvil":
+	if Global.current == "Anvil" and Global.currentanimplaying == "anvilanvil":
 		generatechild()
 
 func _on_anvill_sprite_frames_changed():
