@@ -290,7 +290,7 @@ func create_anvil():
 	selected_anvil_things = []
 
 func data_anvil():
-	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 35 cm" + "\nFrom: GameJam"
+	$Paper/TempBg/Profile/Data.text = "Age: 7 Days"+"\nHeight: 35 cm" + "\nFrom: JameGam"
 	$Paper/TempBg/Profile/Name.text = "Anvil"
 
 func _on_close_pressed():
