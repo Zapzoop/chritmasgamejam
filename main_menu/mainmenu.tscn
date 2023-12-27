@@ -1,11 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbmf1tywq1u2v"]
+[gd_scene load_steps=6 format=3 uid="uid://bbmf1tywq1u2v"]
 
 [ext_resource type="Script" path="res://main_menu/mainmenu.gd" id="1_fpnir"]
+[ext_resource type="Texture2D" uid="uid://brpgy81j1w40o" path="res://main_menu/bg.png" id="2_ikrkj"]
 [ext_resource type="Script" path="res://main_menu/sfx.gd" id="2_kvo1x"]
-[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/graphics/bg.jpeg" id="2_ljwq6"]
-[ext_resource type="Texture2D" uid="uid://bynxb35vi87sj" path="res://assets/graphics/tree/treeIdle1.png" id="3_c0om3"]
-[ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="4_h5vgx"]
-[ext_resource type="FontFile" uid="uid://dywp2r20vvy4h" path="res://assets/fonts/Written On The Hand-Bold.otf" id="6_2ov01"]
 [ext_resource type="AudioStream" uid="uid://buxasyd8x5xsq" path="res://main_menu/mermello_pastello.mp3" id="7_877fo"]
 [ext_resource type="Script" path="res://main_menu/theme.gd" id="8_5nm75"]
 
@@ -22,66 +19,23 @@ script = ExtResource("1_fpnir")
 modulate = Color(0.694118, 0.764706, 0.529412, 0.72549)
 position = Vector2(576, 326)
 scale = Vector2(0.6, 0.603704)
-texture = ExtResource("2_ljwq6")
-
-[node name="tree" type="Sprite2D" parent="bg"]
-texture = ExtResource("3_c0om3")
+texture = ExtResource("2_ikrkj")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.375
-anchor_top = 0.209877
-anchor_right = 0.611979
-anchor_bottom = 1.20988
+anchor_left = 0.715278
+anchor_top = 0.938272
+anchor_right = 0.958333
+anchor_bottom = 1.35802
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 49
+theme_override_constants/separation = 38
 alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="start" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_h5vgx")
-theme_override_font_sizes/font_size = 30
-text = "Start"
-flat = true
-
-[node name="option" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_h5vgx")
-theme_override_font_sizes/font_size = 30
-text = "Option"
-flat = true
-
-[node name="credits" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_h5vgx")
-theme_override_font_sizes/font_size = 30
-text = "Credits"
-flat = true
-
-[node name="exit" type="Button" parent="VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_h5vgx")
-theme_override_font_sizes/font_size = 30
-text = "Exit"
-flat = true
-
 [node name="sfx" type="AudioStreamPlayer2D" parent="."]
 script = ExtResource("2_kvo1x")
-
-[node name="title" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 424.0
-offset_top = 32.0
-offset_right = 968.0
-offset_bottom = 312.0
-theme_override_colors/default_color = Color(0.513726, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("6_2ov01")
-theme_override_font_sizes/normal_font_size = 76
-text = "SANTA'S 
-	LAP"
 
 [node name="theme" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_877fo")
@@ -89,8 +43,40 @@ volume_db = -10.0
 autoplay = true
 script = ExtResource("8_5nm75")
 
-[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]
-[connection signal="pressed" from="VBoxContainer/credits" to="." method="_on_credits_pressed"]
-[connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
+[node name="start" type="Button" parent="."]
+layout_mode = 0
+offset_left = 872.0
+offset_top = 312.0
+offset_right = 1072.0
+offset_bottom = 392.0
+flat = true
+
+[node name="option" type="Button" parent="."]
+layout_mode = 0
+offset_left = 896.0
+offset_top = 408.0
+offset_right = 1048.0
+offset_bottom = 464.0
+flat = true
+
+[node name="credits" type="Button" parent="."]
+layout_mode = 0
+offset_left = 896.0
+offset_top = 480.0
+offset_right = 1048.0
+offset_bottom = 536.0
+flat = true
+
+[node name="exit" type="Button" parent="."]
+layout_mode = 0
+offset_left = 896.0
+offset_top = 544.0
+offset_right = 1048.0
+offset_bottom = 600.0
+flat = true
+
 [connection signal="finished" from="theme" to="." method="_on_theme_finished"]
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="option" to="." method="_on_option_pressed"]
+[connection signal="pressed" from="credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="exit" to="." method="_on_exit_pressed"]

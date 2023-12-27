@@ -33,3 +33,5 @@ func loads():
 func save(content):
 	var file = FileAccess.open("hight_Score.txt.txt", FileAccess.WRITE)
 	file.store_string(str(content))
+
+
