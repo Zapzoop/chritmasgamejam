@@ -4,3 +4,4 @@ res://generator/generator.gd
 res://main_menu/mainmenu.gd
 res://character/child/child.tscn
 res://character/child/child_file.tscn
+res://assets/scenes&scripts/loose.tscn

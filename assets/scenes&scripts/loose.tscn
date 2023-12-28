@@ -42,12 +42,12 @@ metadata/_edit_use_anchors_ = true
 [node name="score" type="RichTextLabel" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.409722
+anchor_left = 0.361111
 anchor_top = 0.283951
-anchor_right = 0.583333
+anchor_right = 0.625
 anchor_bottom = 0.432099
 theme_override_font_sizes/normal_font_size = 29
-text = "YOUR SCORE"
+text = "YOUR SCORE: 0"
 script = ExtResource("1_3foxm")
 metadata/_edit_use_anchors_ = true
 
