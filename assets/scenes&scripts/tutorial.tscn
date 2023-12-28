@@ -117,7 +117,7 @@ anchor_right = 1.02626
 anchor_bottom = 0.892187
 theme = ExtResource("3_2j0yg")
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 15
+theme_override_font_sizes/normal_font_size = 10
 bbcode_enabled = true
 text = "Good morning, Mr Claus! We are happy to have you working with us!
 As this is your first day on the job, here are some guidelines -
@@ -126,7 +126,7 @@ and it's your job to judge them!
 Each child has their own file [click on the child to open it],
 this file will contain:
 -general information about the child
--good and bad actions the child has done in the past year [click on the action to get details]
+-good and bad actions the child has done in the past year [click on the action to see a picture]
 -the child's letter to you [click letter to open]
 After examining a child's file, click [Judge],
 then drag the child to the right if you consider them [Nice],

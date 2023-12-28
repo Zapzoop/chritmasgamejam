@@ -1,8 +1,8 @@
+Button
 Label
 Sprite2D
 ColorRect
 AudioStreamPlayer2D
-Button
 AspectRatioContainer
 Node2D
 CollisionShape2D
@@ -12,4 +12,3 @@ AnimatedSprite2D
 Node
 Control
 ProgressBar
-TextureProgressBar
