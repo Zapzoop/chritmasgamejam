@@ -8,7 +8,10 @@ func _on_option_pressed():
 	Global.emit_signal("change_scene",self,"options")
 
 func _on_exit_pressed():
-	get_tree().quit()
+	if OS.has_feature("web"):
+		get_tree()->call_deferred("quit")
+	else:
+		get_tree().quit()
 
 func _on_credits_pressed():
 	Global.emit_signal("change_scene",self,"credits")

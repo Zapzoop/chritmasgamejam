@@ -6,3 +6,5 @@ res://mainlevel/level.gd
 res://main_menu/mainmenu.tscn
 res://character/child/child_file.tscn
 res://assets/scenes&scripts/loose.tscn
+res://main_menu/mainmenu.gd
+res://main_menu/pause.gd
