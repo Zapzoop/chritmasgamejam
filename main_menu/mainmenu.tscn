@@ -1,13 +1,23 @@
-[gd_scene load_steps=9 format=3 uid="uid://bbmf1tywq1u2v"]
+[gd_scene load_steps=12 format=3 uid="uid://bbmf1tywq1u2v"]
 
 [ext_resource type="Script" path="res://main_menu/mainmenu.gd" id="1_fpnir"]
 [ext_resource type="Script" path="res://main_menu/sfx.gd" id="2_kvo1x"]
-[ext_resource type="Texture2D" uid="uid://bwuje4q6anm0o" path="res://assets/graphics/bg.jpeg" id="2_ljwq6"]
-[ext_resource type="Texture2D" uid="uid://bynxb35vi87sj" path="res://assets/graphics/tree/treeIdle1.png" id="3_c0om3"]
+[ext_resource type="Texture2D" uid="uid://bb0b080qjamc6" path="res://assets/IMG_7719.png" id="2_noes8"]
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="4_h5vgx"]
-[ext_resource type="FontFile" uid="uid://dywp2r20vvy4h" path="res://assets/fonts/Written On The Hand-Bold.otf" id="6_2ov01"]
+[ext_resource type="Texture2D" uid="uid://t64qhhfe0w0l" path="res://assets/icons/start.png" id="4_y60q8"]
+[ext_resource type="Texture2D" uid="uid://ubridbbve72c" path="res://assets/icons/options.png" id="5_ifoir"]
+[ext_resource type="Texture2D" uid="uid://unoyip4b2bkm" path="res://assets/icons/credits.png" id="6_ffonl"]
 [ext_resource type="AudioStream" uid="uid://buxasyd8x5xsq" path="res://main_menu/mermello_pastello.mp3" id="7_877fo"]
+[ext_resource type="Texture2D" uid="uid://yy3l7lpc8d3x" path="res://assets/icons/exit.png" id="7_arbmq"]
 [ext_resource type="Script" path="res://main_menu/theme.gd" id="8_5nm75"]
+
+[sub_resource type="Environment" id="Environment_a01t5"]
+background_mode = 3
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 1.0
+glow_strength = 0.95
+glow_blend_mode = 0
 
 [node name="Mainmenu" type="Control"]
 layout_mode = 3
@@ -19,69 +29,60 @@ grow_vertical = 2
 script = ExtResource("1_fpnir")
 
 [node name="bg" type="Sprite2D" parent="."]
-modulate = Color(0.694118, 0.764706, 0.529412, 0.72549)
 position = Vector2(576, 326)
 scale = Vector2(0.6, 0.603704)
-texture = ExtResource("2_ljwq6")
-
-[node name="tree" type="Sprite2D" parent="bg"]
-texture = ExtResource("3_c0om3")
+texture = ExtResource("2_noes8")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.375
-anchor_top = 0.209877
-anchor_right = 0.611979
-anchor_bottom = 1.20988
-grow_horizontal = 2
+anchor_left = 0.777778
+anchor_top = 0.382716
+anchor_right = 1.01788
+anchor_bottom = 0.982716
+offset_right = 148.4
+offset_bottom = 259.2
+grow_horizontal = 0
 grow_vertical = 2
-theme_override_constants/separation = 49
-alignment = 1
+scale = Vector2(0.6, 0.6)
+theme_override_constants/separation = 25
+alignment = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="start" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
 theme = ExtResource("4_h5vgx")
 theme_override_font_sizes/font_size = 30
-text = "Start"
+icon = ExtResource("4_y60q8")
 flat = true
 
 [node name="option" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
 theme = ExtResource("4_h5vgx")
 theme_override_font_sizes/font_size = 30
-text = "Option"
+icon = ExtResource("5_ifoir")
 flat = true
 
 [node name="credits" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
 theme = ExtResource("4_h5vgx")
 theme_override_font_sizes/font_size = 30
-text = "Credits"
+icon = ExtResource("6_ffonl")
 flat = true
 
 [node name="exit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 8
 theme = ExtResource("4_h5vgx")
 theme_override_font_sizes/font_size = 30
-text = "Exit"
+icon = ExtResource("7_arbmq")
 flat = true
 
 [node name="sfx" type="AudioStreamPlayer2D" parent="."]
 script = ExtResource("2_kvo1x")
-
-[node name="title" type="RichTextLabel" parent="."]
-layout_mode = 0
-offset_left = 424.0
-offset_top = 32.0
-offset_right = 968.0
-offset_bottom = 312.0
-theme_override_colors/default_color = Color(0.513726, 0, 0, 1)
-theme_override_fonts/normal_font = ExtResource("6_2ov01")
-theme_override_font_sizes/normal_font_size = 76
-text = "SANTA'S 
-	LAP"
 
 [node name="theme" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_877fo")
@@ -89,8 +90,19 @@ volume_db = -10.0
 autoplay = true
 script = ExtResource("8_5nm75")
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_a01t5")
+
+[connection signal="mouse_entered" from="VBoxContainer/start" to="." method="_on_start_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/start" to="." method="_on_start_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/option" to="." method="_on_option_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/option" to="." method="_on_option_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/option" to="." method="_on_option_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/credits" to="." method="_on_credits_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/credits" to="." method="_on_credits_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/credits" to="." method="_on_credits_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/exit" to="." method="_on_exit_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/exit" to="." method="_on_exit_mouse_exited"]
 [connection signal="pressed" from="VBoxContainer/exit" to="." method="_on_exit_pressed"]
 [connection signal="finished" from="theme" to="." method="_on_theme_finished"]

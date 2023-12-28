@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ti4n5d5nwwpi"]
+[gd_scene load_steps=18 format=3 uid="uid://ti4n5d5nwwpi"]
 
 [ext_resource type="Script" path="res://generator/generator.gd" id="1_fjgta"]
 [ext_resource type="Theme" uid="uid://cuevdh5m46808" path="res://assets/fonts/normal.tres" id="2_2bemc"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://cdjbwhckwxatn" path="res://assets/fonts/Childhood-Bold.otf" id="3_vadwe"]
 [ext_resource type="Texture2D" uid="uid://c1s7mowljpc60" path="res://assets/icons/buttonclose.png" id="4_uhwsp"]
 [ext_resource type="Texture2D" uid="uid://cei4aanvdavik" path="res://generator/letter.png" id="5_7pqky"]
+[ext_resource type="Texture2D" uid="uid://bnkhw7of6r373" path="res://assets/IMG_7722.png" id="7_bte7i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fip30"]
 size = Vector2(457.143, 320)
@@ -269,8 +270,8 @@ anchor_right = 0.291667
 anchor_bottom = 1.0
 offset_left = 120.0
 offset_top = 90.0
-offset_right = 792.0
-offset_bottom = 1386.0
+offset_right = 1128.0
+offset_bottom = 2034.0
 grow_vertical = 2
 scale = Vector2(0.7, 0.7)
 script = ExtResource("1_fjgta")
@@ -413,6 +414,11 @@ theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3_vadwe")
 theme_override_font_sizes/normal_font_size = 39
 text = "Dear santa i want"
+
+[node name="Sprite2D" type="Sprite2D" parent="letter"]
+position = Vector2(182.857, -125.714)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_bte7i")
 
 [node name="Crushed" type="Sprite2D" parent="."]
 position = Vector2(125.714, 145.714)

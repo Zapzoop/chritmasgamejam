@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703516787
-export_presets.cfg::TextFile::-1::1703506866::0::1::::<><>::
+::res://::1703747751
+export_presets.cfg::TextFile::-1::1703747379::0::1::::<><>::
 hight_Score.txt.txt::TextFile::-1::1703501262::0::1::::<><>::
-icon.svg::CompressedTexture2D::7578759187451317425::1703425603::1703498727::1::::<><>::
+icon.svg::CompressedTexture2D::7578759187451317425::1703425603::1703747378::1::::<><>::
 README.md::TextFile::-1::1703425603::0::1::::<><>::
-score.gd::GDScript::-1::1703501262::0::1::::<>RichTextLabel<>::
+score.gd::GDScript::-1::1703747381::0::1::::<>RichTextLabel<>::
 tutorial.gd::GDScript::-1::1703427403::0::1::::<>Control<>::
-::res://assets/::1703516816
+::res://assets/::1703747753
 Child5BlueAnvil1.png::CompressedTexture2D::8329353491667304987::1703498438::1703498438::1::::<><>::
 Child5BlueAnvil2.png::CompressedTexture2D::1272948645953778845::1703498438::1703498438::1::::<><>::
 Child5BlueAnvil3.png::CompressedTexture2D::6162740960458258065::1703498438::1703498438::1::::<><>::
@@ -115,6 +115,13 @@ IMG_7691.png::CompressedTexture2D::3678383901395515719::1703425603::1703427657::
 IMG_7692.png::CompressedTexture2D::6304221986139122490::1703425603::1703427657::1::::<><>::
 IMG_7693.png::CompressedTexture2D::6497769830797600014::1703506796::1703427657::1::::<><>::
 IMG_7694.png::CompressedTexture2D::3595419595305728056::1703506796::1703427657::1::::<><>::
+IMG_7719.png::CompressedTexture2D::2508326105652689635::1703747395::1703747753::1::::<><>::
+IMG_7721.png::CompressedTexture2D::5586227527134579057::1703747395::1703747751::1::::<><>::
+IMG_7722.png::CompressedTexture2D::3319985437587164388::1703747395::1703747751::1::::<><>::
+IMG_7727.png::CompressedTexture2D::6395753090995166734::1703747395::1703747753::1::::<><>::
+IMG_7728.png::CompressedTexture2D::1801158937106766299::1703747395::1703747753::1::::<><>::
+IMG_7729.png::CompressedTexture2D::8360929763697595995::1703747395::1703747753::1::::<><>::
+IMG_7730.png::CompressedTexture2D::1511336241050616344::1703747395::1703747753::1::::<><>::
 ::res://assets/characters/::1703427403
 anvil.webp::CompressedTexture2D::4346153789948654377::1703425603::1703425603::1::::<><>::
 ::res://assets/characters/Anvil/::1703427403
@@ -144,18 +151,18 @@ Childhood-Bold.otf::FontFile::5002087673783229547::1703425603::1703425603::1::::
 normal.tres::Theme::6186156579985719103::1703499243::0::1::::<><>::uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf
 Written On The Hand-Bold.otf::FontFile::8890170516079799065::1703425603::1703425603::1::::<><>::
 Written On The Hand.otf::FontFile::3385745802403308697::1703425603::1703425603::1::::<><>::
-::res://assets/Forgottenpostcards/::1703516834
-believes in aliens.png::CompressedTexture2D::1330303472053973757::1703447864::1703516837::1::::<><>::
-doesn't know the difference between a microwave and a oven.png::CompressedTexture2D::2634642745508573824::1703482144::1703516837::1::::<><>::
-doesn't know the difference between tomato sauce and ketchup.png::CompressedTexture2D::7293091824527153027::1703481664::1703516837::1::::<><>::
-dosentlikemushroom.png::CompressedTexture2D::5679045098617533831::1703448934::1703516837::1::::<><>::
-eatspineapplepizza.png::CompressedTexture2D::3688147734620563124::1703449226::1703516837::1::::<><>::
-joinschessclub.png::CompressedTexture2D::4656938786593217158::1703448432::1703516837::1::::<><>::
-loves Disney movies.png::CompressedTexture2D::3360191536285644610::1703482726::1703516837::1::::<><>::
-playsicehockey.png::CompressedTexture2D::1383698480596856351::1703449464::1703516837::1::::<><>::
-sleepswithanightlighton.png::CompressedTexture2D::4086375668149414243::1703448754::1703516837::1::::<><>::
-wears pyjamas inside out all of the time.png::CompressedTexture2D::7834051781441135805::1703482014::1703516837::1::::<><>::
-whatched the godfather 7 timers.png::CompressedTexture2D::1272363353811968800::1703481298::1703516837::1::::<><>::
+::res://assets/Forgottenpostcards/::1703747395
+believes in aliens.png::CompressedTexture2D::1330303472053973757::1703747395::1703747395::1::::<><>::
+doesn't know the difference between a microwave and a oven.png::CompressedTexture2D::2634642745508573824::1703747395::1703747395::1::::<><>::
+doesn't know the difference between tomato sauce and ketchup.png::CompressedTexture2D::7293091824527153027::1703747395::1703747395::1::::<><>::
+dosentlikemushroom.png::CompressedTexture2D::5679045098617533831::1703747395::1703747395::1::::<><>::
+eatspineapplepizza.png::CompressedTexture2D::3688147734620563124::1703747395::1703747395::1::::<><>::
+joinschessclub.png::CompressedTexture2D::4656938786593217158::1703747395::1703747395::1::::<><>::
+loves Disney movies.png::CompressedTexture2D::3360191536285644610::1703747395::1703747395::1::::<><>::
+playsicehockey.png::CompressedTexture2D::1383698480596856351::1703747395::1703747395::1::::<><>::
+sleepswithanightlighton.png::CompressedTexture2D::4086375668149414243::1703747395::1703747395::1::::<><>::
+wears pyjamas inside out all of the time.png::CompressedTexture2D::7834051781441135805::1703747395::1703747395::1::::<><>::
+whatched the godfather 7 timers.png::CompressedTexture2D::1272363353811968800::1703747395::1703747395::1::::<><>::
 ::res://assets/grafics/::1703436855
 logo.png::CompressedTexture2D::2512335140386692520::1703436855::1703436855::1::::<><>::
 ::res://assets/grafics/actions/::1703429229
@@ -420,18 +427,22 @@ SantaWin9.png::CompressedTexture2D::1506795614861623550::1703425603::1703425603:
 ::res://assets/graphics/tree/::1703425603
 treeIdle1.png::CompressedTexture2D::4099189636400294677::1703425603::1703425603::1::::<><>::
 treeIdle2.png::CompressedTexture2D::4432816780049879044::1703425603::1703425603::1::::<><>::
-::res://assets/icons/::1703498438
+::res://assets/icons/::1703748432
 back.png::CompressedTexture2D::2122019267414469849::1703425603::1703425603::1::::<><>::
 buttonclose.png::CompressedTexture2D::6636875244668514471::1703498438::1703498438::1::::<><>::
 close.jpg::CompressedTexture2D::4864347877611178618::1703425603::1703425603::1::::<><>::
+credits.png::CompressedTexture2D::1431507125194766508::1703748424::1703748434::1::::<><>::
+exit.png::CompressedTexture2D::1735798731366185379::1703747729::1703747751::1::::<><>::
+options.png::CompressedTexture2D::1406887884931524968::1703748366::1703748434::1::::<><>::
+start.png::CompressedTexture2D::1399373483701787421::1703747657::1703747751::1::::<><>::
 white-removebg.png::CompressedTexture2D::8179448553755570305::1703425603::1703425603::1::::<><>::
 ::res://assets/Report/::1703425603
 Report.png::CompressedTexture2D::6526024992810072132::1703425603::1703425603::1::::<><>::
-::res://assets/scenes&scripts/::1703498438
+::res://assets/scenes&scripts/::1703747379
 bg.tscn::PackedScene::5860211336105416219::1703425603::0::1::::<><>::uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg
-loose.tscn::PackedScene::3019424750563842566::1703483084::0::1::::<><>::res://score.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/mainmenu.gd<>uid://dntgl8tebgjuo::::res://main_menu/loose.mp3
+loose.tscn::PackedScene::3019424750563842566::1703747379::0::1::::<><>::res://score.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/mainmenu.gd<>uid://dntgl8tebgjuo::::res://main_menu/loose.mp3
 main.tscn::PackedScene::3007063402395734495::1703425603::0::1::::<><>::
-tutorial.tscn::PackedScene::5973909585609080770::1703498438::0::1::::<><>::res://tutorial.gd<>uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres
+tutorial.tscn::PackedScene::5973909585609080770::1703747379::0::1::::<><>::res://tutorial.gd<>uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres
 ::res://assets/sound/::1703498438
 AmbienceLoop.wav::AudioStreamWAV::2490381276454230762::1703425603::1703425603::1::::<><>::
 base.gd::GDScript::-1::1703425603::0::1::::<>AudioStreamPlayer2D<>::
@@ -507,13 +518,13 @@ StartGame.wav::AudioStreamWAV::3838591436227028715::1703425603::1703425603::1:::
 ::res://character/::1703425603
 ::res://character/anvil/::1703498438
 anvil.tscn::PackedScene::114508701755314026::1703498438::0::1::::<><>::res://character/child/child.gd<>uid://55ypvj5fj1og::::res://assets/characters/Dragged/IMG_7696.png<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn<>uid://dk0q5st24y5jc::::res://assets/characters/Presents/IMG_7712.png<>uid://cgxv88lwegt2p::::res://assets/characters/Idle/IMG_7695.png<>uid://bfd8jbdjewwxi::::res://assets/characters/Presents/IMG_7713.png<>uid://tr6r8ynffgr3::::res://assets/characters/Presents/IMG_7714.png<>uid://n7ic4x4hppay::::res://assets/characters/Presents/IMG_7715.png<>uid://xm7sq3nnq8v0::::res://assets/characters/Presents/IMG_7716.png<>uid://c2x5kewqgqxjf::::res://assets/characters/Presents/IMG_7717.png<>uid://bbeo4cg0vsahu::::res://assets/characters/Presents/IMG_7718.png
-::res://character/child/::1703501262
-child.gd::GDScript::-1::1703500730::0::1::::<>CharacterBody2D<>::
-child.tscn::PackedScene::7367537772686235666::1703501262::0::1::::<><>::res://character/child/child.gd<>uid://cjlpxmewwoeer::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil1.png<>uid://cxxctaoe2dd3o::::res://assets/graphics/Child/Child 4/Blue/Sitting/Child4BlueSitting.png<>uid://cnmcnewu1nva3::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil2.png<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn<>uid://ww6yw5gbwpci::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil3.png<>uid://cacipbwr3b22j::::res://assets/graphics/Child/Child 1/Blue/Dragging/ChildBlueDragged.png<>uid://b7pq3w4eajfoj::::res://assets/graphics/Child/Child 1/Blue/Idle/ChildBlueSitting.png<>uid://dcwnfqxwwrsn2::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents1.png<>uid://bgpg1x7jw5hjj::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents2.png<>uid://ccuea04uleteg::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents3.png<>uid://cbn6mwrbekffw::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents4.png<>uid://bftiqx4cri3dv::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil1.png<>uid://tudalkwuw7r8::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil2.png<>uid://ddrc8evwkdxp7::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil3.png<>uid://33b34x50omss::::res://assets/graphics/Child/Child 1/Green/Dragging/ChildGreenDragged.png<>uid://dke2d4wb2l1fh::::res://assets/graphics/Child/Child 1/Green/Idle/ChildGreenSitting.png<>uid://c3ggojrsuurxo::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents1.png<>uid://bpcwfc0puq4y7::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents2.png<>uid://dm5hbkoaannrm::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents3.png<>uid://br8iquckgoan2::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents4.png<>uid://dlkg0u0fh2q7y::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil1.png<>uid://cerqaxfeupi0k::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil2.png<>uid://da15r3a3wtyf6::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil3.png<>uid://ftqyv3rwiqmv::::res://assets/graphics/Child/Child 1/Pink/Dragging/ChildPinkDragged.png<>uid://bqk3e5yplgguu::::res://assets/graphics/Child/Child 1/Pink/Idle/ChildPinkSitting.png<>uid://dnc55yeue28b0::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents1.png<>uid://4htqtf4bgxx3::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents2.png<>uid://cbwdpqahdvnmp::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents3.png<>uid://dbbrb63yycslx::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents4.png<>uid://bumdu58rt0apv::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil1.png<>uid://br5dg8y3u1pjh::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil2.png<>uid://b2crie175jfd4::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil3.png<>uid://4l6bvrle8ujx::::res://assets/graphics/Child/Child 2/Blue/Dragging/Child2BlueDragged.png<>uid://cisof4efkntdq::::res://assets/graphics/Child/Child 2/Blue/Idle/Child2BlueSitting.png<>uid://cipsxxjdn1qxt::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents1.png<>uid://do7phl8gu4job::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents2.png<>uid://dkehb1buoi4aa::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents3.png<>uid://b7ne5xiny5gvj::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents4.png<>uid://cfmahktswapwm::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil1.png<>uid://cuy23ynud4d0p::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil2.png<>uid://bjvj3kodmvaby::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil3.png<>uid://bofpi52xh5xqa::::res://assets/graphics/Child/Child 2/Green/Dragging/Child2GreenDragged.png<>uid://bevejwj2pwbvf::::res://assets/graphics/Child/Child 2/Green/Idle/Child2GreenSitting.png<>uid://dy25m8qqst770::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents1.png<>uid://ds18da15adxwx::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents2.png<>uid://bvv51wmn7j2y6::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents3.png<>uid://c0nhyf0sxafey::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents4.png<>uid://cyyywjp6jldmp::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil1.png<>uid://co432tan07tjy::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil2.png<>uid://cyoqm1u4lqlmr::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil3.png<>uid://d4em3mn3uugep::::res://assets/graphics/Child/Child 2/Pink/Dragging/Child2PinkDragged.png<>uid://blhhywqsjxmo6::::res://assets/graphics/Child/Child 2/Pink/Idle/Child2PinkSitting.png<>uid://dfbbooqoctg33::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents1.png<>uid://c4wpjxf5paiac::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents2.png<>uid://c1bumxfpcmnmk::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents3.png<>uid://b5eqoyd0a6o62::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents4.png<>uid://didrh67idwj0r::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil1.png<>uid://brro0tq6m5s1m::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil2.png<>uid://cj01gv8yv5gxn::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil3.png<>uid://shfgj1v1gm8e::::res://assets/graphics/Child/Child 3/Blue/Dragged/Child3BlueDragged.png<>uid://bpk6uh4pblpjd::::res://assets/graphics/Child/Child 3/Blue/Sitting/Child3BlueSitting.png<>uid://huofua075fxn::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents1.png<>uid://chwewnh5pd3yk::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents2.png<>uid://40sanbl5gekg::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents3.png<>uid://codo151hywvpr::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents4.png<>uid://di4hvn2tfqj6q::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil1.png<>uid://kbh3gmxmy0ti::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil2.png<>uid://mpe0kcslvxak::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil3.png<>uid://c0al7878xhydj::::res://assets/graphics/Child/Child 3/Green/Dragged/Child3GreenDragged.png<>uid://dcxmr6j4p01aw::::res://assets/graphics/Child/Child 3/Green/Sitting/Child3GreenSitting.png<>uid://cib82yilpwgf3::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents1.png<>uid://befxko8ysar2w::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents2.png<>uid://btpek7lawfxeg::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents3.png<>uid://iqo6vhlf3r14::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents4.png<>uid://gau4vnjaprk7::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil1.png<>uid://ctiv3lv3dkw0s::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil2.png<>uid://c4tufv704plga::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil3.png<>uid://dari4t4i2sw4f::::res://assets/graphics/Child/Child 3/Pink/Dragged/Child3PinkDragged.png<>uid://ofqkmnd5c6t4::::res://assets/graphics/Child/Child 3/Pink/Sitting/Child3PinkSitting.png<>uid://bc5bjyl5mhbt2::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents1.png<>uid://cx2tdvuvwr47f::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents2.png<>uid://bo054tykkgc3c::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents3.png<>uid://b71v6d6dv1n1b::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents4.png<>uid://hslmsy3nb58d::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil1.png<>uid://bbfrp2vqcf0w0::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil2.png<>uid://1lcuqj50p2pb::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil3.png<>uid://doqjil1j7vlm0::::res://assets/graphics/Child/Child 4/Blue/Dragged/Child4BlueDragged.png<>uid://kpg11roub72s::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents1.png<>uid://caflnn2sh022a::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents2.png<>uid://8pmgk5omu3fn::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents3.png<>uid://dn3he6ihmxb2j::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents4.png<>uid://bd53clj4nkk8x::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil1.png<>uid://bqelv6bsjmkq::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil2.png<>uid://bh3otyvh6kn38::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil3.png<>uid://bai707yn3gjfm::::res://assets/graphics/Child/Child 4/Green/Dragged/Child4GreenDragged.png<>uid://gy6hental2ft::::res://assets/graphics/Child/Child 4/Green/Sitting/Child4GreenSitting.png<>uid://cthht4qxn1rqs::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents1.png<>uid://ccq0nte382yxc::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents2.png<>uid://jt8smi1v7b3w::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents3.png<>uid://dwtpuwkrn7tb7::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents4.png<>uid://c08huf0ujap60::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil1.png<>uid://bkxrkrx7gr88k::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil2.png<>uid://c7igsbei6l434::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil3.png<>uid://b570m73jvgbpp::::res://assets/graphics/Child/Child 4/Pink/Dragged/Child4PinkDragged.png<>uid://b22m5w2cx61en::::res://assets/graphics/Child/Child 4/Pink/Sitting/Child4PinkSitting.png<>uid://dsa8bveqvsk36::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents1.png<>uid://cgt1hqw3j4qb3::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents2.png<>uid://ivkydrymx6y1::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents3.png<>uid://b3gju8y7wx7n7::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents4.png
+::res://character/child/::1703748275
+child.gd::GDScript::-1::1703748275::0::1::::<>CharacterBody2D<>::
+child.tscn::PackedScene::7367537772686235666::1703747379::0::1::::<><>::res://character/child/child.gd<>uid://cjlpxmewwoeer::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil1.png<>uid://cxxctaoe2dd3o::::res://assets/graphics/Child/Child 4/Blue/Sitting/Child4BlueSitting.png<>uid://cnmcnewu1nva3::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil2.png<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn<>uid://ww6yw5gbwpci::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil3.png<>uid://cacipbwr3b22j::::res://assets/graphics/Child/Child 1/Blue/Dragging/ChildBlueDragged.png<>uid://b7pq3w4eajfoj::::res://assets/graphics/Child/Child 1/Blue/Idle/ChildBlueSitting.png<>uid://dcwnfqxwwrsn2::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents1.png<>uid://bgpg1x7jw5hjj::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents2.png<>uid://ccuea04uleteg::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents3.png<>uid://cbn6mwrbekffw::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents4.png<>uid://bftiqx4cri3dv::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil1.png<>uid://tudalkwuw7r8::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil2.png<>uid://ddrc8evwkdxp7::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil3.png<>uid://33b34x50omss::::res://assets/graphics/Child/Child 1/Green/Dragging/ChildGreenDragged.png<>uid://dke2d4wb2l1fh::::res://assets/graphics/Child/Child 1/Green/Idle/ChildGreenSitting.png<>uid://c3ggojrsuurxo::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents1.png<>uid://bpcwfc0puq4y7::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents2.png<>uid://dm5hbkoaannrm::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents3.png<>uid://br8iquckgoan2::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents4.png<>uid://dlkg0u0fh2q7y::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil1.png<>uid://cerqaxfeupi0k::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil2.png<>uid://da15r3a3wtyf6::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil3.png<>uid://ftqyv3rwiqmv::::res://assets/graphics/Child/Child 1/Pink/Dragging/ChildPinkDragged.png<>uid://bqk3e5yplgguu::::res://assets/graphics/Child/Child 1/Pink/Idle/ChildPinkSitting.png<>uid://dnc55yeue28b0::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents1.png<>uid://4htqtf4bgxx3::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents2.png<>uid://cbwdpqahdvnmp::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents3.png<>uid://dbbrb63yycslx::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents4.png<>uid://bumdu58rt0apv::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil1.png<>uid://br5dg8y3u1pjh::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil2.png<>uid://b2crie175jfd4::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil3.png<>uid://4l6bvrle8ujx::::res://assets/graphics/Child/Child 2/Blue/Dragging/Child2BlueDragged.png<>uid://cisof4efkntdq::::res://assets/graphics/Child/Child 2/Blue/Idle/Child2BlueSitting.png<>uid://cipsxxjdn1qxt::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents1.png<>uid://do7phl8gu4job::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents2.png<>uid://dkehb1buoi4aa::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents3.png<>uid://b7ne5xiny5gvj::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents4.png<>uid://cfmahktswapwm::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil1.png<>uid://cuy23ynud4d0p::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil2.png<>uid://bjvj3kodmvaby::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil3.png<>uid://bofpi52xh5xqa::::res://assets/graphics/Child/Child 2/Green/Dragging/Child2GreenDragged.png<>uid://bevejwj2pwbvf::::res://assets/graphics/Child/Child 2/Green/Idle/Child2GreenSitting.png<>uid://dy25m8qqst770::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents1.png<>uid://ds18da15adxwx::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents2.png<>uid://bvv51wmn7j2y6::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents3.png<>uid://c0nhyf0sxafey::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents4.png<>uid://cyyywjp6jldmp::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil1.png<>uid://co432tan07tjy::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil2.png<>uid://cyoqm1u4lqlmr::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil3.png<>uid://d4em3mn3uugep::::res://assets/graphics/Child/Child 2/Pink/Dragging/Child2PinkDragged.png<>uid://blhhywqsjxmo6::::res://assets/graphics/Child/Child 2/Pink/Idle/Child2PinkSitting.png<>uid://dfbbooqoctg33::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents1.png<>uid://c4wpjxf5paiac::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents2.png<>uid://c1bumxfpcmnmk::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents3.png<>uid://b5eqoyd0a6o62::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents4.png<>uid://didrh67idwj0r::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil1.png<>uid://brro0tq6m5s1m::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil2.png<>uid://cj01gv8yv5gxn::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil3.png<>uid://shfgj1v1gm8e::::res://assets/graphics/Child/Child 3/Blue/Dragged/Child3BlueDragged.png<>uid://bpk6uh4pblpjd::::res://assets/graphics/Child/Child 3/Blue/Sitting/Child3BlueSitting.png<>uid://huofua075fxn::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents1.png<>uid://chwewnh5pd3yk::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents2.png<>uid://40sanbl5gekg::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents3.png<>uid://codo151hywvpr::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents4.png<>uid://di4hvn2tfqj6q::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil1.png<>uid://kbh3gmxmy0ti::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil2.png<>uid://mpe0kcslvxak::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil3.png<>uid://c0al7878xhydj::::res://assets/graphics/Child/Child 3/Green/Dragged/Child3GreenDragged.png<>uid://dcxmr6j4p01aw::::res://assets/graphics/Child/Child 3/Green/Sitting/Child3GreenSitting.png<>uid://cib82yilpwgf3::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents1.png<>uid://befxko8ysar2w::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents2.png<>uid://btpek7lawfxeg::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents3.png<>uid://iqo6vhlf3r14::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents4.png<>uid://gau4vnjaprk7::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil1.png<>uid://ctiv3lv3dkw0s::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil2.png<>uid://c4tufv704plga::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil3.png<>uid://dari4t4i2sw4f::::res://assets/graphics/Child/Child 3/Pink/Dragged/Child3PinkDragged.png<>uid://ofqkmnd5c6t4::::res://assets/graphics/Child/Child 3/Pink/Sitting/Child3PinkSitting.png<>uid://bc5bjyl5mhbt2::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents1.png<>uid://cx2tdvuvwr47f::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents2.png<>uid://bo054tykkgc3c::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents3.png<>uid://b71v6d6dv1n1b::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents4.png<>uid://hslmsy3nb58d::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil1.png<>uid://bbfrp2vqcf0w0::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil2.png<>uid://1lcuqj50p2pb::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil3.png<>uid://doqjil1j7vlm0::::res://assets/graphics/Child/Child 4/Blue/Dragged/Child4BlueDragged.png<>uid://kpg11roub72s::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents1.png<>uid://caflnn2sh022a::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents2.png<>uid://8pmgk5omu3fn::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents3.png<>uid://dn3he6ihmxb2j::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents4.png<>uid://bd53clj4nkk8x::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil1.png<>uid://bqelv6bsjmkq::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil2.png<>uid://bh3otyvh6kn38::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil3.png<>uid://bai707yn3gjfm::::res://assets/graphics/Child/Child 4/Green/Dragged/Child4GreenDragged.png<>uid://gy6hental2ft::::res://assets/graphics/Child/Child 4/Green/Sitting/Child4GreenSitting.png<>uid://cthht4qxn1rqs::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents1.png<>uid://ccq0nte382yxc::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents2.png<>uid://jt8smi1v7b3w::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents3.png<>uid://dwtpuwkrn7tb7::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents4.png<>uid://c08huf0ujap60::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil1.png<>uid://bkxrkrx7gr88k::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil2.png<>uid://c7igsbei6l434::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil3.png<>uid://b570m73jvgbpp::::res://assets/graphics/Child/Child 4/Pink/Dragged/Child4PinkDragged.png<>uid://b22m5w2cx61en::::res://assets/graphics/Child/Child 4/Pink/Sitting/Child4PinkSitting.png<>uid://dsa8bveqvsk36::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents1.png<>uid://cgt1hqw3j4qb3::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents2.png<>uid://ivkydrymx6y1::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents3.png<>uid://b3gju8y7wx7n7::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents4.png
 childquality.gd::GDScript::-1::1703425603::0::1::::<>Node<>::
-child_file.tscn::PackedScene::1351888640982327902::1703501262::0::1::::<><>::res://generator/generator.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cdjbwhckwxatn::::res://assets/fonts/Childhood-Bold.otf<>uid://c1s7mowljpc60::::res://assets/icons/buttonclose.png<>uid://cei4aanvdavik::::res://generator/letter.png
-::res://generator/::1703501262
-generator.gd::GDScript::-1::1703501262::0::1::::<>Node<>::
+child_file.tscn::PackedScene::1351888640982327902::1703747379::0::1::::<><>::res://generator/generator.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cdjbwhckwxatn::::res://assets/fonts/Childhood-Bold.otf<>uid://c1s7mowljpc60::::res://assets/icons/buttonclose.png<>uid://cei4aanvdavik::::res://generator/letter.png
+::res://generator/::1703748275
+generator.gd::GDScript::-1::1703748275::0::1::::<>Node<>::
 letter.png::CompressedTexture2D::5071872577801672190::1703430705::1703430705::1::::<><>::
 ::res://global/::1703501262
 global.gd::GDScript::-1::1703498438::0::1::::<>Node<>::
@@ -522,136 +533,136 @@ hight.txt::TextFile::-1::1703501262::0::1::::<><>::
 level.gd::GDScript::-1::1703501262::0::1::::<>Node2D<>::
 level.tscn::PackedScene::1516234851076444278::1703498438::0::1::::<><>::res://mainlevel/level.gd<>uid://vmsjdh52pqvp::::res://main_menu/pause.tscn<>uid://crd2ohkb3lewo::::res://assets/scenes&scripts/tutorial.tscn<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://b4fj3yrce0xxs::::res://assets/graphics/tree/treeIdle2.png<>uid://8yrk6p4wbuck::::res://assets/graphics/anvill/Idle/anvilIDLE1.png<>uid://cbb2mp8j2xrxq::::res://assets/characters/Anvil/IMG_7697.png<>uid://ea6ocanfdiqf::::res://assets/graphics/anvill/Idle/anvilIDLE2.png<>uid://dr5fx4emrt33d::::res://assets/characters/Anvil/IMG_7698.png<>uid://dh3qqbc08ptjn::::res://assets/characters/Anvil/IMG_7699.png<>uid://dgd1dec4r3t1x::::res://assets/graphics/anvill/KillChild/KillChild1.png<>uid://ch58l7lmh75we::::res://assets/graphics/Youre_fired.png<>uid://bvknu3uxnmugb::::res://assets/characters/Anvil/IMG_7700.png<>uid://b2514lp7rnbdt::::res://assets/graphics/anvill/KillChild/KillChild2.png<>uid://dlm3w0xtvsl0k::::res://assets/characters/Anvil/IMG_7701.png<>uid://copyd58nj8skn::::res://assets/graphics/anvill/KillChild/KillChild3.png<>uid://xosxcm36v58b::::res://assets/characters/Anvil/IMG_7702.png<>uid://conpsmuc8t6bh::::res://assets/graphics/anvill/KillChild/KillChild4.png<>uid://bjt0k5lcew7wx::::res://assets/graphics/anvill/KillChild/KillChild5.png<>uid://fe80nqr3abt3::::res://assets/characters/Anvil/IMG_7703.png<>uid://ctkum1maf03hg::::res://assets/graphics/anvill/KillChild/KillChild6.png<>uid://buqi3523w4xvv::::res://assets/characters/Anvil/IMG_7704.png<>uid://dv2xbgm042c6w::::res://assets/graphics/anvill/KillChild/KillChild7.png<>uid://fal50oxwevwn::::res://assets/graphics/anvill/KillChild/KillChild8.png<>uid://c5m0162b6wbn6::::res://assets/graphics/anvill/KillChild/KillChild9.png<>uid://dqi7ig3mvpehr::::res://assets/graphics/Santa/Idle/SantaIDLE.png<>uid://dsrjap5xaol6u::::res://assets/graphics/Santa/Win/SantaWin1.png<>uid://cn6wa3pvcs31o::::res://assets/sound/sounds.tscn<>uid://cfh8aewvu57j::::res://assets/graphics/Santa/Win/SantaWin2.png<>uid://jge1gmxxwaei::::res://assets/graphics/Santa/Win/SantaWin3.png<>uid://bmx84irvxs8tk::::res://assets/graphics/Santa/Win/SantaWin4.png<>uid://b7o3pvojuvg3c::::res://assets/graphics/Santa/Win/SantaWin5.png<>uid://dufaeex42clnc::::res://assets/graphics/Santa/Win/SantaWin6.png<>uid://di4q23i8qdp2i::::res://assets/graphics/Santa/Win/SantaWin7.png<>uid://dyw1d2qkfayqi::::res://assets/graphics/Santa/Win/SantaWin8.png<>uid://vp5x6nrw3w1s::::res://assets/graphics/Santa/Win/SantaWin9.png
 sounds.gd::GDScript::-1::1703498438::0::1::::<>Node<>::
-::res://main_menu/::1703501262
+::res://main_menu/::1703748275
 loose.mp3::AudioStreamMP3::8111325904195576154::1703425604::1703425604::1::::<><>::
-mainmenu.gd::GDScript::-1::1703501262::0::1::::<>Control<>::
-mainmenu.tscn::PackedScene::2481733112026175755::1703501236::0::1::::<><>::res://main_menu/mainmenu.gd<>res://main_menu/sfx.gd<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://dywp2r20vvy4h::::res://assets/fonts/Written On The Hand-Bold.otf<>uid://buxasyd8x5xsq::::res://main_menu/mermello_pastello.mp3<>res://main_menu/theme.gd
+mainmenu.gd::GDScript::-1::1703747379::0::1::::<>Control<>::
+mainmenu.tscn::PackedScene::2481733112026175755::1703748275::0::1::::<><>::res://main_menu/mainmenu.gd<>res://main_menu/sfx.gd<>uid://bb0b080qjamc6::::res://assets/IMG_7719.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://t64qhhfe0w0l::::res://assets/icons/start.png<>uid://ubridbbve72c::::res://assets/icons/options.png<>uid://unoyip4b2bkm::::res://assets/icons/credits.png<>uid://buxasyd8x5xsq::::res://main_menu/mermello_pastello.mp3<>uid://yy3l7lpc8d3x::::res://assets/icons/exit.png<>res://main_menu/theme.gd
 mermello_pastello.mp3::AudioStreamMP3::3837711655813539472::1703436372::1703425604::1::::<><>::
 pause.gd::GDScript::-1::1703498438::0::1::::<>CanvasLayer<>::
 pause.tscn::PackedScene::1499847397245771713::1703498438::0::1::::<><>::uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/pause.gd
 sfx.gd::GDScript::-1::1703498438::0::1::::<>AudioStreamPlayer2D<>::
 theme.gd::GDScript::-1::1703498438::0::1::::<>AudioStreamPlayer2D<>::
-::res://main_menu/credits/::1703498438
+::res://main_menu/credits/::1703747379
 credits.gd::GDScript::-1::1703425603::0::1::::<>Control<>::
-credits.tscn::PackedScene::5823629526697979744::1703498438::0::1::::<><>::res://main_menu/credits/credits.gd<>uid://dosgk78mdcxmn::::res://assets/icons/white-removebg.png
+credits.tscn::PackedScene::5823629526697979744::1703747379::0::1::::<><>::res://main_menu/credits/credits.gd<>uid://dosgk78mdcxmn::::res://assets/icons/white-removebg.png
 ::res://main_menu/option/::1703490431
 option.gd::GDScript::-1::1703429229::0::1::::<>Control<>::
 option.tscn::PackedScene::4672343652747781873::1703490431::0::1::::<><>::res://main_menu/option/option.gd<>uid://5h6l2qocg6y4::::res://assets/icons/back.png<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>res://main_menu/option/volume.gd<>uid://buxasyd8x5xsq::::res://main_menu/mermello_pastello.mp3<>res://main_menu/theme.gd<>res://main_menu/sfx.gd
 volume.gd::GDScript::-1::1703429229::0::1::::<>ProgressBar<>::
-::res://santa's lap/::1703436856
-::res://santa's lap/santa's lap/::1703516787
-icon.svg::CompressedTexture2D::7578759187451317425::1703436856::1703498727::1::::<><>::
-score.gd::GDScript::-1::1703436856::0::1::::<>RichTextLabel<>::
-tutorial.gd::GDScript::-1::1703436856::0::1::::<>Control<>::
-::res://santa's lap/santa's lap/assets/::1703436856
-::res://santa's lap/santa's lap/assets/characters/::1703436856
-::res://santa's lap/santa's lap/assets/characters/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/characters/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/characters/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/characters/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/fonts/::1703436856
-::res://santa's lap/santa's lap/assets/grafics/::1703436856
-::res://santa's lap/santa's lap/assets/grafics/actions/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/actions/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/anvill/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/anvill/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/anvill/KillChild/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Dragging/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Dragging/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Dragging/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Dragging/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Dragging/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Dragging/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Sitting/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Sitting/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Sitting/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Sitting/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Sitting/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Anvil/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Dragged/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Presents/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Sitting/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Santa/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Santa/Idle/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/Santa/Win/::1703436856
-::res://santa's lap/santa's lap/assets/graphics/tree/::1703436856
-::res://santa's lap/santa's lap/assets/icons/::1703436856
-::res://santa's lap/santa's lap/assets/Report/::1703436856
-::res://santa's lap/santa's lap/assets/scenes&scripts/::1703436856
-::res://santa's lap/santa's lap/assets/sound/::1703436856
-base.gd::GDScript::-1::1703436856::0::1::::<>AudioStreamPlayer2D<>::
-click.gd::GDScript::-1::1703436856::0::1::::<>AudioStreamPlayer2D<>::
-musics.gd::GDScript::-1::1703436856::0::1::::<>Node2D<>::
-::res://santa's lap/santa's lap/character/::1703436856
-::res://santa's lap/santa's lap/character/anvil/::1703436856
-::res://santa's lap/santa's lap/character/child/::1703436856
-child.gd::GDScript::-1::1703436856::0::1::::<>CharacterBody2D<>::
-childquality.gd::GDScript::-1::1703436856::0::1::::<>Node<>::
-::res://santa's lap/santa's lap/generator/::1703436856
-generator.gd::GDScript::-1::1703436856::0::1::::<>Node<>::
-::res://santa's lap/santa's lap/global/::1703436856
-global.gd::GDScript::-1::1703436856::0::1::::<>Node<>::
-::res://santa's lap/santa's lap/mainlevel/::1703436856
-level.gd::GDScript::-1::1703436856::0::1::::<>Node2D<>::
-sounds.gd::GDScript::-1::1703436856::0::1::::<>Node<>::
-::res://santa's lap/santa's lap/main_menu/::1703436856
-mainmenu.gd::GDScript::-1::1703436856::0::1::::<>Control<>::
-pause.gd::GDScript::-1::1703436856::0::1::::<>CanvasLayer<>::
-sfx.gd::GDScript::-1::1703436856::0::1::::<>AudioStreamPlayer2D<>::
-theme.gd::GDScript::-1::1703436856::0::1::::<>AudioStreamPlayer2D<>::
-::res://santa's lap/santa's lap/main_menu/credits/::1703436856
-credits.gd::GDScript::-1::1703436856::0::1::::<>Control<>::
-::res://santa's lap/santa's lap/main_menu/option/::1703436856
-option.gd::GDScript::-1::1703436856::0::1::::<>Control<>::
-volume.gd::GDScript::-1::1703436856::0::1::::<>ProgressBar<>::
+::res://santa's lap/::1703747380
+::res://santa's lap/santa's lap/::1703747381
+icon.svg::CompressedTexture2D::7578759187451317425::1703747380::1703747380::1::::<><>::
+score.gd::GDScript::-1::1703747381::0::1::::<>RichTextLabel<>::
+tutorial.gd::GDScript::-1::1703747381::0::1::::<>Control<>::
+::res://santa's lap/santa's lap/assets/::1703747380
+::res://santa's lap/santa's lap/assets/characters/::1703747380
+::res://santa's lap/santa's lap/assets/characters/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/characters/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/characters/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/characters/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/fonts/::1703747380
+::res://santa's lap/santa's lap/assets/grafics/::1703747380
+::res://santa's lap/santa's lap/assets/grafics/actions/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/actions/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/anvill/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/anvill/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/anvill/KillChild/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Dragging/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Blue/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Dragging/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Green/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Dragging/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 1/Pink/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Dragging/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Blue/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Dragging/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Green/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Dragging/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 2/Pink/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Blue/Sitting/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Green/Sitting/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 3/Pink/Sitting/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Blue/Sitting/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Green/Sitting/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Anvil/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Dragged/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Presents/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Child/Child 4/Pink/Sitting/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Santa/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Santa/Idle/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/Santa/Win/::1703747380
+::res://santa's lap/santa's lap/assets/graphics/tree/::1703747380
+::res://santa's lap/santa's lap/assets/icons/::1703747380
+::res://santa's lap/santa's lap/assets/Report/::1703747380
+::res://santa's lap/santa's lap/assets/scenes&scripts/::1703747380
+::res://santa's lap/santa's lap/assets/sound/::1703747380
+base.gd::GDScript::-1::1703747380::0::1::::<>AudioStreamPlayer2D<>::
+click.gd::GDScript::-1::1703747380::0::1::::<>AudioStreamPlayer2D<>::
+musics.gd::GDScript::-1::1703747380::0::1::::<>Node2D<>::
+::res://santa's lap/santa's lap/character/::1703747380
+::res://santa's lap/santa's lap/character/anvil/::1703747380
+::res://santa's lap/santa's lap/character/child/::1703747380
+child.gd::GDScript::-1::1703747380::0::1::::<>CharacterBody2D<>::
+childquality.gd::GDScript::-1::1703747380::0::1::::<>Node<>::
+::res://santa's lap/santa's lap/generator/::1703747380
+generator.gd::GDScript::-1::1703747380::0::1::::<>Node<>::
+::res://santa's lap/santa's lap/global/::1703747380
+global.gd::GDScript::-1::1703747380::0::1::::<>Node<>::
+::res://santa's lap/santa's lap/mainlevel/::1703747380
+level.gd::GDScript::-1::1703747380::0::1::::<>Node2D<>::
+sounds.gd::GDScript::-1::1703747380::0::1::::<>Node<>::
+::res://santa's lap/santa's lap/main_menu/::1703747380
+mainmenu.gd::GDScript::-1::1703747380::0::1::::<>Control<>::
+pause.gd::GDScript::-1::1703747380::0::1::::<>CanvasLayer<>::
+sfx.gd::GDScript::-1::1703747380::0::1::::<>AudioStreamPlayer2D<>::
+theme.gd::GDScript::-1::1703747380::0::1::::<>AudioStreamPlayer2D<>::
+::res://santa's lap/santa's lap/main_menu/credits/::1703747380
+credits.gd::GDScript::-1::1703747380::0::1::::<>Control<>::
+::res://santa's lap/santa's lap/main_menu/option/::1703747380
+option.gd::GDScript::-1::1703747380::0::1::::<>Control<>::
+volume.gd::GDScript::-1::1703747380::0::1::::<>ProgressBar<>::

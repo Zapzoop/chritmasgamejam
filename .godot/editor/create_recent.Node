@@ -1,5 +1,6 @@
-Label
 Sprite2D
+WorldEnvironment
+Label
 ColorRect
 AudioStreamPlayer2D
 Button
@@ -11,5 +12,3 @@ AnimationPlayer
 AnimatedSprite2D
 Node
 Control
-ProgressBar
-TextureProgressBar
