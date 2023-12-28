@@ -22,7 +22,7 @@ func _on_button_2_pressed():
 
 func _on_button_pressed():
 	if OS.has_feature("web"):
-		get_tree()->call_deferred("quit")
+		get_tree().call_deferred("quit")
 	else:
 		get_tree().quit()
 

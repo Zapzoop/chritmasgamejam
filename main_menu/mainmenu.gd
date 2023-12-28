@@ -9,7 +9,7 @@ func _on_option_pressed():
 
 func _on_exit_pressed():
 	if OS.has_feature("web"):
-		get_tree()->call_deferred("quit")
+		get_tree().call_deferred("quit")
 	else:
 		get_tree().quit()
 
