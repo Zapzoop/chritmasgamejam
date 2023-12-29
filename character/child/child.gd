@@ -268,6 +268,78 @@ func child4(color):
 			currentanim = "Child4PinkIdle"
 			Global.currentanimplaying = currentanim
 			Global.current = "Child4Pink"
+			
+func child5(color):
+	match color:
+		"blue":
+			sprite.play("Child5BlueIdle")
+			currentanim = "Child5BlueIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child5Blue"
+		"green":
+			sprite.play("Child5GreenIdle")
+			currentanim = "Child5GreenIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child5Green"
+		"pink":
+			sprite.play("Child5PinkIdle")
+			currentanim = "Child5PinkIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child5Pink"
+			
+func child6(color):
+	match color:
+		"blue":
+			sprite.play("Child6BlueIdle")
+			currentanim = "Child6BlueIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child6Blue"
+		"green":
+			sprite.play("Child6GreenIdle")
+			currentanim = "Child6GreenIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child6Green"
+		"pink":
+			sprite.play("Child6PinkIdle")
+			currentanim = "Child6PinkIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child6Pink"
+			
+func child7(color):
+	match color:
+		"blue":
+			sprite.play("Child7BlueIdle")
+			currentanim = "Child7BlueIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child7Blue"
+		"green":
+			sprite.play("Child7GreenIdle")
+			currentanim = "Child7GreenIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child7Green"
+		"pink":
+			sprite.play("Child7PinkIdle")
+			currentanim = "Child7PinkIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child7Pink"
+			
+func child8(color):
+	match color:
+		"blue":
+			sprite.play("Child8BlueIdle")
+			currentanim = "Child8BlueIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child8Blue"
+		"green":
+			sprite.play("Child8GreenIdle")
+			currentanim = "Child8GreenIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child8Green"
+		"pink":
+			sprite.play("Child8PinkIdle")
+			currentanim = "Child8PinkIdle"
+			Global.currentanimplaying = currentanim
+			Global.current = "Child8Pink"
 
 
 func _on_sprite_2d_animation_finished():

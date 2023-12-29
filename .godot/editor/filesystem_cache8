@@ -1,127 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1703747751
-export_presets.cfg::TextFile::-1::1703747379::0::1::::<><>::
+::res://::1703795606
+export_presets.cfg::TextFile::-1::1703792723::0::1::::<><>::
 hight_Score.txt.txt::TextFile::-1::1703501262::0::1::::<><>::
 icon.svg::CompressedTexture2D::7578759187451317425::1703425603::1703747378::1::::<><>::
 README.md::TextFile::-1::1703425603::0::1::::<><>::
 score.gd::GDScript::-1::1703747381::0::1::::<>RichTextLabel<>::
 tutorial.gd::GDScript::-1::1703427403::0::1::::<>Control<>::
-::res://assets/::1703747753
-Child5BlueAnvil1.png::CompressedTexture2D::8329353491667304987::1703498438::1703498438::1::::<><>::
-Child5BlueAnvil2.png::CompressedTexture2D::1272948645953778845::1703498438::1703498438::1::::<><>::
-Child5BlueAnvil3.png::CompressedTexture2D::6162740960458258065::1703498438::1703498438::1::::<><>::
-Child5BluePresents1.png::CompressedTexture2D::752782824400761203::1703498438::1703498438::1::::<><>::
-Child5BluePresents2.png::CompressedTexture2D::5926090447176329595::1703498438::1703498438::1::::<><>::
-Child5BluePresents3.png::CompressedTexture2D::3422452848402658287::1703498438::1703498438::1::::<><>::
-Child5BluePresents4.png::CompressedTexture2D::134734382069185420::1703498438::1703498438::1::::<><>::
-IMG_7594.png::CompressedTexture2D::1493122988122625430::1703506796::1703427657::1::::<><>::
-IMG_7595.png::CompressedTexture2D::2536838718152943162::1703506796::1703427657::1::::<><>::
-IMG_7596.png::CompressedTexture2D::9187829534760067441::1703506796::1703427657::1::::<><>::
-IMG_7597.png::CompressedTexture2D::2620356087749959096::1703506796::1703427657::1::::<><>::
-IMG_7598.png::CompressedTexture2D::9084194369776354325::1703506796::1703427657::1::::<><>::
-IMG_7599.png::CompressedTexture2D::432422213654847544::1703506796::1703427657::1::::<><>::
-IMG_7600.png::CompressedTexture2D::3738926767761871903::1703506796::1703427657::1::::<><>::
-IMG_7601.png::CompressedTexture2D::6264111689394771128::1703506796::1703427657::1::::<><>::
-IMG_7602.png::CompressedTexture2D::2766582404857533357::1703506796::1703427657::1::::<><>::
-IMG_7603.png::CompressedTexture2D::3400631922408593656::1703506796::1703427657::1::::<><>::
-IMG_7604.png::CompressedTexture2D::9158453666231665471::1703506796::1703427657::1::::<><>::
-IMG_7605.png::CompressedTexture2D::2518070117092337239::1703506796::1703427657::1::::<><>::
-IMG_7606.png::CompressedTexture2D::5517086158901740258::1703506796::1703427657::1::::<><>::
-IMG_7607.png::CompressedTexture2D::2513185506024454251::1703506796::1703427657::1::::<><>::
-IMG_7608.png::CompressedTexture2D::8887404762326265578::1703506796::1703427657::1::::<><>::
-IMG_7609.png::CompressedTexture2D::7763094606392141606::1703425603::1703427657::1::::<><>::
-IMG_7610.png::CompressedTexture2D::6658882154537987229::1703425603::1703427657::1::::<><>::
-IMG_7611.png::CompressedTexture2D::861157904633381335::1703425603::1703427657::1::::<><>::
-IMG_7612.png::CompressedTexture2D::6148347578264245231::1703425603::1703427657::1::::<><>::
-IMG_7613.png::CompressedTexture2D::646978322904830233::1703425603::1703427657::1::::<><>::
-IMG_7614.png::CompressedTexture2D::7628849879270328428::1703425603::1703427657::1::::<><>::
-IMG_7615.png::CompressedTexture2D::8565133682477761308::1703425603::1703427657::1::::<><>::
-IMG_7616.png::CompressedTexture2D::4711791526426159166::1703425603::1703427657::1::::<><>::
-IMG_7617.png::CompressedTexture2D::8784751834105537694::1703425603::1703427657::1::::<><>::
-IMG_7618.png::CompressedTexture2D::6178110101456120121::1703425603::1703427657::1::::<><>::
-IMG_7619.png::CompressedTexture2D::9112526522045431357::1703425603::1703427657::1::::<><>::
-IMG_7620.png::CompressedTexture2D::7314664960417428829::1703425603::1703427657::1::::<><>::
-IMG_7621.png::CompressedTexture2D::4537466595470427781::1703425603::1703427657::1::::<><>::
-IMG_7622.png::CompressedTexture2D::3936161219668484106::1703425603::1703427657::1::::<><>::
-IMG_7623.png::CompressedTexture2D::8236928214210860282::1703425603::1703427657::1::::<><>::
-IMG_7624.png::CompressedTexture2D::8621114426233332990::1703425603::1703427657::1::::<><>::
-IMG_7625.png::CompressedTexture2D::5953505245161803910::1703425603::1703427657::1::::<><>::
-IMG_7626.png::CompressedTexture2D::5631140714195126331::1703425603::1703427657::1::::<><>::
-IMG_7627.png::CompressedTexture2D::4408491168475562857::1703425603::1703427657::1::::<><>::
-IMG_7628.png::CompressedTexture2D::2774917590142320965::1703425603::1703427657::1::::<><>::
-IMG_7629.png::CompressedTexture2D::881335129258298384::1703425603::1703427657::1::::<><>::
-IMG_7630.png::CompressedTexture2D::8526256638101420237::1703425603::1703427657::1::::<><>::
-IMG_7631.png::CompressedTexture2D::739297000240956538::1703425603::1703427657::1::::<><>::
-IMG_7632.png::CompressedTexture2D::6096745072924526838::1703425603::1703427657::1::::<><>::
-IMG_7633.png::CompressedTexture2D::6920474612139848507::1703425603::1703427657::1::::<><>::
-IMG_7634.png::CompressedTexture2D::2733469057006060142::1703425603::1703427657::1::::<><>::
-IMG_7635.png::CompressedTexture2D::1872620502153061207::1703425603::1703427657::1::::<><>::
-IMG_7636.png::CompressedTexture2D::5025866972247130791::1703425603::1703427657::1::::<><>::
-IMG_7637.png::CompressedTexture2D::318320299421483353::1703425603::1703427657::1::::<><>::
-IMG_7638.png::CompressedTexture2D::7554642096413215054::1703425603::1703427657::1::::<><>::
-IMG_7639.png::CompressedTexture2D::4782880222476693890::1703425603::1703427657::1::::<><>::
-IMG_7640.png::CompressedTexture2D::4628251935464589219::1703425603::1703427657::1::::<><>::
-IMG_7641.png::CompressedTexture2D::1105999223009162303::1703425603::1703427657::1::::<><>::
-IMG_7642.png::CompressedTexture2D::6157362259268772775::1703425603::1703427657::1::::<><>::
-IMG_7643.png::CompressedTexture2D::7690599143732062345::1703425603::1703427657::1::::<><>::
-IMG_7644.png::CompressedTexture2D::8317611676447225353::1703425603::1703427657::1::::<><>::
-IMG_7645.png::CompressedTexture2D::6943908416250578711::1703425603::1703427657::1::::<><>::
-IMG_7646.png::CompressedTexture2D::2576965904704647318::1703425603::1703427657::1::::<><>::
-IMG_7647.png::CompressedTexture2D::3354856953529022266::1703425603::1703427657::1::::<><>::
-IMG_7648.png::CompressedTexture2D::7906091788138903336::1703425603::1703427657::1::::<><>::
-IMG_7649.png::CompressedTexture2D::2628997252037062289::1703425603::1703427657::1::::<><>::
-IMG_7650.png::CompressedTexture2D::2137467487015934274::1703425603::1703427657::1::::<><>::
-IMG_7651.png::CompressedTexture2D::8359478508620156588::1703425603::1703427657::1::::<><>::
-IMG_7652.png::CompressedTexture2D::4777217635141921274::1703425603::1703427657::1::::<><>::
-IMG_7653.png::CompressedTexture2D::7757357164511207157::1703425603::1703427657::1::::<><>::
-IMG_7654.png::CompressedTexture2D::6692298155858928830::1703425603::1703427657::1::::<><>::
-IMG_7655.png::CompressedTexture2D::652477570839632773::1703425603::1703427657::1::::<><>::
-IMG_7656.png::CompressedTexture2D::2610514068806804641::1703425603::1703427657::1::::<><>::
-IMG_7657.png::CompressedTexture2D::3474744707153230404::1703425603::1703427657::1::::<><>::
-IMG_7658.png::CompressedTexture2D::1696746809481813076::1703425603::1703427657::1::::<><>::
-IMG_7659.png::CompressedTexture2D::5334939955241355427::1703425603::1703427657::1::::<><>::
-IMG_7660.png::CompressedTexture2D::7785695626234960299::1703425603::1703427657::1::::<><>::
-IMG_7661.png::CompressedTexture2D::3424637933937624215::1703425603::1703427657::1::::<><>::
-IMG_7662.png::CompressedTexture2D::4800121802511257631::1703425603::1703427657::1::::<><>::
-IMG_7663.png::CompressedTexture2D::4716811385878710729::1703425603::1703427657::1::::<><>::
-IMG_7664.png::CompressedTexture2D::721677164964459958::1703425603::1703427657::1::::<><>::
-IMG_7665.png::CompressedTexture2D::4112884977047857981::1703425603::1703427657::1::::<><>::
-IMG_7666.png::CompressedTexture2D::3685945385344055136::1703425603::1703427657::1::::<><>::
-IMG_7667.png::CompressedTexture2D::8343496310099062877::1703425603::1703427657::1::::<><>::
-IMG_7668.png::CompressedTexture2D::6065339814379731478::1703425603::1703427657::1::::<><>::
-IMG_7669.png::CompressedTexture2D::1369947776427897929::1703425603::1703427657::1::::<><>::
-IMG_7670.png::CompressedTexture2D::6053111620527084317::1703425603::1703427657::1::::<><>::
-IMG_7671.png::CompressedTexture2D::4642924642510220667::1703425603::1703427657::1::::<><>::
-IMG_7672.png::CompressedTexture2D::4358489727786004883::1703425603::1703427657::1::::<><>::
-IMG_7673.png::CompressedTexture2D::1478047858180173841::1703425603::1703427657::1::::<><>::
-IMG_7674.png::CompressedTexture2D::7278292369146416861::1703425603::1703427657::1::::<><>::
-IMG_7675.png::CompressedTexture2D::8668312105922078479::1703425603::1703427657::1::::<><>::
-IMG_7676.png::CompressedTexture2D::968894680160051060::1703425603::1703427657::1::::<><>::
-IMG_7677.png::CompressedTexture2D::5721451035565657446::1703425603::1703427657::1::::<><>::
-IMG_7678.png::CompressedTexture2D::4581217850795313077::1703425603::1703427657::1::::<><>::
-IMG_7679.png::CompressedTexture2D::5997147876447463996::1703425603::1703427657::1::::<><>::
-IMG_7680.png::CompressedTexture2D::1866034514807640296::1703425603::1703427657::1::::<><>::
-IMG_7681.png::CompressedTexture2D::1261763576346270155::1703425603::1703427657::1::::<><>::
-IMG_7682.png::CompressedTexture2D::1146490294892408559::1703425603::1703427657::1::::<><>::
-IMG_7683.png::CompressedTexture2D::5754765856286031801::1703425603::1703427657::1::::<><>::
-IMG_7684.png::CompressedTexture2D::3071948816119462446::1703425603::1703427657::1::::<><>::
-IMG_7685.png::CompressedTexture2D::5662047075437960710::1703425603::1703427657::1::::<><>::
-IMG_7686.png::CompressedTexture2D::2022885691589122735::1703425603::1703427657::1::::<><>::
-IMG_7687.png::CompressedTexture2D::5775885257389224287::1703425603::1703427657::1::::<><>::
-IMG_7688.png::CompressedTexture2D::4235169534046215846::1703425603::1703427657::1::::<><>::
-IMG_7689.png::CompressedTexture2D::1271798352075459845::1703425603::1703427657::1::::<><>::
-IMG_7690.png::CompressedTexture2D::705717349732759881::1703425603::1703427657::1::::<><>::
-IMG_7691.png::CompressedTexture2D::3678383901395515719::1703425603::1703427657::1::::<><>::
-IMG_7692.png::CompressedTexture2D::6304221986139122490::1703425603::1703427657::1::::<><>::
-IMG_7693.png::CompressedTexture2D::6497769830797600014::1703506796::1703427657::1::::<><>::
-IMG_7694.png::CompressedTexture2D::3595419595305728056::1703506796::1703427657::1::::<><>::
+::res://assets/::1703795573
 IMG_7719.png::CompressedTexture2D::2508326105652689635::1703747395::1703747753::1::::<><>::
 IMG_7721.png::CompressedTexture2D::5586227527134579057::1703747395::1703747751::1::::<><>::
 IMG_7722.png::CompressedTexture2D::3319985437587164388::1703747395::1703747751::1::::<><>::
-IMG_7727.png::CompressedTexture2D::6395753090995166734::1703747395::1703747753::1::::<><>::
-IMG_7728.png::CompressedTexture2D::1801158937106766299::1703747395::1703747753::1::::<><>::
-IMG_7729.png::CompressedTexture2D::8360929763697595995::1703747395::1703747753::1::::<><>::
-IMG_7730.png::CompressedTexture2D::1511336241050616344::1703747395::1703747753::1::::<><>::
 ::res://assets/characters/::1703427403
 anvil.webp::CompressedTexture2D::4346153789948654377::1703425603::1703425603::1::::<><>::
 ::res://assets/characters/Anvil/::1703427403
@@ -238,7 +126,7 @@ KillChild6.png::CompressedTexture2D::6128310327584056828::1703425603::1703425603
 KillChild7.png::CompressedTexture2D::8690364578318588548::1703425603::1703425603::1::::<><>::
 KillChild8.png::CompressedTexture2D::351667014713351725::1703425603::1703425603::1::::<><>::
 KillChild9.png::CompressedTexture2D::6904845235057881693::1703425603::1703425603::1::::<><>::
-::res://assets/graphics/Child/::1703425603
+::res://assets/graphics/Child/::1703795382
 ::res://assets/graphics/Child/Child 1/::1703425603
 ::res://assets/graphics/Child/Child 1/Blue/::1703425603
 ::res://assets/graphics/Child/Child 1/Blue/Anvil/::1703425603
@@ -411,6 +299,178 @@ Child4PinkPresents3.png::CompressedTexture2D::605512895860048894::1703425603::17
 Child4PinkPresents4.png::CompressedTexture2D::4364678512725497714::1703425603::1703425603::1::::<><>::
 ::res://assets/graphics/Child/Child 4/Pink/Sitting/::1703425603
 Child4PinkSitting.png::CompressedTexture2D::4338041036356211429::1703425603::1703425603::1::::<><>::
+::res://assets/graphics/Child/Child 5/::1703795196
+::res://assets/graphics/Child/Child 5/Blue/::1703795186
+::res://assets/graphics/Child/Child 5/Blue/Anvil/::1703795274
+Child5BlueAnvil1.png::CompressedTexture2D::8329353491667304987::1703498438::1703795617::1::::<><>::
+Child5BlueAnvil2.png::CompressedTexture2D::1272948645953778845::1703498438::1703795618::1::::<><>::
+Child5BlueAnvil3.png::CompressedTexture2D::6162740960458258065::1703498438::1703795617::1::::<><>::
+::res://assets/graphics/Child/Child 5/Blue/Dragged/::1703795290
+Child5BlueDragged.png::CompressedTexture2D::3595419595305728056::1703506796::1703795618::1::::<><>::
+::res://assets/graphics/Child/Child 5/Blue/Idle/::1703795298
+Child5BlueIdle.png::CompressedTexture2D::6497769830797600014::1703506796::1703795617::1::::<><>::
+::res://assets/graphics/Child/Child 5/Blue/Presents/::1703795308
+Child5BluePresents1.png::CompressedTexture2D::752782824400761203::1703498438::1703795618::1::::<><>::
+Child5BluePresents2.png::CompressedTexture2D::5926090447176329595::1703498438::1703795617::1::::<><>::
+Child5BluePresents3.png::CompressedTexture2D::3422452848402658287::1703498438::1703795617::1::::<><>::
+Child5BluePresents4.png::CompressedTexture2D::134734382069185420::1703498438::1703795617::1::::<><>::
+::res://assets/graphics/Child/Child 5/Green/::1703795186
+::res://assets/graphics/Child/Child 5/Green/Anvil/::1703795327
+Child5GreenAnvil1.png::CompressedTexture2D::4534144257395915846::1703506796::1703795617::1::::<><>::
+Child5GreenAnvil2.png::CompressedTexture2D::857392810070889947::1703506796::1703795616::1::::<><>::
+Child5GreenAnvil3.png::CompressedTexture2D::7934306396623285446::1703506796::1703795616::1::::<><>::
+::res://assets/graphics/Child/Child 5/Green/Dragged/::1703795356
+Child5GreenDragged.png::CompressedTexture2D::4542233947779954722::1703506796::1703795617::1::::<><>::
+::res://assets/graphics/Child/Child 5/Green/Idle/::1703795335
+Child5GreenIdle.png::CompressedTexture2D::2004650987644591881::1703506796::1703795616::1::::<><>::
+::res://assets/graphics/Child/Child 5/Green/Presents/::1703795343
+Child5GreenPresents1.png::CompressedTexture2D::8332893084472985685::1703506796::1703795616::1::::<><>::
+Child5GreenPresents2.png::CompressedTexture2D::1186008245932379808::1703425603::1703795616::1::::<><>::
+Child5GreenPresents3.png::CompressedTexture2D::8184809845140467885::1703425603::1703795616::1::::<><>::
+Child5GreenPresents4.png::CompressedTexture2D::4600279129683307939::1703425603::1703795615::1::::<><>::
+::res://assets/graphics/Child/Child 5/Pink/::1703795186
+::res://assets/graphics/Child/Child 5/Pink/Anvil/::1703795349
+Child5PinkaAnvil2.png::CompressedTexture2D::4020796130169961822::1703506796::1703795616::1::::<><>::
+Child5PinkaAnvil3.png::CompressedTexture2D::8992094900744652166::1703506796::1703795615::1::::<><>::
+Child5PinkAnvil1.png::CompressedTexture2D::183935557299848928::1703506796::1703795615::1::::<><>::
+::res://assets/graphics/Child/Child 5/Pink/Dragged/::1703795366
+Child5PinkDragged.png::CompressedTexture2D::6614876001925747135::1703506796::1703795615::1::::<><>::
+::res://assets/graphics/Child/Child 5/Pink/Idle/::1703795375
+Child5PinkIdle.png::CompressedTexture2D::2496900267389610979::1703506796::1703795616::1::::<><>::
+::res://assets/graphics/Child/Child 5/Pink/Presents/::1703795382
+Child5PinkPresents1.png::CompressedTexture2D::6165820757169963227::1703506796::1703795615::1::::<><>::
+Child5PinkPresents2.png::CompressedTexture2D::7961898203329014547::1703506796::1703795615::1::::<><>::
+Child5PinkPresents3.png::CompressedTexture2D::1811540498881206813::1703506796::1703795614::1::::<><>::
+Child5PinkPresents4.png::CompressedTexture2D::400022971798621856::1703506796::1703795614::1::::<><>::
+::res://assets/graphics/Child/Child 6/::1703795439
+::res://assets/graphics/Child/Child 6/Blue/::1703795417
+::res://assets/graphics/Child/Child 6/Blue/Anvil/::1703795412
+Child6BlueAnvil1.png::CompressedTexture2D::2858088730841889821::1703425603::1703795620::1::::<><>::
+Child6BlueAnvil2.png::CompressedTexture2D::2967478385686190001::1703425603::1703795620::1::::<><>::
+Child6BlueAnvil3.png::CompressedTexture2D::640106980210580480::1703425603::1703795620::1::::<><>::
+::res://assets/graphics/Child/Child 6/Blue/Dragged/::1703795414
+Child6BlueDragged.png::CompressedTexture2D::4004892433398414448::1703425603::1703795620::1::::<><>::
+::res://assets/graphics/Child/Child 6/Blue/Idle/::1703795415
+Child6BlueIdle.png::CompressedTexture2D::6977090486953915450::1703425603::1703795620::1::::<><>::
+::res://assets/graphics/Child/Child 6/Blue/Presents/::1703795417
+Child6BluePresents1.png::CompressedTexture2D::5388385547407017919::1703425603::1703795620::1::::<><>::
+Child6BluePresents2.png::CompressedTexture2D::3134251307305347843::1703425603::1703795620::1::::<><>::
+Child6BluePresents3.png::CompressedTexture2D::7278851331248289422::1703425603::1703795620::1::::<><>::
+Child6BluePresents4.png::CompressedTexture2D::8872526131490327581::1703425603::1703795620::1::::<><>::
+::res://assets/graphics/Child/Child 6/Green/::1703795432
+::res://assets/graphics/Child/Child 6/Green/Anvil/::1703795427
+Child6GreenAnvil1.png::CompressedTexture2D::2595648376794582246::1703425603::1703795620::1::::<><>::
+Child6GreenAnvil2.png::CompressedTexture2D::194938003852720814::1703425603::1703795620::1::::<><>::
+Child6GreenAnvil3.png::CompressedTexture2D::7368476851610719421::1703425603::1703795619::1::::<><>::
+::res://assets/graphics/Child/Child 6/Green/Dragged/::1703795429
+Child6GreenDragged.png::CompressedTexture2D::8227472909649955304::1703425603::1703795620::1::::<><>::
+::res://assets/graphics/Child/Child 6/Green/Idle/::1703795430
+Child6GreenIdle.png::CompressedTexture2D::6171345473449935768::1703425603::1703795619::1::::<><>::
+::res://assets/graphics/Child/Child 6/Green/Presents/::1703795432
+Child6GreenPresents1.png::CompressedTexture2D::6276295190464365383::1703425603::1703795619::1::::<><>::
+Child6GreenPresents2.png::CompressedTexture2D::6461386873086068698::1703425603::1703795619::1::::<><>::
+Child6GreenPresents3.png::CompressedTexture2D::5476002840632203465::1703425603::1703795619::1::::<><>::
+Child6GreenPresents4.png::CompressedTexture2D::6052598904572468683::1703425603::1703795619::1::::<><>::
+::res://assets/graphics/Child/Child 6/Pink/::1703795446
+::res://assets/graphics/Child/Child 6/Pink/Anvil/::1703795442
+Child6PinkAnvil1.png::CompressedTexture2D::3530315114676870358::1703425603::1703795619::1::::<><>::
+Child6PinkAnvil2.png::CompressedTexture2D::6211072609778970502::1703425603::1703795618::1::::<><>::
+Child6PinkAnvil3.png::CompressedTexture2D::4902385006200420148::1703425603::1703795619::1::::<><>::
+::res://assets/graphics/Child/Child 6/Pink/Dragged/::1703795443
+Child6PinkDragged.png::CompressedTexture2D::7246563890725263343::1703425603::1703795619::1::::<><>::
+::res://assets/graphics/Child/Child 6/Pink/Idle/::1703795445
+Child6PinkIdle.png::CompressedTexture2D::4241496196380791149::1703425603::1703795619::1::::<><>::
+::res://assets/graphics/Child/Child 6/Pink/Presents/::1703795446
+Child6PinkPresents1.png::CompressedTexture2D::7451073552188975556::1703425603::1703795618::1::::<><>::
+Child6PinkPresents2.png::CompressedTexture2D::7504792398082115438::1703425603::1703795618::1::::<><>::
+Child6PinkPresents3.png::CompressedTexture2D::8495670628308772603::1703425603::1703795618::1::::<><>::
+Child6PinkPresents4.png::CompressedTexture2D::4291890101942177848::1703425603::1703795618::1::::<><>::
+::res://assets/graphics/Child/Child 7/::1703795492
+::res://assets/graphics/Child/Child 7/Blue/::1703795472
+::res://assets/graphics/Child/Child 7/Blue/Anvil/::1703795467
+Child7BlueAnvil1.png::CompressedTexture2D::9172998215900627167::1703425603::1703795611::1::::<><>::
+Child7BlueAnvil2.png::CompressedTexture2D::1580176824027842363::1703425603::1703795611::1::::<><>::
+Child7BlueAnvil3.png::CompressedTexture2D::8910138182261812898::1703425603::1703795611::1::::<><>::
+::res://assets/graphics/Child/Child 7/Blue/Dragged/::1703795468
+Child7BlueDragged.png::CompressedTexture2D::8832645420810269119::1703425603::1703795611::1::::<><>::
+::res://assets/graphics/Child/Child 7/Blue/Idle/::1703795470
+Child7BlueIdle.png::CompressedTexture2D::9077304373853694999::1703425603::1703795611::1::::<><>::
+::res://assets/graphics/Child/Child 7/Blue/Presents/::1703795472
+Child7BluePresents1.png::CompressedTexture2D::1899047547673798631::1703425603::1703795611::1::::<><>::
+Child7BluePresents2.png::CompressedTexture2D::5339154021569204727::1703425603::1703795610::1::::<><>::
+Child7BluePresents3.png::CompressedTexture2D::8715612635956756836::1703425603::1703795611::1::::<><>::
+Child7BluePresents4.png::CompressedTexture2D::8408428992816808762::1703425603::1703795610::1::::<><>::
+::res://assets/graphics/Child/Child 7/Green/::1703795486
+::res://assets/graphics/Child/Child 7/Green/Anvil/::1703795481
+Child7GreenAnvil1.png::CompressedTexture2D::7327077695497325553::1703425603::1703795611::1::::<><>::
+Child7GreenAnvil2.png::CompressedTexture2D::9141243013920776592::1703425603::1703795610::1::::<><>::
+Child7GreenAnvil3.png::CompressedTexture2D::2048842244249042543::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 7/Green/Dragged/::1703795482
+Child7GreenDragged.png::CompressedTexture2D::904600917292678147::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 7/Green/Idle/::1703795483
+Child7GreenIdle.png::CompressedTexture2D::4426206248316197229::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 7/Green/Presents/::1703795486
+Child7GreenPresents1.png::CompressedTexture2D::6777495651357341482::1703425603::1703795609::1::::<><>::
+Child7GreenPresents2.png::CompressedTexture2D::6340349254211821136::1703425603::1703795609::1::::<><>::
+Child7GreenPresents3.png::CompressedTexture2D::7834220983361773929::1703425603::1703795609::1::::<><>::
+Child7GreenPresents4.png::CompressedTexture2D::6264953454927153433::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 7/Pink/::1703795498
+::res://assets/graphics/Child/Child 7/Pink/Anvil/::1703795494
+Child7PinkAnvil1.png::CompressedTexture2D::2445671028519048692::1703425603::1703795610::1::::<><>::
+Child7PinkAnvil2.png::CompressedTexture2D::3627919045285772414::1703425603::1703795609::1::::<><>::
+Child7PinkAnvil3.png::CompressedTexture2D::1200427828383191306::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 7/Pink/Dragged/::1703795495
+Child7PinkDragged.png::CompressedTexture2D::4991278784015528230::1703425603::1703795610::1::::<><>::
+::res://assets/graphics/Child/Child 7/Pink/Idle/::1703795497
+Child7PinkIdle.png::CompressedTexture2D::725264351102476114::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 7/Pink/Presents/::1703795498
+Child7PinkPresents1.png::CompressedTexture2D::5441897412809442544::1703425603::1703795609::1::::<><>::
+Child7PinkPresents2.png::CompressedTexture2D::3411865761956207416::1703425603::1703795609::1::::<><>::
+Child7PinkPresents3.png::CompressedTexture2D::1460358582506979787::1703425603::1703795609::1::::<><>::
+Child7PinkPresents4.png::CompressedTexture2D::1881588257606953500::1703425603::1703795609::1::::<><>::
+::res://assets/graphics/Child/Child 8/::1703795544
+::res://assets/graphics/Child/Child 8/Blue/::1703795524
+::res://assets/graphics/Child/Child 8/Blue/Anvil/::1703795519
+Child8BlueAnvil1.png::CompressedTexture2D::3898414660983095956::1703425603::1703795614::1::::<><>::
+Child8BlueAnvil2.png::CompressedTexture2D::6777297255930437095::1703425603::1703795614::1::::<><>::
+Child8BlueAnvil3.png::CompressedTexture2D::1160508176286272256::1703425603::1703795614::1::::<><>::
+::res://assets/graphics/Child/Child 8/Blue/Dragged/::1703795521
+Child8BlueDragged.png::CompressedTexture2D::2065203676714908151::1703425603::1703795614::1::::<><>::
+::res://assets/graphics/Child/Child 8/Blue/Idle/::1703795522
+Child8BlueIdle.png::CompressedTexture2D::1597098974638980810::1703425603::1703795614::1::::<><>::
+::res://assets/graphics/Child/Child 8/Blue/Presents/::1703795524
+Child8BluePresents1.png::CompressedTexture2D::8600681941371791486::1703425603::1703795614::1::::<><>::
+Child8BluePresents2.png::CompressedTexture2D::9177706581526121326::1703425603::1703795614::1::::<><>::
+Child8BluePresents3.png::CompressedTexture2D::1793174960302155512::1703425603::1703795614::1::::<><>::
+Child8BluePresents4.png::CompressedTexture2D::6314587883494351472::1703425603::1703795614::1::::<><>::
+::res://assets/graphics/Child/Child 8/Green/::1703795535
+::res://assets/graphics/Child/Child 8/Green/Anvil/::1703795531
+Child8GreenAnvil1.png::CompressedTexture2D::2312595786188749301::1703425603::1703795614::1::::<><>::
+Child8GreenAnvil2.png::CompressedTexture2D::5421956372534700728::1703425603::1703795614::1::::<><>::
+Child8GreenAnvil3.png::CompressedTexture2D::4318732862790163398::1703425603::1703795613::1::::<><>::
+::res://assets/graphics/Child/Child 8/Green/Dragged/::1703795532
+Child8GreenDragged.png::CompressedTexture2D::5299701605769259737::1703425603::1703795613::1::::<><>::
+::res://assets/graphics/Child/Child 8/Green/Idle/::1703795533
+Child8GreenIdle.png::CompressedTexture2D::788088608782053746::1703425603::1703795613::1::::<><>::
+::res://assets/graphics/Child/Child 8/Green/Presents/::1703795535
+Child8GreenPresents1.png::CompressedTexture2D::5822159052370400098::1703425603::1703795612::1::::<><>::
+Child8GreenPresents2.png::CompressedTexture2D::1647714274178452626::1703425603::1703795612::1::::<><>::
+Child8GreenPresents3.png::CompressedTexture2D::2581585328464919465::1703425603::1703795612::1::::<><>::
+Child8GreenPresents4.png::CompressedTexture2D::4816799904597109560::1703425603::1703795613::1::::<><>::
+::res://assets/graphics/Child/Child 8/Pink/::1703795553
+::res://assets/graphics/Child/Child 8/Pink/Anvil/::1703795549
+Child8PinkAnvil1.png::CompressedTexture2D::4983438380651333362::1703425603::1703795612::1::::<><>::
+Child8PinkAnvil2.png::CompressedTexture2D::1904379396179811194::1703425603::1703795612::1::::<><>::
+Child8PinkAnvil3.png::CompressedTexture2D::8240438602533828090::1703425603::1703795612::1::::<><>::
+::res://assets/graphics/Child/Child 8/Pink/Dragged/::1703795550
+Child8PinkDragged.png::CompressedTexture2D::7117091280011195993::1703425603::1703795612::1::::<><>::
+::res://assets/graphics/Child/Child 8/Pink/Idle/::1703795551
+Child8PinkIdle.png::CompressedTexture2D::2610130421879641057::1703425603::1703795612::1::::<><>::
+::res://assets/graphics/Child/Child 8/Pink/Presents/::1703795553
+Child8PinkPresents1.png::CompressedTexture2D::867876830334508315::1703425603::1703795612::1::::<><>::
+Child8PinkPresents2.png::CompressedTexture2D::2216888051003891610::1703425603::1703795612::1::::<><>::
+Child8PinkPresents3.png::CompressedTexture2D::6434505587239585505::1703425603::1703795612::1::::<><>::
+Child8PinkPresents4.png::CompressedTexture2D::5634423108584418870::1703425603::1703795612::1::::<><>::
 ::res://assets/graphics/Santa/::1703425603
 ::res://assets/graphics/Santa/Idle/::1703425603
 SantaIDLE.png::CompressedTexture2D::8300756160408572631::1703425603::1703425603::1::::<><>::
@@ -427,7 +487,7 @@ SantaWin9.png::CompressedTexture2D::1506795614861623550::1703425603::1703425603:
 ::res://assets/graphics/tree/::1703425603
 treeIdle1.png::CompressedTexture2D::4099189636400294677::1703425603::1703425603::1::::<><>::
 treeIdle2.png::CompressedTexture2D::4432816780049879044::1703425603::1703425603::1::::<><>::
-::res://assets/icons/::1703748432
+::res://assets/icons/::1703748434
 back.png::CompressedTexture2D::2122019267414469849::1703425603::1703425603::1::::<><>::
 buttonclose.png::CompressedTexture2D::6636875244668514471::1703498438::1703498438::1::::<><>::
 close.jpg::CompressedTexture2D::4864347877611178618::1703425603::1703425603::1::::<><>::
@@ -438,9 +498,9 @@ start.png::CompressedTexture2D::1399373483701787421::1703747657::1703747751::1::
 white-removebg.png::CompressedTexture2D::8179448553755570305::1703425603::1703425603::1::::<><>::
 ::res://assets/Report/::1703425603
 Report.png::CompressedTexture2D::6526024992810072132::1703425603::1703425603::1::::<><>::
-::res://assets/scenes&scripts/::1703747379
+::res://assets/scenes&scripts/::1703749452
 bg.tscn::PackedScene::5860211336105416219::1703425603::0::1::::<><>::uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg
-loose.tscn::PackedScene::3019424750563842566::1703747379::0::1::::<><>::res://score.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/mainmenu.gd<>uid://dntgl8tebgjuo::::res://main_menu/loose.mp3
+loose.tscn::PackedScene::3019424750563842566::1703749452::0::1::::<><>::res://score.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/mainmenu.gd<>uid://dntgl8tebgjuo::::res://main_menu/loose.mp3
 main.tscn::PackedScene::3007063402395734495::1703425603::0::1::::<><>::
 tutorial.tscn::PackedScene::5973909585609080770::1703747379::0::1::::<><>::res://tutorial.gd<>uid://c7omhw0uwjvi8::::res://assets/fonts/AA_typewriter.ttf<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres
 ::res://assets/sound/::1703498438
@@ -518,11 +578,11 @@ StartGame.wav::AudioStreamWAV::3838591436227028715::1703425603::1703425603::1:::
 ::res://character/::1703425603
 ::res://character/anvil/::1703498438
 anvil.tscn::PackedScene::114508701755314026::1703498438::0::1::::<><>::res://character/child/child.gd<>uid://55ypvj5fj1og::::res://assets/characters/Dragged/IMG_7696.png<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn<>uid://dk0q5st24y5jc::::res://assets/characters/Presents/IMG_7712.png<>uid://cgxv88lwegt2p::::res://assets/characters/Idle/IMG_7695.png<>uid://bfd8jbdjewwxi::::res://assets/characters/Presents/IMG_7713.png<>uid://tr6r8ynffgr3::::res://assets/characters/Presents/IMG_7714.png<>uid://n7ic4x4hppay::::res://assets/characters/Presents/IMG_7715.png<>uid://xm7sq3nnq8v0::::res://assets/characters/Presents/IMG_7716.png<>uid://c2x5kewqgqxjf::::res://assets/characters/Presents/IMG_7717.png<>uid://bbeo4cg0vsahu::::res://assets/characters/Presents/IMG_7718.png
-::res://character/child/::1703748275
+::res://character/child/::1703749172
 child.gd::GDScript::-1::1703748275::0::1::::<>CharacterBody2D<>::
-child.tscn::PackedScene::7367537772686235666::1703747379::0::1::::<><>::res://character/child/child.gd<>uid://cjlpxmewwoeer::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil1.png<>uid://cxxctaoe2dd3o::::res://assets/graphics/Child/Child 4/Blue/Sitting/Child4BlueSitting.png<>uid://cnmcnewu1nva3::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil2.png<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn<>uid://ww6yw5gbwpci::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil3.png<>uid://cacipbwr3b22j::::res://assets/graphics/Child/Child 1/Blue/Dragging/ChildBlueDragged.png<>uid://b7pq3w4eajfoj::::res://assets/graphics/Child/Child 1/Blue/Idle/ChildBlueSitting.png<>uid://dcwnfqxwwrsn2::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents1.png<>uid://bgpg1x7jw5hjj::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents2.png<>uid://ccuea04uleteg::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents3.png<>uid://cbn6mwrbekffw::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents4.png<>uid://bftiqx4cri3dv::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil1.png<>uid://tudalkwuw7r8::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil2.png<>uid://ddrc8evwkdxp7::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil3.png<>uid://33b34x50omss::::res://assets/graphics/Child/Child 1/Green/Dragging/ChildGreenDragged.png<>uid://dke2d4wb2l1fh::::res://assets/graphics/Child/Child 1/Green/Idle/ChildGreenSitting.png<>uid://c3ggojrsuurxo::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents1.png<>uid://bpcwfc0puq4y7::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents2.png<>uid://dm5hbkoaannrm::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents3.png<>uid://br8iquckgoan2::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents4.png<>uid://dlkg0u0fh2q7y::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil1.png<>uid://cerqaxfeupi0k::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil2.png<>uid://da15r3a3wtyf6::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil3.png<>uid://ftqyv3rwiqmv::::res://assets/graphics/Child/Child 1/Pink/Dragging/ChildPinkDragged.png<>uid://bqk3e5yplgguu::::res://assets/graphics/Child/Child 1/Pink/Idle/ChildPinkSitting.png<>uid://dnc55yeue28b0::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents1.png<>uid://4htqtf4bgxx3::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents2.png<>uid://cbwdpqahdvnmp::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents3.png<>uid://dbbrb63yycslx::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents4.png<>uid://bumdu58rt0apv::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil1.png<>uid://br5dg8y3u1pjh::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil2.png<>uid://b2crie175jfd4::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil3.png<>uid://4l6bvrle8ujx::::res://assets/graphics/Child/Child 2/Blue/Dragging/Child2BlueDragged.png<>uid://cisof4efkntdq::::res://assets/graphics/Child/Child 2/Blue/Idle/Child2BlueSitting.png<>uid://cipsxxjdn1qxt::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents1.png<>uid://do7phl8gu4job::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents2.png<>uid://dkehb1buoi4aa::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents3.png<>uid://b7ne5xiny5gvj::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents4.png<>uid://cfmahktswapwm::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil1.png<>uid://cuy23ynud4d0p::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil2.png<>uid://bjvj3kodmvaby::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil3.png<>uid://bofpi52xh5xqa::::res://assets/graphics/Child/Child 2/Green/Dragging/Child2GreenDragged.png<>uid://bevejwj2pwbvf::::res://assets/graphics/Child/Child 2/Green/Idle/Child2GreenSitting.png<>uid://dy25m8qqst770::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents1.png<>uid://ds18da15adxwx::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents2.png<>uid://bvv51wmn7j2y6::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents3.png<>uid://c0nhyf0sxafey::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents4.png<>uid://cyyywjp6jldmp::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil1.png<>uid://co432tan07tjy::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil2.png<>uid://cyoqm1u4lqlmr::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil3.png<>uid://d4em3mn3uugep::::res://assets/graphics/Child/Child 2/Pink/Dragging/Child2PinkDragged.png<>uid://blhhywqsjxmo6::::res://assets/graphics/Child/Child 2/Pink/Idle/Child2PinkSitting.png<>uid://dfbbooqoctg33::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents1.png<>uid://c4wpjxf5paiac::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents2.png<>uid://c1bumxfpcmnmk::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents3.png<>uid://b5eqoyd0a6o62::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents4.png<>uid://didrh67idwj0r::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil1.png<>uid://brro0tq6m5s1m::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil2.png<>uid://cj01gv8yv5gxn::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil3.png<>uid://shfgj1v1gm8e::::res://assets/graphics/Child/Child 3/Blue/Dragged/Child3BlueDragged.png<>uid://bpk6uh4pblpjd::::res://assets/graphics/Child/Child 3/Blue/Sitting/Child3BlueSitting.png<>uid://huofua075fxn::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents1.png<>uid://chwewnh5pd3yk::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents2.png<>uid://40sanbl5gekg::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents3.png<>uid://codo151hywvpr::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents4.png<>uid://di4hvn2tfqj6q::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil1.png<>uid://kbh3gmxmy0ti::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil2.png<>uid://mpe0kcslvxak::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil3.png<>uid://c0al7878xhydj::::res://assets/graphics/Child/Child 3/Green/Dragged/Child3GreenDragged.png<>uid://dcxmr6j4p01aw::::res://assets/graphics/Child/Child 3/Green/Sitting/Child3GreenSitting.png<>uid://cib82yilpwgf3::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents1.png<>uid://befxko8ysar2w::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents2.png<>uid://btpek7lawfxeg::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents3.png<>uid://iqo6vhlf3r14::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents4.png<>uid://gau4vnjaprk7::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil1.png<>uid://ctiv3lv3dkw0s::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil2.png<>uid://c4tufv704plga::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil3.png<>uid://dari4t4i2sw4f::::res://assets/graphics/Child/Child 3/Pink/Dragged/Child3PinkDragged.png<>uid://ofqkmnd5c6t4::::res://assets/graphics/Child/Child 3/Pink/Sitting/Child3PinkSitting.png<>uid://bc5bjyl5mhbt2::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents1.png<>uid://cx2tdvuvwr47f::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents2.png<>uid://bo054tykkgc3c::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents3.png<>uid://b71v6d6dv1n1b::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents4.png<>uid://hslmsy3nb58d::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil1.png<>uid://bbfrp2vqcf0w0::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil2.png<>uid://1lcuqj50p2pb::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil3.png<>uid://doqjil1j7vlm0::::res://assets/graphics/Child/Child 4/Blue/Dragged/Child4BlueDragged.png<>uid://kpg11roub72s::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents1.png<>uid://caflnn2sh022a::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents2.png<>uid://8pmgk5omu3fn::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents3.png<>uid://dn3he6ihmxb2j::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents4.png<>uid://bd53clj4nkk8x::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil1.png<>uid://bqelv6bsjmkq::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil2.png<>uid://bh3otyvh6kn38::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil3.png<>uid://bai707yn3gjfm::::res://assets/graphics/Child/Child 4/Green/Dragged/Child4GreenDragged.png<>uid://gy6hental2ft::::res://assets/graphics/Child/Child 4/Green/Sitting/Child4GreenSitting.png<>uid://cthht4qxn1rqs::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents1.png<>uid://ccq0nte382yxc::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents2.png<>uid://jt8smi1v7b3w::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents3.png<>uid://dwtpuwkrn7tb7::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents4.png<>uid://c08huf0ujap60::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil1.png<>uid://bkxrkrx7gr88k::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil2.png<>uid://c7igsbei6l434::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil3.png<>uid://b570m73jvgbpp::::res://assets/graphics/Child/Child 4/Pink/Dragged/Child4PinkDragged.png<>uid://b22m5w2cx61en::::res://assets/graphics/Child/Child 4/Pink/Sitting/Child4PinkSitting.png<>uid://dsa8bveqvsk36::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents1.png<>uid://cgt1hqw3j4qb3::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents2.png<>uid://ivkydrymx6y1::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents3.png<>uid://b3gju8y7wx7n7::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents4.png
+child.tscn::PackedScene::7367537772686235666::1703749172::0::1::::<><>::res://character/child/child.gd<>uid://cjlpxmewwoeer::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil1.png<>uid://cxxctaoe2dd3o::::res://assets/graphics/Child/Child 4/Blue/Sitting/Child4BlueSitting.png<>uid://cnmcnewu1nva3::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil2.png<>uid://ti4n5d5nwwpi::::res://character/child/child_file.tscn<>uid://ww6yw5gbwpci::::res://assets/graphics/Child/Child 1/Blue/Anvil/ChildBlueAnvil3.png<>uid://cacipbwr3b22j::::res://assets/graphics/Child/Child 1/Blue/Dragging/ChildBlueDragged.png<>uid://b7pq3w4eajfoj::::res://assets/graphics/Child/Child 1/Blue/Idle/ChildBlueSitting.png<>uid://dcwnfqxwwrsn2::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents1.png<>uid://bgpg1x7jw5hjj::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents2.png<>uid://ccuea04uleteg::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents3.png<>uid://cbn6mwrbekffw::::res://assets/graphics/Child/Child 1/Blue/Presents/ChildBluePresents4.png<>uid://bftiqx4cri3dv::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil1.png<>uid://tudalkwuw7r8::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil2.png<>uid://ddrc8evwkdxp7::::res://assets/graphics/Child/Child 1/Green/Anvil/ChildGreenAnvil3.png<>uid://33b34x50omss::::res://assets/graphics/Child/Child 1/Green/Dragging/ChildGreenDragged.png<>uid://dke2d4wb2l1fh::::res://assets/graphics/Child/Child 1/Green/Idle/ChildGreenSitting.png<>uid://c3ggojrsuurxo::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents1.png<>uid://bpcwfc0puq4y7::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents2.png<>uid://dm5hbkoaannrm::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents3.png<>uid://br8iquckgoan2::::res://assets/graphics/Child/Child 1/Green/Presents/ChildGreenPresents4.png<>uid://dlkg0u0fh2q7y::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil1.png<>uid://cerqaxfeupi0k::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil2.png<>uid://da15r3a3wtyf6::::res://assets/graphics/Child/Child 1/Pink/Anvil/ChildPinkAnvil3.png<>uid://ftqyv3rwiqmv::::res://assets/graphics/Child/Child 1/Pink/Dragging/ChildPinkDragged.png<>uid://bqk3e5yplgguu::::res://assets/graphics/Child/Child 1/Pink/Idle/ChildPinkSitting.png<>uid://dnc55yeue28b0::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents1.png<>uid://4htqtf4bgxx3::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents2.png<>uid://cbwdpqahdvnmp::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents3.png<>uid://dbbrb63yycslx::::res://assets/graphics/Child/Child 1/Pink/Presents/ChildPinkPresents4.png<>uid://bumdu58rt0apv::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil1.png<>uid://br5dg8y3u1pjh::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil2.png<>uid://b2crie175jfd4::::res://assets/graphics/Child/Child 2/Blue/Anvil/Child2BlueAnvil3.png<>uid://4l6bvrle8ujx::::res://assets/graphics/Child/Child 2/Blue/Dragging/Child2BlueDragged.png<>uid://cisof4efkntdq::::res://assets/graphics/Child/Child 2/Blue/Idle/Child2BlueSitting.png<>uid://cipsxxjdn1qxt::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents1.png<>uid://do7phl8gu4job::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents2.png<>uid://dkehb1buoi4aa::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents3.png<>uid://b7ne5xiny5gvj::::res://assets/graphics/Child/Child 2/Blue/Presents/Child2BluePresents4.png<>uid://cfmahktswapwm::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil1.png<>uid://cuy23ynud4d0p::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil2.png<>uid://bjvj3kodmvaby::::res://assets/graphics/Child/Child 2/Green/Anvil/Child2GreenAnvil3.png<>uid://bofpi52xh5xqa::::res://assets/graphics/Child/Child 2/Green/Dragging/Child2GreenDragged.png<>uid://bevejwj2pwbvf::::res://assets/graphics/Child/Child 2/Green/Idle/Child2GreenSitting.png<>uid://dy25m8qqst770::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents1.png<>uid://ds18da15adxwx::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents2.png<>uid://bvv51wmn7j2y6::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents3.png<>uid://c0nhyf0sxafey::::res://assets/graphics/Child/Child 2/Green/Presents/Child2GreenPresents4.png<>uid://cyyywjp6jldmp::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil1.png<>uid://co432tan07tjy::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil2.png<>uid://cyoqm1u4lqlmr::::res://assets/graphics/Child/Child 2/Pink/Anvil/Child2PinkAnvil3.png<>uid://d4em3mn3uugep::::res://assets/graphics/Child/Child 2/Pink/Dragging/Child2PinkDragged.png<>uid://blhhywqsjxmo6::::res://assets/graphics/Child/Child 2/Pink/Idle/Child2PinkSitting.png<>uid://dfbbooqoctg33::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents1.png<>uid://c4wpjxf5paiac::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents2.png<>uid://c1bumxfpcmnmk::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents3.png<>uid://b5eqoyd0a6o62::::res://assets/graphics/Child/Child 2/Pink/Presents/Child2PinkPresents4.png<>uid://didrh67idwj0r::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil1.png<>uid://brro0tq6m5s1m::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil2.png<>uid://cj01gv8yv5gxn::::res://assets/graphics/Child/Child 3/Blue/Anvil/Child3BlueAnvil3.png<>uid://shfgj1v1gm8e::::res://assets/graphics/Child/Child 3/Blue/Dragged/Child3BlueDragged.png<>uid://bpk6uh4pblpjd::::res://assets/graphics/Child/Child 3/Blue/Sitting/Child3BlueSitting.png<>uid://huofua075fxn::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents1.png<>uid://chwewnh5pd3yk::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents2.png<>uid://40sanbl5gekg::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents3.png<>uid://codo151hywvpr::::res://assets/graphics/Child/Child 3/Blue/Presents/Child3BluePresents4.png<>uid://di4hvn2tfqj6q::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil1.png<>uid://kbh3gmxmy0ti::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil2.png<>uid://mpe0kcslvxak::::res://assets/graphics/Child/Child 3/Green/Anvil/Child3GreenAnvil3.png<>uid://c0al7878xhydj::::res://assets/graphics/Child/Child 3/Green/Dragged/Child3GreenDragged.png<>uid://dcxmr6j4p01aw::::res://assets/graphics/Child/Child 3/Green/Sitting/Child3GreenSitting.png<>uid://cib82yilpwgf3::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents1.png<>uid://befxko8ysar2w::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents2.png<>uid://btpek7lawfxeg::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents3.png<>uid://iqo6vhlf3r14::::res://assets/graphics/Child/Child 3/Green/Presents/Child3GreenPresents4.png<>uid://gau4vnjaprk7::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil1.png<>uid://ctiv3lv3dkw0s::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil2.png<>uid://c4tufv704plga::::res://assets/graphics/Child/Child 3/Pink/Anvil/Child3PinkAnvil3.png<>uid://dari4t4i2sw4f::::res://assets/graphics/Child/Child 3/Pink/Dragged/Child3PinkDragged.png<>uid://ofqkmnd5c6t4::::res://assets/graphics/Child/Child 3/Pink/Sitting/Child3PinkSitting.png<>uid://bc5bjyl5mhbt2::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents1.png<>uid://cx2tdvuvwr47f::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents2.png<>uid://bo054tykkgc3c::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents3.png<>uid://b71v6d6dv1n1b::::res://assets/graphics/Child/Child 3/Pink/Presents/Child3PinkPresents4.png<>uid://hslmsy3nb58d::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil1.png<>uid://bbfrp2vqcf0w0::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil2.png<>uid://1lcuqj50p2pb::::res://assets/graphics/Child/Child 4/Blue/Anvil/Child4BlueAnvil3.png<>uid://doqjil1j7vlm0::::res://assets/graphics/Child/Child 4/Blue/Dragged/Child4BlueDragged.png<>uid://kpg11roub72s::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents1.png<>uid://caflnn2sh022a::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents2.png<>uid://8pmgk5omu3fn::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents3.png<>uid://dn3he6ihmxb2j::::res://assets/graphics/Child/Child 4/Blue/Presents/Child4BluePresents4.png<>uid://bd53clj4nkk8x::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil1.png<>uid://bqelv6bsjmkq::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil2.png<>uid://bh3otyvh6kn38::::res://assets/graphics/Child/Child 4/Green/Anvil/Child4GreenAnvil3.png<>uid://bai707yn3gjfm::::res://assets/graphics/Child/Child 4/Green/Dragged/Child4GreenDragged.png<>uid://gy6hental2ft::::res://assets/graphics/Child/Child 4/Green/Sitting/Child4GreenSitting.png<>uid://cthht4qxn1rqs::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents1.png<>uid://ccq0nte382yxc::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents2.png<>uid://jt8smi1v7b3w::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents3.png<>uid://dwtpuwkrn7tb7::::res://assets/graphics/Child/Child 4/Green/Presents/Child4GreenPresents4.png<>uid://c08huf0ujap60::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil1.png<>uid://bkxrkrx7gr88k::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil2.png<>uid://c7igsbei6l434::::res://assets/graphics/Child/Child 4/Pink/Anvil/Child4PinkAnvil3.png<>uid://b570m73jvgbpp::::res://assets/graphics/Child/Child 4/Pink/Dragged/Child4PinkDragged.png<>uid://b22m5w2cx61en::::res://assets/graphics/Child/Child 4/Pink/Sitting/Child4PinkSitting.png<>uid://dsa8bveqvsk36::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents1.png<>uid://cgt1hqw3j4qb3::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents2.png<>uid://ivkydrymx6y1::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents3.png<>uid://b3gju8y7wx7n7::::res://assets/graphics/Child/Child 4/Pink/Presents/Child4PinkPresents4.png
 childquality.gd::GDScript::-1::1703425603::0::1::::<>Node<>::
-child_file.tscn::PackedScene::1351888640982327902::1703747379::0::1::::<><>::res://generator/generator.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cdjbwhckwxatn::::res://assets/fonts/Childhood-Bold.otf<>uid://c1s7mowljpc60::::res://assets/icons/buttonclose.png<>uid://cei4aanvdavik::::res://generator/letter.png
+child_file.tscn::PackedScene::1351888640982327902::1703749172::0::1::::<><>::res://generator/generator.gd<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://cy8ixb7xri7pw::::res://assets/Report/Report.png<>uid://cdjbwhckwxatn::::res://assets/fonts/Childhood-Bold.otf<>uid://c1s7mowljpc60::::res://assets/icons/buttonclose.png<>uid://cei4aanvdavik::::res://generator/letter.png<>uid://bnkhw7of6r373::::res://assets/IMG_7722.png
 ::res://generator/::1703748275
 generator.gd::GDScript::-1::1703748275::0::1::::<>Node<>::
 letter.png::CompressedTexture2D::5071872577801672190::1703430705::1703430705::1::::<><>::
@@ -533,10 +593,10 @@ hight.txt::TextFile::-1::1703501262::0::1::::<><>::
 level.gd::GDScript::-1::1703501262::0::1::::<>Node2D<>::
 level.tscn::PackedScene::1516234851076444278::1703498438::0::1::::<><>::res://mainlevel/level.gd<>uid://vmsjdh52pqvp::::res://main_menu/pause.tscn<>uid://crd2ohkb3lewo::::res://assets/scenes&scripts/tutorial.tscn<>uid://bwuje4q6anm0o::::res://assets/graphics/bg.jpeg<>uid://bynxb35vi87sj::::res://assets/graphics/tree/treeIdle1.png<>uid://b4fj3yrce0xxs::::res://assets/graphics/tree/treeIdle2.png<>uid://8yrk6p4wbuck::::res://assets/graphics/anvill/Idle/anvilIDLE1.png<>uid://cbb2mp8j2xrxq::::res://assets/characters/Anvil/IMG_7697.png<>uid://ea6ocanfdiqf::::res://assets/graphics/anvill/Idle/anvilIDLE2.png<>uid://dr5fx4emrt33d::::res://assets/characters/Anvil/IMG_7698.png<>uid://dh3qqbc08ptjn::::res://assets/characters/Anvil/IMG_7699.png<>uid://dgd1dec4r3t1x::::res://assets/graphics/anvill/KillChild/KillChild1.png<>uid://ch58l7lmh75we::::res://assets/graphics/Youre_fired.png<>uid://bvknu3uxnmugb::::res://assets/characters/Anvil/IMG_7700.png<>uid://b2514lp7rnbdt::::res://assets/graphics/anvill/KillChild/KillChild2.png<>uid://dlm3w0xtvsl0k::::res://assets/characters/Anvil/IMG_7701.png<>uid://copyd58nj8skn::::res://assets/graphics/anvill/KillChild/KillChild3.png<>uid://xosxcm36v58b::::res://assets/characters/Anvil/IMG_7702.png<>uid://conpsmuc8t6bh::::res://assets/graphics/anvill/KillChild/KillChild4.png<>uid://bjt0k5lcew7wx::::res://assets/graphics/anvill/KillChild/KillChild5.png<>uid://fe80nqr3abt3::::res://assets/characters/Anvil/IMG_7703.png<>uid://ctkum1maf03hg::::res://assets/graphics/anvill/KillChild/KillChild6.png<>uid://buqi3523w4xvv::::res://assets/characters/Anvil/IMG_7704.png<>uid://dv2xbgm042c6w::::res://assets/graphics/anvill/KillChild/KillChild7.png<>uid://fal50oxwevwn::::res://assets/graphics/anvill/KillChild/KillChild8.png<>uid://c5m0162b6wbn6::::res://assets/graphics/anvill/KillChild/KillChild9.png<>uid://dqi7ig3mvpehr::::res://assets/graphics/Santa/Idle/SantaIDLE.png<>uid://dsrjap5xaol6u::::res://assets/graphics/Santa/Win/SantaWin1.png<>uid://cn6wa3pvcs31o::::res://assets/sound/sounds.tscn<>uid://cfh8aewvu57j::::res://assets/graphics/Santa/Win/SantaWin2.png<>uid://jge1gmxxwaei::::res://assets/graphics/Santa/Win/SantaWin3.png<>uid://bmx84irvxs8tk::::res://assets/graphics/Santa/Win/SantaWin4.png<>uid://b7o3pvojuvg3c::::res://assets/graphics/Santa/Win/SantaWin5.png<>uid://dufaeex42clnc::::res://assets/graphics/Santa/Win/SantaWin6.png<>uid://di4q23i8qdp2i::::res://assets/graphics/Santa/Win/SantaWin7.png<>uid://dyw1d2qkfayqi::::res://assets/graphics/Santa/Win/SantaWin8.png<>uid://vp5x6nrw3w1s::::res://assets/graphics/Santa/Win/SantaWin9.png
 sounds.gd::GDScript::-1::1703498438::0::1::::<>Node<>::
-::res://main_menu/::1703748275
+::res://main_menu/::1703749172
 loose.mp3::AudioStreamMP3::8111325904195576154::1703425604::1703425604::1::::<><>::
-mainmenu.gd::GDScript::-1::1703747379::0::1::::<>Control<>::
-mainmenu.tscn::PackedScene::2481733112026175755::1703748275::0::1::::<><>::res://main_menu/mainmenu.gd<>res://main_menu/sfx.gd<>uid://bb0b080qjamc6::::res://assets/IMG_7719.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://t64qhhfe0w0l::::res://assets/icons/start.png<>uid://ubridbbve72c::::res://assets/icons/options.png<>uid://unoyip4b2bkm::::res://assets/icons/credits.png<>uid://buxasyd8x5xsq::::res://main_menu/mermello_pastello.mp3<>uid://yy3l7lpc8d3x::::res://assets/icons/exit.png<>res://main_menu/theme.gd
+mainmenu.gd::GDScript::-1::1703749074::0::1::::<>Control<>::
+mainmenu.tscn::PackedScene::2481733112026175755::1703749172::0::1::::<><>::res://main_menu/mainmenu.gd<>res://main_menu/sfx.gd<>uid://bb0b080qjamc6::::res://assets/IMG_7719.png<>uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>uid://t64qhhfe0w0l::::res://assets/icons/start.png<>uid://ubridbbve72c::::res://assets/icons/options.png<>uid://unoyip4b2bkm::::res://assets/icons/credits.png<>uid://buxasyd8x5xsq::::res://main_menu/mermello_pastello.mp3<>uid://yy3l7lpc8d3x::::res://assets/icons/exit.png<>res://main_menu/theme.gd
 mermello_pastello.mp3::AudioStreamMP3::3837711655813539472::1703436372::1703425604::1::::<><>::
 pause.gd::GDScript::-1::1703498438::0::1::::<>CanvasLayer<>::
 pause.tscn::PackedScene::1499847397245771713::1703498438::0::1::::<><>::uid://cuevdh5m46808::::res://assets/fonts/normal.tres<>res://main_menu/pause.gd

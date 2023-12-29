@@ -21,7 +21,10 @@ func _on_button_2_pressed():
 
 
 func _on_button_pressed():
-	get_tree().quit()
+	if OS.has_feature("web"):
+		get_tree().call_deferred("quit")
+	else:
+		get_tree().quit()
 
 
 func _on_button_3_pressed():

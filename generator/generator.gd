@@ -310,6 +310,8 @@ func data_anvil():
 	$Paper/TempBg/Profile/Name.text = "Anvil"
 
 func _on_close_pressed():
+	if $Animation.is_playing():
+		await get_tree().create_timer(1).timeout
 	close()
 		
 
@@ -317,6 +319,8 @@ func close():
 	$Animation.play("close")
 
 func _on_story_meta_clicked(meta):
+	if $Animation.is_playing():
+		await get_tree().create_timer(1).timeout
 	print("clicked")
 	if parent.is_in_group("anvil") and !seen:
 		seen = true
@@ -338,6 +342,8 @@ func _on_story_meta_clicked(meta):
 			
 		else:
 			if meta == "See letter" and letter_seen == false:
+				if $Animation.is_playing():
+					await get_tree().create_timer(1).timeout
 				letter_seen = true
 				$Animation.play("lettershow")
 				$Paper/TempBg/Profile/Decide.show()
@@ -350,6 +356,8 @@ func _on_anim_animation_finished(anim_name):
 		santa_drawings_done = false
 
 func _on_decide_pressed():
+	if $Animation.is_playing():
+		await get_tree().create_timer(1).timeout
 	close()
 	parent.clicked = true
 	sfx.paper("hide")

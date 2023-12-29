@@ -66,6 +66,38 @@ func generatechild():
 			child_ins.child4(decidecolored)
 			animplayer.play("moveChild")
 			return
+			
+		elif decided == "child5":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child5(decidecolored)
+			animplayer.play("moveChild")
+			return
+			
+		elif decided == "child6":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child6(decidecolored)
+			animplayer.play("moveChild")
+			return
+			
+		elif decided == "child7":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child7(decidecolored)
+			animplayer.play("moveChild")
+			return
+			
+		elif decided == "child8":
+			var child_ins = child.instantiate()
+			var decidecolored = decidecolor()
+			$child.add_child(child_ins)
+			child_ins.child8(decidecolored)
+			animplayer.play("moveChild")
+			return
 
 func decidecolor():
 	var probab = ["blue","green","pink"]
@@ -73,8 +105,8 @@ func decidecolor():
 	return rand
 
 func decider():
-	var probab = ["child1","child2","child3","child4","child1","child2","child3","child4","anvil"]
-	var rand = randi_range(0,8)
+	var probab = ["child1","child2","child3","child4","child5","child6","child7","child8","child1","child2","child3","child4","child5","child6","child7","child8","anvil","anvil","anvil","anvil"]
+	var rand = randi_range(0,19)
 	return probab[rand]
 
 func gameover():
